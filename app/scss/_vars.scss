@@ -1,0 +1,25 @@
+$header: #436372;
+
+%gil-400 {
+    font-family: "Gilroy-Regular";
+    font-weight: 400;
+}
+%gil-500 {
+    font-family: "Gilroy-Medium";
+    font-weight: 500;
+}
+%gil-600 {
+    font-family: "Gilroy-SemiBold";
+    font-weight: 600;
+}
+%gil-700 {
+    font-family: "Gilroy-Bold";
+    font-weight: 700;
+}
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}
