@@ -1,41 +1,206 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'libs';
-@import 'media';
-@import 'global';
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "media";
+@import "global";
 
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
 
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 165px;
+        width: 100%;
+    }
+    &__select {
+        text-transform: uppercase;
+        color: $title;
+    }
+    &__btn {
+        padding: 9px 37px;
+        background-color: #2d50fc;
+        border-radius: 6px;
+        color: #fff;
+        cursor: pointer;
+    }
 
+    &__menu-btn {
+        display: none;
+        z-index: 50;
+        // position: absolute;
+        // right: 30px;
+        // top: 50px;
+        // transform: translateY(-50%);
+        // width: 30px;
+        // height: 40px;
+        padding: 5px;
+        cursor: pointer;
+    }
 
+    &__menu-btn span {
+        display: block;
+        height: 3px;
+        width: 24px;
+        background-color: #3f414a;
+        border-radius: 2px;
+        margin-bottom: 5px;
+        transition: all 0.5s;
+    }
+}
 
+.menu {
+    width: 736px;
+    margin: 0 20px;
+    &__mob {
+        display: none;
+    }
 
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    // &__item {
+    //     margin-right: 10px;
+    //     &:last-child {
+    //         margin-right: 0;
+    //     }
+    // }
+}
 
+// -----------Content Part-----------------------------------
 
+.first {
+    padding: 94px 0;
+    min-height: 614px;
+    position: relative;
+    background: linear-gradient(134.6deg, #0b72ff 8.43%, #3605c0 80.91%);
+    &::before {
+        // content: "";
+        // position: absolute;
+        // width: 90%;
+        // height: 100%;
+        // top: 100px;
+        // left: 0;
+        // background-size: contain;
+        // background-position: left bottom;
+        // z-index: -1;
+        // background-image: url("../images/vector-bg.svg");
+        // background-repeat: no-repeat;
+    }
 
-@import 'media';
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left {
+        max-width: 673px;
+    }
+    &__title {
+        font-size: 46px;
+        line-height: 120%;
+        color: $yellow;
+        @extend %gil-600;
+    }
+    &__title-bottom {
+        font-size: 46px;
+        line-height: 120%;
+        color: #fff;
+        @extend %gil-600;
+    }
+    &__left-wrap {
+        display: flex;
+        justify-content: space-between;
+        max-width: 413px;
+        width: 100%;
+    }
+    &__wrap-text {
+        margin-top: 16px;
+        padding-left: 30px;
+        font-size: 16px;
+        line-height: 146.5%;
+        @extend %gil-600;
+        color: #ffffff;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            background-image: url("../images/icons/finger-up.png");
+            top: 0;
+            left: 0;
+        }
+    }
+    &__left-text {
+        margin: 28px 0 32px;
+        color: #fff;
+        font-size: 18px;
+        line-height: 149%;
+    }
+    &__left-try {
+        display: inline-block;
+        padding: 18px 26px;
+        margin-right: 20px;
+        transition: all 0.8s linear 0s;
+        &:hover {
+            color: $bg;
+            background: rgb(255, 255, 255);
+            // background-color: #fff;
+        }
+    }
+    &__left-consult {
+        padding: 17px 26px;
+        cursor: pointer;
+        transition: all 0.4s;
+        &:hover {
+            color: $bg;
+            background-color: #fff;
+        }
+    }
 
+    &__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../images/bg-first.png");
+        background-repeat: no-repeat;
+        width: 710px;
+        min-height: 426px;
+        position: relative;
+        left: 100px;
+        z-index: 2;
+    }
+    &__right-btn {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        max-width: 94px;
+        color: #ffffff;
+        transform: rotate(-0.1deg);
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../images/play-btn.svg");
+            width: 130px;
+            height: 130px;
+            left: -100px;
+            top: -47px;
+            z-index: -1;
+        }
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@import "media";

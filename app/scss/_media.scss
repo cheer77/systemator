@@ -1,0 +1,11 @@
+@media (max-width: 1170px) {
+    .menu {
+        &__item {
+            margin-right: 28px;
+            max-width: 75px;
+            &:first-child {
+                margin-right: 57px;
+            }
+        }
+    }
+}

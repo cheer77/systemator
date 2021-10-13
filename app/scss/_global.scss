@@ -7,18 +7,50 @@ body {
 body {
     display: flex;
     flex-direction: column;
+    color: $first;
+    @extend %gil-500;
+    background-color: #fff;
 }
 
 main {
     flex-grow: 1;
 }
 
-.container{
-    
+.container {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
-
 
 .title {
-
+    font-size: 44px;
+    line-height: 149%;
+    text-align: center;
+    color: $first;
+    @extend %gil-600;
+    & span {
+        color: $title;
+    }
 }
 
+.btn {
+    background: linear-gradient(90deg, #ffdb1b 0%, #ffbf1b 100%);
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #362f2f;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.btn-sec {
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+    transition: all 0.4s;
+    cursor: pointer;
+}
