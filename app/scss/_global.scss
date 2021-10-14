@@ -42,6 +42,9 @@ main {
     color: #362f2f;
     transition: all 0.4s;
     cursor: pointer;
+    &:hover {
+        background: #fff;
+    }
 }
 .btn-sec {
     border: 1px solid #ffffff;
