@@ -903,7 +903,12 @@
         max-width: 815px;
     }
     &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
         margin-top: 52px;
+        position: relative;
     }
     &__item {
         padding: 32px 35px;
@@ -911,6 +916,7 @@
         background: #ffffff;
         box-shadow: 0px 5px 20px rgba(12, 62, 62, 0.1);
         border-radius: 8px;
+        min-height: 445px;
     }
     &__item-top {
         display: flex;
@@ -997,6 +1003,197 @@
     }
     &__input:checked ~ .team__read-next {
         display: none;
+    }
+}
+
+.help {
+    padding-bottom: 120px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__descr {
+        margin-top: 50px;
+        max-width: 467px;
+    }
+    &__title {
+        margin-bottom: 20px;
+        font-size: 44px;
+        line-height: 120%;
+        & span {
+            color: #075fc5;
+        }
+    }
+    &__pre-title {
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 146.5%;
+        @extend %gil-600;
+    }
+    &__text {
+        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 149%;
+        color: #878787;
+        @extend %gil-700;
+    }
+    &__btn {
+        padding: 18px 26px;
+        &:hover {
+            color: #fff;
+            background: linear-gradient(134.6deg, #0b72ff 8.43%, #3605c0 80.91%);
+        }
+    }
+
+    &__box-img {
+        position: relative;
+        left: 126px;
+    }
+}
+
+.teleg {
+    padding: 72px 0 25px;
+    background-color: $bg;
+
+    &__inner {
+        max-width: 1040px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    &__descr {
+        margin-top: 18px;
+        max-width: 505px;
+    }
+    &__logo {
+        margin-bottom: 24px;
+    }
+    &__title {
+        margin-bottom: 20px;
+        font-size: 44px;
+        line-height: 120%;
+        color: #fff;
+        @extend %gil-600;
+        & span {
+            color: $yellow;
+        }
+    }
+    &__text {
+        margin-bottom: 24px;
+        font-size: 18px;
+        line-height: 149%;
+        color: #ffffff;
+        & span {
+            color: $yellow;
+        }
+    }
+    &__btn {
+        padding: 19px 56px;
+    }
+
+    &__box-img {
+        position: relative;
+        top: 25px;
+    }
+}
+
+.news {
+    padding: 120px 0;
+
+    &__title {
+        margin-bottom: 32px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin-top: 20px;
+        margin-right: 10px;
+        padding: 174px 73px 30px 30px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        min-height: 291px;
+        border-radius: 10px;
+        background-size: cover;
+        z-index: 1;
+        // position: relative;
+        color: #fff;
+        // &::before {
+        //     content: "";
+        //     display: block;
+        //     position: absolute;
+        //     width: 100%;
+        //     height: 100%;
+        //     background: linear-gradient(0deg, rgba(37, 26, 68, 0.6), rgba(37, 26, 68, 0.6)), url(.jpg), #c4c4c4;
+        //     opacity: 0.5;
+        //     border-radius: 10px;
+        //     top: 0;
+        //     left: 0;
+        //     z-index: -1;
+        // }
+    }
+    &__name {
+        font-size: 18px;
+        line-height: 149%;
+        @extend %gil-700;
+    }
+    &__link {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 146.5%;
+        color: $yellow;
+        // max-width: 86px;
+        transition: all 0.3s;
+        &:hover {
+            text-decoration: underline;
+            // border-bottom: solid 1px $yellow;
+        }
+    }
+}
+
+.try {
+    padding: 37px 0 54px;
+    background-color: $bg;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__descr {
+        margin-top: 89px;
+        max-width: 505px;
+    }
+    &__title {
+        max-width: 490px;
+        font-size: 44px;
+        line-height: 120%;
+        color: #ffffff;
+        @extend %gil-600;
+        margin-bottom: 20px;
+        & span {
+            color: $yellow;
+        }
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 146.5%;
+        color: #ffffff;
+        margin-bottom: 24px;
+    }
+    &__btn {
+        padding: 18px 26px;
+        margin-right: 20px;
+    }
+    &__btn-sec {
+        padding: 17px 26px;
     }
 }
 

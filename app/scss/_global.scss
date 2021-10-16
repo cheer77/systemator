@@ -58,4 +58,8 @@ main {
     color: #ffffff;
     transition: all 0.4s;
     cursor: pointer;
+    &:hover {
+        color: $bg;
+        background: #fff;
+    }
 }
