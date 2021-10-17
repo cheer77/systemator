@@ -1,5 +1,11 @@
 $(function () {
 
+    MicroModal.init({
+        disableScroll: true, // [6]
+        awaitOpenAnimation: true, // [8]
+        awaitCloseAnimation: true, // [9]
+    });
+
     $('.select-style, .nav__select').styler();
 
     var swiper = new Swiper(".win__slider", {
@@ -32,5 +38,16 @@ $(function () {
         $($(this).attr('href')).addClass('need__item--active');
 
     });
+
+
+
+    $('.enter-modal__forgot').on('click', function (event) {
+        $('.forgot-modal__overlay').toggleClass('active');
+        // $('.forgot-modal').toggleClass('forgot-modal--active');
+    });
+
+
+
+
 
 });

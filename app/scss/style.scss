@@ -2,7 +2,7 @@
 @import "fonts";
 @import "reset";
 @import "libs";
-@import "media";
+@import "modals";
 @import "global";
 
 .header {
@@ -262,6 +262,7 @@
         font-size: 14px;
         line-height: 149%;
         color: #878787;
+        max-width: 385px;
     }
     &__slider-production {
         position: relative;
@@ -271,7 +272,7 @@
             position: absolute;
             font-size: 14px;
             line-height: 149%;
-            left: -20px;
+            left: -10px;
             top: 0;
             color: #878787;
         }
