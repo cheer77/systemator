@@ -47,7 +47,16 @@ $(function () {
     });
 
 
+    $('.video__btn').on('click', function (e) {
 
+        e.preventDefault();
+        $('.video__btn').removeClass('video__btn-active');
+        $(this).addClass('video__btn-active');
+
+        $('.video__content').removeClass('video__content-active');
+        $($(this).attr('href')).addClass('video__content-active');
+
+    });
 
 
 });

@@ -36,6 +36,10 @@
     background: transparent;
     box-shadow: none;
 }
+.jq-selectbox__select-text {
+    font-size: 14px;
+    // line-height: 16px;
+}
 .jq-selectbox__trigger-arrow {
     position: absolute;
     top: 14px;
