@@ -228,8 +228,8 @@
 }
 
 .win {
-    padding-top: 120px;
-    padding-bottom: 113px;
+    margin-top: 120px;
+    // padding-bottom: 113px;
 
     &__slider-inner {
         position: relative;
@@ -251,7 +251,7 @@
         cursor: pointer;
     }
     &__slider {
-        padding: 0 10px;
+        padding: 0 15px;
         max-width: 1041px;
         display: flex;
         justify-content: center;
@@ -270,7 +270,7 @@
         min-height: 415px;
         padding: 51px 53px 46px;
         background: #ffffff;
-        box-shadow: 0px 5px 20px rgba(12, 62, 62, 0.1);
+        box-shadow: 0px 5px 11px rgba(12, 62, 62, 0.1);
         border-radius: 8px;
         box-sizing: border-box;
     }
@@ -323,7 +323,7 @@
 }
 
 .need {
-    padding-bottom: 104px;
+    margin-top: 113px;
     &__title {
         margin-bottom: 59px;
     }
@@ -509,7 +509,8 @@
 }
 
 .profit {
-    padding-bottom: 120px;
+    margin-top: 104px;
+    margin-bottom: 120px;
 
     &__title {
         display: block;
@@ -689,7 +690,8 @@
 }
 
 .demo {
-    padding: 72px 0 120px;
+    padding-top: 72px;
+    margin-bottom: 120px;
     background: linear-gradient(180deg, #e5f1ff 0%, rgba(229, 241, 255, 0.4375) 64.82%, rgba(255, 255, 255, 0) 116.31%);
 
     &__title {
@@ -788,7 +790,7 @@
 }
 
 .result {
-    padding: 126px 0 120px;
+    margin: 126px 0 120px;
     &__title {
         margin-bottom: 57px;
     }
@@ -956,7 +958,7 @@
 }
 
 .team {
-    padding: 111px 0 132px;
+    margin: 111px 0 132px;
 
     &__title {
         max-width: 815px;
@@ -1066,8 +1068,6 @@
 }
 
 .help {
-    padding-bottom: 120px;
-
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -1097,7 +1097,9 @@
         font-size: 16px;
         line-height: 149%;
         color: #878787;
-        @extend %gil-700;
+        & span {
+            @extend %gil-700;
+        }
     }
     &__btn {
         padding: 18px 26px;
@@ -1114,7 +1116,7 @@
 }
 
 .video {
-    padding-bottom: 120px;
+    margin: 120px 0;
     &__title {
         max-width: 715px;
         margin-bottom: 52px;
@@ -1137,22 +1139,15 @@
         background-size: cover;
         position: relative;
         margin-top: 71px;
+        transition: all 0.5s;
         &::before {
             content: "";
             position: absolute;
-            background-image: url("../images/video/play-btn2.svg");
-            width: 49px;
-            height: 49px;
-            top: 50px;
-            left: 100px;
+            width: 100%;
+            height: 100%;
+            background-color: #5c08f7;
+            border-radius: 8px;
             opacity: 0;
-            // background-image: url("../images/video/v-1.jpg");
-            // background-size: cover;
-            // width: 100%;
-            // height: 100%;
-        }
-        &:hover {
-            opacity: 0.6;
         }
         &:nth-child(1) {
             margin-top: 0;
@@ -1161,17 +1156,38 @@
             margin-top: 0;
         }
     }
-    // &__btn:hover + .video__btn::before {
-    //     opacity: 1;
-    // }
-
+    .video__btn:hover {
+        &::before {
+            opacity: 0.5;
+        }
+    }
+    .video__btn:hover &__btn-img-play {
+        opacity: 1;
+    }
+    &__btn-img-play {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+        opacity: 0;
+    }
     &__btn-text {
+        display: inline-block;
+        position: relative;
+        left: 60px;
         text-align: center;
-        margin-top: 16px;
+        padding-top: 16px;
         font-size: 16px;
         line-height: 146.5%;
         text-align: center;
         text-transform: uppercase;
+        @extend %gil-700;
+    }
+    .video__btn:hover &__btn-text {
+        border-bottom: 1px solid #444141;
     }
 
     &__content {
@@ -1235,7 +1251,7 @@
 }
 
 .news {
-    padding: 120px 0;
+    margin: 120px 0;
 
     &__title {
         margin-bottom: 32px;

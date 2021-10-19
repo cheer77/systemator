@@ -10,7 +10,7 @@ $(function () {
 
     var swiper = new Swiper(".win__slider", {
         slidesPerView: 2,
-        spaceBetween: 21,
+        spaceBetween: 24,
         centeredSlidesBounds: true,
         navigation: {
             nextEl: ".win__next",
@@ -57,6 +57,10 @@ $(function () {
         $($(this).attr('href')).addClass('video__content-active');
 
     });
+
+
+
+
 
 
 });
