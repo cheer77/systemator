@@ -18,6 +18,14 @@
                 <img class="nav__logo" src="images/logo.svg" alt="Logo">
 
                 <div class="menu">
+
+                    <div class="nav__select-box menu__select-box-mob">
+                        <select class="nav__select" name="" id="">
+                            <option class="nav__select-option" value="0">ru</option>
+                            <option class="nav__select-option" value="1">ua</option>
+                        </select>
+                    </div>
+
                     <ul class="menu__items">
                         <li class="menu__item">
                             <a href="#" class="menu__link">Инструменты управления</a>
@@ -103,11 +111,11 @@
                 <div class="first__inner">
                     <div class="first__left">
                         <h1 class="first__title">
-                            Систематизируй бизнес
+                            <span>Систематизируй бизнес</span> и управляй компанией онлайн
                         </h1>
-                        <h2 class="first__title-bottom">
+                        <!-- <h2 class="first__title-bottom">
                             и управляй компанией онлайн
-                        </h2>
+                        </h2> -->
                         <div class="first__left-wrap">
                             <p class="first__wrap-text">Удобная</p>
                             <p class="first__wrap-text">Логичная</p>
@@ -203,6 +211,8 @@
                             </div>
 
                         </div>
+
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -504,6 +514,7 @@
                 <div class="kit__inner">
                     <div class="kit__descr">
                         <img class="kit__logo" src="images/icons/kit-logo.png" alt="logo">
+                        <img class="kit__logo-mob" src="images/icons/kit-logo-mob.png" alt="">
                         <h2 class="kit__title">Systemator</h2>
                         <p class="kit__text">
                             набор <span>инструментов для эффективной работы</span> офисных
@@ -968,8 +979,8 @@
 
                 <h2 class="news__title title">Новостной <span>блог</span></h2>
 
-                <div class="news__block">
-                    <div class="news__wrapper">
+                <div class="swiper news__block">
+                    <div class="news__wrapper swiper-wrapper">
 
                         <div style="background-image: url('images/news/1.jpg')" class="swiper-slide news__item">
                             <p class="news__name">Доход растет, а&nbsp;бизнес становится масштабируемым...</p>
