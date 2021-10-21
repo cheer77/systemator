@@ -24,7 +24,7 @@ $(function () {
 
 
 
-    var swiper = new Swiper(".win__slider", {
+    let swiper22 = new Swiper(".win__slider", {
         watchOverflow: true,
         centerSlidesBounds: true,
         centerSlides: true,
@@ -59,19 +59,129 @@ $(function () {
 
 
 
-    var swiper = new Swiper(".news__block", {
-        slidesPerView: 2,
-        spaceBetween: 24,
-        // centeredSlidesBounds: true,
-        navigation: {
-            nextEl: ".win__next",
-            prevEl: ".win__prev",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
+
+    const windowInnerWidth = window.innerWidth;
+
+    window.addEventListener('resize', function (event) {
+        const windowInnerWidth = window.innerWidth;
+        if (windowInnerWidth >= 768) {
+            swiper.destroy();
+            swiper2.destroy();
+        } else {
+            //код инициализатора
+            let swiper = new Swiper(".news__block", {
+                slidesPerView: 1,
+                watchOverflow: true,
+                spaceBetween: 10,
+                centeredSlides: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+
+            let swiper2 = new Swiper(".video__content-slider", {
+                observer: true,
+                observerParents: true,
+                // watchOverflow: true,
+                centerSlidesBounds: true,
+                slidesPerView: 2,
+                spaceBetween: 14,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        }
     });
+
+    if (windowInnerWidth >= 768) {
+        swiper.destroy();
+        swiper2.destroy();
+
+    } else {
+        //код инициализатора
+        let swiper = new Swiper(".news__block", {
+            slidesPerView: 1,
+            watchOverflow: true,
+            spaceBetween: 10,
+            centeredSlides: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        let swiper2 = new Swiper(".video__content-slider", {
+            observer: true,
+            observerParents: true,
+            // watchOverflow: true,
+            centerSlidesBounds: true,
+            slidesPerView: 2,
+            spaceBetween: 14,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    // const windowInnerWidth = window.innerWidth;
+
+    // window.addEventListener('resize', function (event) {
+    //     const windowInnerWidth = window.innerWidth;
+    //     if (windowInnerWidth >= 768) {
+    //         swiper.destroy();
+    //     } else {
+    //         //код инициализатора
+    //         let swiper = new Swiper(".video__content-slider", {
+    //             slidesPerView: 1,
+    //             watchOverflow: true,
+    //             spaceBetween: 10,
+    //             centeredSlides: true,
+    //             pagination: {
+    //                 el: ".swiper-pagination",
+    //                 clickable: true,
+    //             },
+    //         });
+    //     }
+    // });
+
+    // if (windowInnerWidth >= 768) {
+    //     swiper.destroy();
+    // } else {
+    //     //код инициализатора
+    //     let swiper = new Swiper(".video__content-slider", {
+    //         slidesPerView: 1,
+    //         watchOverflow: true,
+    //         spaceBetween: 10,
+    //         centeredSlides: true,
+    //         pagination: {
+    //             el: ".swiper-pagination",
+    //             clickable: true,
+    //         },
+    //     });
+    // };
+
+
+
+
+
+
+
+
+
 
 
 
@@ -114,8 +224,81 @@ $(function () {
 
 
 
+
+    // var swiper = new Swiper(".news__block", {
+    //     breakpoints: {
+    //         // when window width is >= 640px
+    //         320: {
+    //             slidesPerView: 2,
+    //             spaceBetween: 10,
+    //             enabled: true,
+    //         },
+    //         480: {
+    //             slidesPerView: 2,
+    //             spaceBetween: 10,
+    //             enabled: true,
+    //             initialSlide: 1,
+    //         },
+    //         555: {
+    //             slidesPerView: 1.3,
+    //             spaceBetween: 10,
+    //             enabled: true,
+    //             initialSlide: 1,
+    //         },
+    //         768: {
+    //             slidesPerView: 1.3,
+    //             spaceBetween: 10,
+    //             enabled: true,
+    //             initialSlide: 1,
+    //         },
+    //         960: {
+    //             spaceBetween: 10,
+    //             enabled: false,
+    //             initialSlide: 1,
+    //         },
+    //         1080: {
+    //             spaceBetween: 10,
+    //             enabled: false,
+    //             initialSlide: 1,
+    //         },
+    //         1240: {
+    //             spaceBetween: 10,
+    //             enabled: false,
+    //             initialSlide: 1,
+    //         },
+    //     },
+    // });
+
+
 });
 
+
+
+
+// const windowInnerWidth = window.innerWidth;
+
+// if (windowInnerWidth >= 768) {
+//     //код инициализатора
+//     let swiper = new Swiper(".news__block", {
+//         slidesPerView: 1,
+//         spaceBetween: 10,
+//     });
+// } else {
+//     let swiper = new Swiper();
+// }
+
+// window.addEventListener('resize', function (event) {
+//     const windowInnerWidth = window.innerWidth;
+//     if (windowInnerWidth >= 768) {
+//         //код инициализатора
+//         let swiper = new Swiper(".news__block", {
+//             slidesPerView: 1,
+//             spaceBetween: 10,
+//         });
+//     } else {
+//         let swiper = new Swiper();
+//     }
+// });
 
 
 

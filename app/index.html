@@ -893,42 +893,44 @@
                         </a>
                     </div>
 
+                    <div class="swiper video__content-slider">
+                        <div class="video__content-block swiper-wrapper">
+                            <div id="video1" class="swiper-slide video__content video__content-active">
+                                <iframe class="video__content-frame" width="653" height="414"
+                                    src="https://www.youtube.com/embed/-VqaldVH-WE" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
 
-                    <div class="video__content-block">
-                        <div id="video1" class="video__content video__content-active">
-                            <iframe class="video__content-frame" width="653" height="414"
-                                src="https://www.youtube.com/embed/-VqaldVH-WE" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                        </div>
+                            </div>
 
-                        <div id="video2" class="video__content">
-                            <iframe class="video__content-frame" width="653" height="414"
-                                src="https://www.youtube.com/embed/DNPvPFsmA4o" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                        </div>
+                            <div id="video2" class="swiper-slide video__content">
+                                <iframe class="video__content-frame" width="653" height="414"
+                                    src="https://www.youtube.com/embed/DNPvPFsmA4o" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
 
-                        <div id="video3" class="video__content">
-                            <iframe class="video__content-frame" width="653" height="414"
-                                src="https://www.youtube.com/embed/-VqaldVH-WE" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                        </div>
+                            <div id="video3" class="swiper-slide video__content">
+                                <iframe class="video__content-frame" width="653" height="414"
+                                    src="https://www.youtube.com/embed/-VqaldVH-WE" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
 
-                        <div id="video4" class="video__content">
-                            <iframe class="video__content-frame" width="653" height="414"
-                                src="https://www.youtube.com/embed/-VqaldVH-WE" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
+                            <div id="video4" class="swiper-slide video__content">
+                                <iframe class="video__content-frame" width="653" height="414"
+                                    src="https://www.youtube.com/embed/-VqaldVH-WE" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
                         </div>
                     </div>
 
@@ -979,7 +981,7 @@
 
                 <h2 class="news__title title">Новостной <span>блог</span></h2>
 
-                <div class="swiper news__block">
+                <div class="news__block">
                     <div class="news__wrapper swiper-wrapper">
 
                         <div style="background-image: url('images/news/1.jpg')" class="swiper-slide news__item">
@@ -1014,7 +1016,7 @@
 
                     </div>
                 </div>
-
+                <div class="swiper-pagination"></div>
             </div>
         </section>
 
@@ -1355,6 +1357,7 @@
                     </div>
                 </div>
                 <div class="footer__location">
+                    <img class="footer__soc-logo footer__soc-logo-mob" src="images/logo.svg" alt="Logo">
                     <address class="footer__location-addr">Киев, ул. Тростянецкая, 49</address>
                     <p class="footer__location-time">Пн&nbsp;&mdash; Пт: 8.00&nbsp;&mdash; 18.00</p>
                     <a href="mailto:office@systemator.pro" class="footer__location-email">office@systemator.pro</a>
@@ -1377,6 +1380,10 @@
             <div class="footer__bottom">
                 <a href="#" class="footer__bottom-link">Пользовательское соглашение</a>
                 <a href="#" class="footer__bottom-link">Политика конфиденциальности</a>
+
+                <p class="footer__soc-copy footer__soc-copy-mob">
+                    Copyright &copy;&nbsp;2021 Systemator
+                </p>
             </div>
         </div>
     </footer>
