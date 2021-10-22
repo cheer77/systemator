@@ -23,6 +23,7 @@
                         <select class="nav__select" name="" id="">
                             <option class="nav__select-option" value="0">ru</option>
                             <option class="nav__select-option" value="1">ua</option>
+                            <option class="nav__select-option" value="2">en</option>
                         </select>
                     </div>
 
@@ -82,6 +83,7 @@
                         <select class="nav__select" name="" id="">
                             <option class="nav__select-option" value="0">ru</option>
                             <option class="nav__select-option" value="1">ua</option>
+                            <option class="nav__select-option" value="2">en</option>
                         </select>
                     </div>
 
@@ -540,7 +542,7 @@
 
                 <div class="result__items">
                     <div class="result__item">
-                        <input class="result__input" type="checkbox" id="faq1">
+                        <input class="result__input" type="checkbox" id="faq1" checked>
                         <label for="faq1" class="result__label">Для бизнеса и&nbsp;владельца
                         </label>
                         <div class="result__block">
@@ -895,6 +897,7 @@
 
                     <div class="swiper video__content-slider">
                         <div class="video__content-block swiper-wrapper">
+
                             <div id="video1" class="swiper-slide video__content video__content-active">
                                 <iframe class="video__content-frame" width="653" height="414"
                                     src="https://www.youtube.com/embed/-VqaldVH-WE" title="YouTube video player"
@@ -902,7 +905,6 @@
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen>
                                 </iframe>
-
                             </div>
 
                             <div id="video2" class="swiper-slide video__content">
@@ -932,9 +934,8 @@
                                 </iframe>
                             </div>
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-
-
                 </div>
             </div>
         </section>
@@ -1015,8 +1016,8 @@
                         </div>
 
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
         </section>
 
@@ -1158,6 +1159,9 @@
                                 data-micromodal-close>
                             </button>
                             <p class="try-modal__title get-modal__title">Получить консультацию</p>
+                            <p class="try-modal__garant get-modal__garant">
+                                Заполните форму и мы свяжемся с вами в ближайшее время
+                            </p>
 
                             <main class="try-modal__content" id="modal-2-content">
                                 <form class="try-modal__form get-modal__form">
@@ -1167,7 +1171,7 @@
 
                                     <button type="submit" class="try-modal__btn btn">Отправить</button>
 
-                                    <div class="try-modal__know-wrap">
+                                    <!-- <div class="try-modal__know-wrap">
                                         <input class="try-modal__check" type="checkbox" name="" id="box2" required>
                                         <label class="try-modal__know-label" for="box2"> Я&nbsp;ознакомился
                                             и&nbsp;принимаю
@@ -1177,17 +1181,7 @@
                                         <p class="try-modal__know-text">Договор о&nbsp;предоставлении услуг</p>
                                         <p class="try-modal__know-text">Соглашение пользователя</p>
                                         <p class="try-modal__know-text">Политика конфиденциальности</p>
-                                    </div>
-
-                                    <p class="try-modal__garant">
-                                        Мы&nbsp;гарантируем безопасность аккаунта и&nbsp;сохранность внесенной
-                                        информации. Детали
-                                        в&nbsp;соглашении.При заказе платных услуг&nbsp;&mdash; оплата производится
-                                        ежемесячно. У&nbsp;вас
-                                        нет никаких контрактов, обязательств или штрафов. Вы&nbsp;в&nbsp;праве
-                                        прекратить
-                                        использование в&nbsp;любое время
-                                    </p>
+                                    </div> -->
 
                                 </form>
                             </main>
@@ -1393,6 +1387,27 @@
 
 
     <script src="js/main.min.js"></script>
+
+    <!-- <script>
+        const needBlocks = document.querySelectorAll('.need__item');
+        needBlocks.forEach(item => blockSwitcher(item))
+        function blockSwitcher(block) {
+            const needBlock = block
+            const needText = needBlock.querySelector('.need__text')
+            const switcher = needBlock.querySelector('.toggle-switch')
+            switcher.addEventListener('click', () => {
+                if (needText.classList.contains('need__text--active')) {
+                    switcher.classList.add('active')
+                    needText.classList.remove('need__text--active')
+                    needText.nextElementSibling.classList.add('need__text--active')
+                } else {
+                    switcher.classList.remove('active')
+                    needText.classList.add('need__text--active')
+                    needText.nextElementSibling.classList.remove('need__text--active')
+                }
+            })
+        }
+    </script> -->
 
 </body>
 

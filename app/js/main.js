@@ -60,136 +60,11 @@ $(function () {
 
 
 
-    const windowInnerWidth = window.innerWidth;
-
-    window.addEventListener('resize', function (event) {
-        const windowInnerWidth = window.innerWidth;
-        if (windowInnerWidth >= 768) {
-            swiper.destroy();
-            swiper2.destroy();
-        } else {
-            //код инициализатора
-            let swiper = new Swiper(".news__block", {
-                slidesPerView: 1,
-                watchOverflow: true,
-                spaceBetween: 10,
-                centeredSlides: true,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-            });
-
-            let swiper2 = new Swiper(".video__content-slider", {
-                observer: true,
-                observerParents: true,
-                // watchOverflow: true,
-                centerSlidesBounds: true,
-                slidesPerView: 2,
-                spaceBetween: 14,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-            });
-        }
-    });
-
-    if (windowInnerWidth >= 768) {
-        swiper.destroy();
-        swiper2.destroy();
-
-    } else {
-        //код инициализатора
-        let swiper = new Swiper(".news__block", {
-            slidesPerView: 1,
-            watchOverflow: true,
-            spaceBetween: 10,
-            centeredSlides: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-
-        let swiper2 = new Swiper(".video__content-slider", {
-            observer: true,
-            observerParents: true,
-            // watchOverflow: true,
-            centerSlidesBounds: true,
-            slidesPerView: 2,
-            spaceBetween: 14,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    }
 
 
 
 
 
-
-
-
-
-
-
-
-    // const windowInnerWidth = window.innerWidth;
-
-    // window.addEventListener('resize', function (event) {
-    //     const windowInnerWidth = window.innerWidth;
-    //     if (windowInnerWidth >= 768) {
-    //         swiper.destroy();
-    //     } else {
-    //         //код инициализатора
-    //         let swiper = new Swiper(".video__content-slider", {
-    //             slidesPerView: 1,
-    //             watchOverflow: true,
-    //             spaceBetween: 10,
-    //             centeredSlides: true,
-    //             pagination: {
-    //                 el: ".swiper-pagination",
-    //                 clickable: true,
-    //             },
-    //         });
-    //     }
-    // });
-
-    // if (windowInnerWidth >= 768) {
-    //     swiper.destroy();
-    // } else {
-    //     //код инициализатора
-    //     let swiper = new Swiper(".video__content-slider", {
-    //         slidesPerView: 1,
-    //         watchOverflow: true,
-    //         spaceBetween: 10,
-    //         centeredSlides: true,
-    //         pagination: {
-    //             el: ".swiper-pagination",
-    //             clickable: true,
-    //         },
-    //     });
-    // };
-
-
-
-
-
-
-
-
-
-
-
-
-
-    $('.toggle-switch').on('click', function (event) {
-        $('.toggle-switch').toggleClass('active');
-        $('.need__text').toggleClass('need__text--active');
-    });
 
     $('.need__btn').on('click', function (e) {
 
@@ -225,80 +100,133 @@ $(function () {
 
 
 
-    // var swiper = new Swiper(".news__block", {
-    //     breakpoints: {
-    //         // when window width is >= 640px
-    //         320: {
-    //             slidesPerView: 2,
-    //             spaceBetween: 10,
-    //             enabled: true,
-    //         },
-    //         480: {
-    //             slidesPerView: 2,
-    //             spaceBetween: 10,
-    //             enabled: true,
-    //             initialSlide: 1,
-    //         },
-    //         555: {
-    //             slidesPerView: 1.3,
-    //             spaceBetween: 10,
-    //             enabled: true,
-    //             initialSlide: 1,
-    //         },
-    //         768: {
-    //             slidesPerView: 1.3,
-    //             spaceBetween: 10,
-    //             enabled: true,
-    //             initialSlide: 1,
-    //         },
-    //         960: {
-    //             spaceBetween: 10,
-    //             enabled: false,
-    //             initialSlide: 1,
-    //         },
-    //         1080: {
-    //             spaceBetween: 10,
-    //             enabled: false,
-    //             initialSlide: 1,
-    //         },
-    //         1240: {
-    //             spaceBetween: 10,
-    //             enabled: false,
-    //             initialSlide: 1,
-    //         },
-    //     },
-    // });
+
+
+
+
+    // Инициализация Свайпер Слайдера для адаптива важно-------------------------
+
+    const windowInnerWidth = window.innerWidth;
+
+    window.addEventListener('resize', function (event) {
+        const windowInnerWidth = window.innerWidth;
+        if (windowInnerWidth >= 768) {
+            swiper.destroy();
+        } else {
+            //код инициализатора
+            let swiper = new Swiper(".news__block", {
+                slidesPerView: 1,
+                watchOverflow: true,
+                spaceBetween: 10,
+                centeredSlides: true,
+                pagination: {
+                    el: ".news-pagination",
+                    clickable: true,
+                },
+            });
+        }
+    });
+
+    if (windowInnerWidth >= 768) {
+        swiper.destroy();
+
+    } else {
+        //код инициализатора
+        let swiper = new Swiper(".news__block", {
+            slidesPerView: 1,
+            watchOverflow: true,
+            spaceBetween: 10,
+            centeredSlides: true,
+            pagination: {
+                el: ".news-pagination",
+                clickable: true,
+            },
+        });
+    }
+
+    window.addEventListener('resize', function (event) {
+        const windowInnerWidth = window.innerWidth;
+        if (windowInnerWidth >= 1098) {
+            swiper2.destroy();
+        } else {
+            //код инициализатора
+            let swiper2 = new Swiper(".video__content-slider", {
+                observer: true,
+                observeParents: true,
+                watchOverflow: true,
+                centerSlidesBounds: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    // when window width is >= 640px
+                    555: {
+                        slidesPerView: 1.2,
+                        spaceBetween: 24,
+                    },
+                    768: {
+                        slidesPerView: 1.2,
+                        spaceBetween: 24,
+                    },
+                    960: {
+                        slidesPerView: 1,
+                        spaceBetween: 24,
+                    },
+                    1098: {
+                        slidesPerView: 2,
+                        spaceBetween: 24,
+                    },
+                },
+            });
+        }
+    });
+
+    if (windowInnerWidth >= 1098) {
+        swiper2.destroy();
+
+    } else {
+        //код инициализатора
+
+        let swiper2 = new Swiper(".video__content-slider", {
+            observer: true,
+            observeParents: true,
+            watchOverflow: true,
+            centerSlidesBounds: true,
+            slidesPerView: 2,
+            spaceBetween: 14,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    }
+    // Инициализация Свайпер Слайдера для адаптива важно-------------------------
+
+
+    const needBlocks = document.querySelectorAll('.need__item');
+    needBlocks.forEach(item => blockSwitcher(item))
+    function blockSwitcher(block) {
+        const needBlock = block
+        const needText = needBlock.querySelector('.need__text')
+        const switcher = needBlock.querySelector('.toggle-switch')
+        switcher.addEventListener('click', () => {
+            if (needText.classList.contains('need__text--active')) {
+                switcher.classList.add('active')
+                needText.classList.remove('need__text--active')
+                needText.nextElementSibling.classList.add('need__text--active')
+            } else {
+                switcher.classList.remove('active')
+                needText.classList.add('need__text--active')
+                needText.nextElementSibling.classList.remove('need__text--active')
+            }
+        })
+    }
 
 
 });
 
 
-
-
-// const windowInnerWidth = window.innerWidth;
-
-// if (windowInnerWidth >= 768) {
-//     //код инициализатора
-//     let swiper = new Swiper(".news__block", {
-//         slidesPerView: 1,
-//         spaceBetween: 10,
-//     });
-// } else {
-//     let swiper = new Swiper();
-// }
-
-// window.addEventListener('resize', function (event) {
-//     const windowInnerWidth = window.innerWidth;
-//     if (windowInnerWidth >= 768) {
-//         //код инициализатора
-//         let swiper = new Swiper(".news__block", {
-//             slidesPerView: 1,
-//             spaceBetween: 10,
-//         });
-//     } else {
-//         let swiper = new Swiper();
-//     }
-// });
 
 
 

@@ -177,10 +177,16 @@
         max-width: 400px;
     }
     &__title {
-        margin-bottom: 27px;
+        margin-bottom: 10px;
     }
     &__form {
         padding: 0 2.5px;
+    }
+
+    &__garant {
+        margin-bottom: 15px;
+        padding-left: 3px;
+        text-align: center;
     }
 }
 

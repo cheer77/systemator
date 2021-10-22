@@ -36,7 +36,7 @@ main {
 }
 
 .btn {
-    background: linear-gradient(90deg, #ffdb1b 0%, #ffbf1b 100%);
+    background: linear-gradient(90deg, #ffdb1b 0%, #ffc634 100%);
     border-radius: 6px;
     font-weight: 600;
     font-size: 16px;
@@ -46,7 +46,7 @@ main {
     transition: all 0.4s;
     cursor: pointer;
     &:hover {
-        background: #fff;
+        background: #fbff00;
     }
 }
 .btn-sec {

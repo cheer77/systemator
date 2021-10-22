@@ -18,6 +18,9 @@
     min-height: 60px;
     z-index: 99;
 
+    &__logo {
+        width: 200px;
+    }
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -251,6 +254,10 @@
     &__prev {
         left: 0;
         cursor: pointer;
+    }
+
+    .swiper-button-disabled {
+        display: none;
     }
 
     &__next {
@@ -945,6 +952,7 @@
     }
 
     &__icons {
+        margin-top: 11px;
         max-width: 295px;
         width: 100%;
     }
@@ -1222,7 +1230,7 @@
     }
     &__content-active {
         display: block;
-        margin-right: auto;
+        // margin-right: auto;
     }
     &__content-frame {
         border-radius: 10px;
@@ -1277,8 +1285,6 @@
     &__box-img {
         position: relative;
         top: 25px;
-    }
-    &__img {
     }
 }
 
@@ -1338,6 +1344,9 @@
             // border-bottom: solid 1px $yellow;
         }
     }
+    .news-pagination {
+        display: none;
+    }
 }
 
 .try {
@@ -1375,6 +1384,13 @@
     }
     &__btn-sec {
         padding: 17px 26px;
+    }
+
+    &__box-img {
+        max-width: 570px;
+    }
+    &__img {
+        // box-shadow: 1px 5px 22px 4px rgba(34, 60, 80, 0.2);
     }
 }
 
