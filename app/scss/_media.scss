@@ -213,8 +213,7 @@
             width: 100%;
         }
         &__content-slider {
-            // max-width: 900px;
-            max-width: 100%;
+            max-width: 492px;
             padding-bottom: 50px;
         }
         &__btns {
@@ -238,6 +237,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-right: 2px;
         }
         &__content-frame {
             max-width: 430px;
@@ -412,14 +412,6 @@
         &__btns {
             flex-direction: row;
             margin-bottom: 60px;
-        }
-        &__btn {
-            &:nth-child(1) {
-                margin-top: 0px;
-            }
-            &:nth-child(2) {
-                margin-top: 0px;
-            }
         }
     }
 
@@ -678,10 +670,24 @@
 
         &__slider {
             padding: 0 15px 40px;
+            position: relative;
         }
         .swiper-pagination {
             display: block;
-            bottom: -3px;
+            // margin: 0 auto;
+            // display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            // align-items: center;
+            // justify-content: center;
+        }
+        .swiper-pagination-bullet {
+            // width: 11px;
+            // height: 11px;
+            // background: #d0d7df;
+        }
+        .swiper-pagination-bullet-active {
+            // background: #075fc5;
         }
         &__prev {
             display: none;
@@ -894,7 +900,7 @@
         &__inner {
             flex-direction: column;
             align-items: center;
-            width: 100%;
+            // max-width: 700px;
         }
         &__content-slider {
             max-width: 900px;
@@ -907,7 +913,7 @@
         }
 
         &__content {
-            // max-width: 494px;
+            max-width: 734px;
         }
         &__content-frame {
             max-width: 430px;
@@ -1074,7 +1080,8 @@
     }
 
     .first {
-        margin-top: 60px;
+        // margin-top: 60px;
+        margin: 42px 1px 0;
         border-radius: 10px;
         padding: 64px 0px 120px;
 
@@ -1096,7 +1103,7 @@
         &__right {
             // display: block;
             // max-width: 100%;
-            max-width: 350px;
+            max-width: 345px;
             min-height: 220px;
             background-image: url("../images/bg-first-mob.png");
             top: 280px;
@@ -1169,7 +1176,7 @@
         margin-top: 355px;
         &__slider {
             padding: 0 15px;
-            max-width: 380px;
+            max-width: 343px;
             display: flex;
             justify-content: center;
         }
@@ -1224,12 +1231,15 @@
             line-height: 17px;
         }
 
+        .swiper.win__slider {
+            overflow: visible;
+        }
         .swiper-slide-next {
             opacity: 0.4;
         }
 
         .swiper-pagination {
-            bottom: 19px;
+            bottom: -6px;
         }
     }
 
@@ -1265,6 +1275,7 @@
         // }
         &__inner {
             display: block;
+            margin: 50px auto 0;
             min-height: 765px;
             position: relative;
             &::before {
@@ -1646,7 +1657,7 @@
             top: -211px;
         }
         &__descr {
-            padding: 54px 16px 32px;
+            padding: 77px 16px 32px;
             margin-top: 35px;
             text-align: center;
             background-color: #ffffff;
@@ -1675,10 +1686,10 @@
             }
         }
         &__text {
-            margin-top: 62px;
+            margin-top: 30px;
             & span {
                 position: absolute;
-                top: 56px;
+                top: 78px;
                 left: 0;
                 right: 0;
                 font-size: 16px;
@@ -1714,7 +1725,7 @@
         }
 
         &__content-slider {
-            max-width: 900px;
+            max-width: 493px;
             // max-width: 100%;
             padding-bottom: 50px;
         }
@@ -1724,6 +1735,7 @@
         }
 
         &__content {
+            margin-left: -1px;
             // max-width: 494px;
         }
         &__content-frame {
@@ -1772,7 +1784,7 @@
         &__title {
             position: absolute;
             font-size: 26px;
-            line-height: 100%;
+            line-height: 120%;
             color: #ffffff;
             margin-bottom: 20px;
             top: -10px;
@@ -1781,7 +1793,7 @@
         }
         &__text {
             position: absolute;
-            top: 50px;
+            top: 60px;
             left: 0;
             right: 0;
             margin: auto;
@@ -1794,6 +1806,174 @@
         }
         &__btn-sec {
             width: 270px;
+        }
+    }
+
+    .try-modal {
+        &__overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            display: block;
+            z-index: 200;
+        }
+        &__close:before {
+            color: #fff;
+            right: 19px;
+            top: 13px;
+            font-size: 25px;
+        }
+        &__container {
+            margin: 0px auto 0;
+            padding: 47px 20px 39px;
+            background: linear-gradient(134.6deg, #0b72ff 8.43%, #3605c0 80.91%);
+            max-width: 100%;
+            height: 100%;
+            border-radius: 0px;
+            position: relative;
+        }
+        &__title {
+            font-size: 26px;
+            line-height: 128.5%;
+            text-align: start;
+            color: #ffffff;
+            & span {
+                color: $yellow;
+            }
+        }
+        &__form {
+            margin: 0 auto;
+            max-width: 100%;
+            padding: 0;
+        }
+        &__right {
+            margin-right: 30px;
+        }
+        &__input {
+            padding: 15px 16px;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+        &__btn {
+            max-width: 100%;
+        }
+        &__staff {
+            margin: 20px 0 14px;
+            font-size: 16px;
+            line-height: 146.5%;
+            color: #ffffff;
+        }
+        &__know-wrap {
+            margin-top: 24px;
+        }
+        .try-modal__radio-wrap label {
+            color: #fff;
+            font-size: 14px;
+            line-height: 146.5%;
+        }
+
+        &__radio + label::before {
+            border: 1px solid #ffca31;
+        }
+
+        &__radio:checked + label::before {
+            border-color: #ffca31;
+            background-image: url("../images/icons/elips-input-mob.svg");
+        }
+
+        &__know-label {
+            font-size: 12px;
+            line-height: 18px;
+            color: #ffffff;
+        }
+        &__know-text {
+            font-size: 12px;
+            line-height: 18px;
+            color: #ffffff;
+            margin-top: 6px;
+        }
+        &__garant {
+            margin-top: 2px;
+            color: #fff;
+        }
+    }
+
+    .slider-modal {
+        &__overlay {
+            display: block;
+            overflow: auto;
+        }
+        &__container {
+            margin: 36px 10px 30px;
+            padding: 20px;
+            max-width: 500px;
+        }
+        &__close:before {
+            top: 25px;
+        }
+    }
+
+    .enter-modal {
+        &__overlay {
+            display: block;
+            z-index: 200;
+        }
+        &__container {
+            padding: 60px 33px 30px;
+            max-width: 100%;
+            height: 100%;
+            background: linear-gradient(134.6deg, #0b72ff 8.43%, #3605c0 80.91%);
+            border-radius: 0px;
+            position: relative;
+        }
+        &__close:before {
+            color: #fff;
+            right: 19px;
+            top: 13px;
+            font-size: 25px;
+        }
+
+        &__title {
+            font-size: 26px;
+            line-height: 128.5%;
+            color: #ffffff;
+            text-align: center;
+        }
+        &__title span {
+            color: $yellow;
+        }
+
+        &__form {
+            margin: 0 auto;
+            max-width: 294px;
+            margin-top: 27px;
+        }
+        &__input {
+            padding: 15px 16px;
+            max-width: 295px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        &__forgot {
+            font-size: 12px;
+            line-height: 18px;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        &__label {
+            color: #fff;
+        }
+    }
+
+    .get-modal {
+        &__title {
+            text-align: center;
+        }
+        &__title span {
+            color: $yellow;
         }
     }
 

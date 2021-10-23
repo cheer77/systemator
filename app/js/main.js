@@ -78,13 +78,6 @@ $(function () {
     });
 
 
-
-    $('.enter-modal__forgot').on('click', function (event) {
-        $('.forgot-modal__overlay').toggleClass('active');
-        // $('.forgot-modal').toggleClass('forgot-modal--active');
-    });
-
-
     $('.video__btn').on('click', function (e) {
 
         e.preventDefault();
@@ -99,11 +92,6 @@ $(function () {
 
 
 
-
-
-
-
-
     // Инициализация Свайпер Слайдера для адаптива важно-------------------------
 
     const windowInnerWidth = window.innerWidth;
@@ -111,10 +99,10 @@ $(function () {
     window.addEventListener('resize', function (event) {
         const windowInnerWidth = window.innerWidth;
         if (windowInnerWidth >= 768) {
-            swiper.destroy();
+            // swiper1.destroy();
         } else {
             //код инициализатора
-            let swiper = new Swiper(".news__block", {
+            let swiper1 = new Swiper(".news__block", {
                 slidesPerView: 1,
                 watchOverflow: true,
                 spaceBetween: 10,
@@ -128,11 +116,11 @@ $(function () {
     });
 
     if (windowInnerWidth >= 768) {
-        swiper.destroy();
+        // swiper1.destroy();
 
     } else {
         //код инициализатора
-        let swiper = new Swiper(".news__block", {
+        let swiper1 = new Swiper(".news__block", {
             slidesPerView: 1,
             watchOverflow: true,
             spaceBetween: 10,
@@ -155,6 +143,7 @@ $(function () {
                 observeParents: true,
                 watchOverflow: true,
                 centerSlidesBounds: true,
+                centeredSlides: true,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
@@ -162,20 +151,24 @@ $(function () {
                 breakpoints: {
                     // when window width is >= 640px
                     555: {
-                        slidesPerView: 1.2,
+                        slidesPerView: 1,
                         spaceBetween: 24,
+                        centeredSlides: true,
                     },
                     768: {
-                        slidesPerView: 1.2,
+                        slidesPerView: 1,
                         spaceBetween: 24,
+                        centeredSlides: true,
                     },
                     960: {
                         slidesPerView: 1,
                         spaceBetween: 24,
+                        centeredSlides: true,
                     },
                     1098: {
                         slidesPerView: 2,
                         spaceBetween: 24,
+                        centeredSlides: true,
                     },
                 },
             });
@@ -184,26 +177,49 @@ $(function () {
 
     if (windowInnerWidth >= 1098) {
         swiper2.destroy();
-
     } else {
         //код инициализатора
-
         let swiper2 = new Swiper(".video__content-slider", {
             observer: true,
             observeParents: true,
             watchOverflow: true,
             centerSlidesBounds: true,
-            slidesPerView: 2,
-            spaceBetween: 14,
+            centeredSlides: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
+            },
+            breakpoints: {
+                // when window width is >= 640px
+                555: {
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                    centeredSlides: true,
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                    centeredSlides: true,
+                },
+                960: {
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                    centeredSlides: true,
+                },
+                1098: {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                    centeredSlides: true,
+                },
             },
         });
     }
     // Инициализация Свайпер Слайдера для адаптива важно-------------------------
 
+
+
 });
+
 
 
 const needBlocks = document.querySelectorAll('.need__item');
