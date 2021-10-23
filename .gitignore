@@ -8,4 +8,5 @@ npm-debug.*
 dist/
 node_modules/
 package-lock.json
-app/css/* 
+app/css/*
+main.min.js
