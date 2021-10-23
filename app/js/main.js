@@ -204,27 +204,25 @@ $(function () {
     // Инициализация Свайпер Слайдера для адаптива важно-------------------------
 
 
-    const needBlocks = document.querySelectorAll('.need__item');
-    needBlocks.forEach(item => blockSwitcher(item))
-    function blockSwitcher(block) {
-        const needBlock = block
-        const needText = needBlock.querySelector('.need__text')
-        const switcher = needBlock.querySelector('.toggle-switch')
-        switcher.addEventListener('click', () => {
-            if (needText.classList.contains('need__text--active')) {
-                switcher.classList.add('active')
-                needText.classList.remove('need__text--active')
-                needText.nextElementSibling.classList.add('need__text--active')
-            } else {
-                switcher.classList.remove('active')
-                needText.classList.add('need__text--active')
-                needText.nextElementSibling.classList.remove('need__text--active')
-            }
-        })
-    }
-
-
 });
+const needBlocks = document.querySelectorAll('.need__item');
+needBlocks.forEach(item => blockSwitcher(item))
+function blockSwitcher(block) {
+    const needBlock = block
+    const needText = needBlock.querySelector('.need__text')
+    const switcher = needBlock.querySelector('.toggle-switch')
+    switcher.addEventListener('click', () => {
+        if (needText.classList.contains('need__text--active')) {
+            switcher.classList.add('active')
+            needText.classList.remove('need__text--active')
+            needText.nextElementSibling.classList.add('need__text--active')
+        } else {
+            switcher.classList.remove('active')
+            needText.classList.add('need__text--active')
+            needText.nextElementSibling.classList.remove('need__text--active')
+        }
+    })
+}
 
 
 

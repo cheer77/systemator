@@ -122,6 +122,13 @@
         border-radius: 3px;
         margin-bottom: 12px;
         -webkit-appearance: none;
+        -webkit-appearance: none;
+        outline: none;
+        border: none;
+        border: 1px solid #ededed;
+        &:focus-visible {
+            outline: none;
+        }
         &::placeholder {
             font-size: 14px;
             line-height: 146.5%;
@@ -287,14 +294,14 @@
         outline: none;
         border: none;
         border: 1px solid #ededed;
+        &:focus-visible {
+            outline: none;
+        }
         &::placeholder {
             font-size: 14px;
             line-height: 146.5%;
             color: #878787;
             opacity: 0.9;
-        }
-        &:focus-visible {
-            outline: none;
         }
     }
     &__forgot {
