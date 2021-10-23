@@ -121,6 +121,7 @@
         box-sizing: border-box;
         border-radius: 3px;
         margin-bottom: 12px;
+        -webkit-appearance: none;
         &::placeholder {
             font-size: 14px;
             line-height: 146.5%;
@@ -282,11 +283,18 @@
         max-width: 295px;
         width: 100%;
         margin-bottom: 12px;
+        -webkit-appearance: none;
+        outline: none;
+        border: none;
+        border: 1px solid #ededed;
         &::placeholder {
             font-size: 14px;
             line-height: 146.5%;
             color: #878787;
             opacity: 0.9;
+        }
+        &:focus-visible {
+            outline: none;
         }
     }
     &__forgot {
@@ -364,6 +372,7 @@
         max-width: 295px;
         width: 100%;
         margin-bottom: 12px;
+        -webkit-appearance: none;
         &::placeholder {
             font-size: 14px;
             line-height: 146.5%;
