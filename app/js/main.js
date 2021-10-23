@@ -203,8 +203,9 @@ $(function () {
     }
     // Инициализация Свайпер Слайдера для адаптива важно-------------------------
 
-
 });
+
+
 const needBlocks = document.querySelectorAll('.need__item');
 needBlocks.forEach(item => blockSwitcher(item))
 function blockSwitcher(block) {
