@@ -26,3 +26,11 @@
     src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
     font-display: swap;
 }
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 900;
+    font-style: normal;
+    src: url("../fonts/GilroyExtraBold.woff2") format("woff2"), url("../fonts/GilroyExtraBold.woff") format("woff");
+    font-display: swap;
+}

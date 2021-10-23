@@ -16,6 +16,9 @@ $yellow: #ffca31;
 %gil-700 {
     font-weight: 700;
 }
+%gil-900 {
+    font-weight: 900;
+}
 
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});
