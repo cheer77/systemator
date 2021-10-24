@@ -1,4 +1,434 @@
 .about
     &-page
-        & .container
-            max-width: 1270px
+        & main
+            margin-top: 60px
+        &__subtitle
+            font-size: 22px
+            line-height: 33px
+        &__top
+            position: relative
+            @include flex
+            min-height: 565px
+            background: linear-gradient(134.6deg, #0b72ff 8.43%, #3605c0 80.91%)
+            z-index: 1
+            &::before
+                content: ""
+                position: absolute
+                width: 90%
+                height: 100%
+                top: 18px
+                left: 15%
+                background-size: contain
+                background-position: left bottom
+                z-index: -1
+                background-image: url("../images/vector-bg.svg")
+                background-repeat: no-repeat
+            & .figure_circle1
+                position: absolute
+                width: 67px
+                top: 180px
+                left: -25px
+                display: block
+            & .figure_circle2
+                position: absolute
+                width: 21px
+                top: 375px
+                left: 20%
+                display: block
+            & .figure_circle3
+                position: absolute
+                width: 31px
+                top: 100px
+                left: 20%
+                display: block
+            & .figure_circle4
+                position: absolute
+                width: 35px
+                top: 150px
+                left: 35%
+                display: block
+            &-content
+                @include flex
+            &-wrap
+                &:nth-of-type(1)
+                    width: 50%
+                &:nth-of-type(2)
+                    position: absolute
+                    top: -5px
+                    right: 0
+                    z-index: 1
+            &-title
+                margin-bottom: 20px
+                font-size: 85px
+                font-weight: 600
+                line-height: 100px
+                color: rgba(255, 255, 255, 1)
+            &-desc
+                font-weight: 500
+                color: rgba(255, 255, 255, 1)
+                & span
+                    font-weight: 700
+                    color: rgba(215, 219, 27, 1)
+            &-img
+                //max-width: calc(100% - 506px)
+        &__team
+            margin-top: 120px
+            &-title
+                text-align: center
+                margin-bottom: 35px
+            &-list
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+            &-item
+                position: relative
+                margin-right: 25px
+                margin-bottom: 30px
+                width: 26%
+                &:hover
+                    & .about-page__team-informer
+                        visibility: visible
+                        opacity: 1
+                    & .about-page__team-legend
+                        visibility: hidden
+            &-img
+                max-width: 300px
+                //min-height: 380px
+                width: 100%
+                //margin: 0 auto
+                border-radius: 5px
+            &-legend
+                position: absolute
+                @include flex
+                flex-direction: column
+                justify-content: flex-end
+                padding-bottom: 30px
+                max-width: 300px
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                border-radius: 5px
+                background: linear-gradient(180deg, rgba(35, 38, 62, 0) 0%, #23263E 100%)
+            &-name
+                margin-bottom: 5px
+                font-size: 22px
+                font-weight: 700
+                line-height: 33px
+                text-align: center
+                color: rgba(255, 255, 255, 1)
+            &-desc
+                min-height: 45px
+                font-size: 14px
+                font-weight: 500
+                line-height: 21px
+                text-align: center
+                color: rgba(255, 255, 255, 1)
+            &-informer
+                position: absolute
+                top: 0
+                left: 0
+                @include flex
+                flex-direction: column
+                max-width: 300px
+                width: 100%
+                height: 100%
+                border-radius: 5px
+                justify-content: center
+                padding: 0 20px
+                background: linear-gradient(0deg, rgba(7, 95, 197, 0.96), rgba(7, 95, 197, 0.96))
+                visibility: hidden
+                opacity: 0
+                transition: all .2s
+                & .informer
+                    &-title
+                        @extend .about-page__team-name
+                        text-align: center
+                    &-desc
+                        @extend .about-page__team-desc
+                        text-align: center
+            &-btn
+                display: none
+        & .kit
+            margin-top: 120px
+            &__descr
+                position: relative
+                max-width: unset
+                width: 50%
+                margin-left: 0
+                z-index: 1
+                &-decor
+                    position: absolute
+                    top: -50px
+                    left: calc(10% - 100px)
+                    opacity: .4
+                    z-index: -1
+            &__inner
+                align-items: center
+                &-img
+                    margin-top: 55px
+            &__img
+                box-shadow: none
+            &__text
+                &--about
+                    margin-bottom: 0
+                    font-weight: 600
+                    line-height: 53px
+                    text-align: left
+                    color: rgba(255, 255, 255, 1)
+                    & span
+                        color: rgba(255, 206, 0, 1)
+        &__why
+            position: relative
+            padding-top: 120px
+            padding-bottom: 120px
+            &::before,
+            &::after
+                content: 'Systemator'
+                position: absolute
+                display: block
+                font-size: 174px
+                font-weight: 600
+                line-height: 259px
+                color: rgba(68, 65, 65, 1)
+                opacity: .05
+            &::before
+                top: -40px
+                left: -268px
+            &::after
+                bottom: -35px
+                right: -430px
+            &-content
+                padding-top: 10px
+                padding-bottom: 10px
+            &-title
+                @extend .about-page__team-title
+            &-desc
+                @extend .about-page__team-desc
+                max-width: 710px
+                margin: 0 auto
+                font-size: 18px
+                line-height: 27px
+                text-align: center!important
+                color: rgba(68, 65, 65, 1)
+                & span
+                    font-weight: 700
+                    color: rgba(7, 95, 197, 1)
+        &__result
+            margin-top: 25px
+            padding-top: 130px
+            padding-bottom: 285px
+            background: rgba(13, 110, 253, 1)
+            &-title
+                margin-bottom: 15px
+                color: rgba(255, 206, 0, 1)
+                & span
+                    color: rgba(255, 255, 255, 1)
+            &-desc
+                max-width: 655px
+                margin: 0 auto
+                text-align: center
+                color: rgba(255, 255, 255, 1)
+                & span
+                    font-weight: 700
+                    text-align: center
+                    color: rgba(255, 206, 0, 1)
+        &__features
+            margin-top: -260px
+            &-content
+                display: flex
+                justify-content: space-between
+            &-item
+                margin-right: 25px
+                max-width: 400px
+                min-height: 460px
+                padding: 40px 20px 40px 40px
+                border-radius: 8px
+                background: rgba(255, 255, 255, 1)
+                box-shadow: 0px 5px 20px rgba(12, 62, 62, 0.1)
+                &:nth-last-of-type(1)
+                    margin-right: 0
+                &__title
+                    margin-bottom: 25px
+                    font-size: 20px
+                    font-weight: 700
+                    line-height: 30px
+                    color: rgba(68, 65, 65, 1)
+                &__list
+                    & li
+                        display: flex
+                        margin-bottom: 20px
+                        &::before
+                            content: ''
+                            display: block
+                            margin-top: 6px
+                            margin-right: 13px
+                            width: 9px
+                            height: 9px
+                            border-radius: 2px
+                            background: linear-gradient(90deg, #FFDB1B 0%, #FFBF1B 100%)
+                        & p
+                            width: 90%
+                            flex: 1
+                            font-size: 16px
+                            line-height: 24px
+                            color: rgba(68, 65, 65, .85)
+                            & span
+                                font-weight: 700
+        &__try
+            margin-top: 50px
+            margin-bottom: 150px
+            &-content
+                @include flex
+                flex-direction: column
+            &-btn
+                margin-right: 0
+                max-width: 240px
+                padding: 18px 26px
+            &-desc
+                margin-top: 15px
+                font-size: 14px
+                line-height: 21px
+                color: rgba(68, 65, 65, .85)
+        & .footer
+            background: rgba(13, 110, 253, .06)
+
+
+@media screen and (max-width: 1300px)
+
+    .about-page__top-wrap:nth-of-type(2)
+        right: -25%
+
+
+@media screen and (max-width: 1023px)
+
+    .about
+        &-page
+            &__top
+                &-wrap
+                    &:nth-of-type(2)
+                        right: -40%
+            &__team
+                &-legend
+                    align-items: flex-start
+                    padding-right: 10px
+                    padding-left: 10px
+                &-name,
+                &-desc
+                    text-align: left
+                    & br
+                        display: none
+                &-btn
+                    display: block
+                    color: rgba(255, 219, 27, 1)
+                &-informer
+                    align-items: center
+                    & .informer
+                        &-title,
+                        &-desc
+                            text-align: center
+
+
+@media screen and (max-width: 960px)
+
+    .about
+        &-page
+            & .kit
+                &__descr
+                    width: 100%
+                    order: 1
+            &__try
+                margin-top: 35px
+                margin-bottom: 80px
+
+@media screen and (max-width: 768px)
+
+    .about
+        &-page
+            &__top
+                min-height: unset
+                padding-top: 45px
+                border-radius: 10px
+                &::before
+                    content: none
+                &-content
+                    flex-direction: column
+                    padding: 0!important
+                &-wrap
+                    &:nth-of-type(1)
+                        width: 100%
+                    &:nth-of-type(2)
+                        position: static
+                &-title
+                    font-size: 50px
+                    text-align: center
+                    line-height: 54px
+                &-desc
+                    margin-bottom: 30px
+                    padding: 0 10px
+                    font-size: 26px
+                    text-align: center
+                    line-height: 32px
+                &-img
+                    border-radius: 0 0 10px 10px
+            &__team
+                margin-top: 65px
+                &-item
+                    width: 40%
+                    &:nth-child(2n)
+                        margin-right: 0
+            & .kit
+                margin-top: 65px
+                padding: 55px 0
+                &__text
+                    &--about
+                        text-align: center
+                        line-height: 40px
+            &__features
+                &-content
+                    flex-wrap: wrap
+                    justify-content: center
+                &-item
+                    margin-right: 0
+                    margin-bottom: 16px
+                    max-width: 600px
+                    min-height: unset
+                    padding: 30px 20px 30px 30px
+                    &__title
+                        font-size: 16px
+                        line-height: 23px
+            &__result
+                padding-top: 65px
+
+
+@media screen and (max-width: 575px)
+
+    .about
+        &-page
+            &__subtitle
+                font-size: 14px
+                line-height: 22px
+            &__team
+                &-item
+                    width: 100%
+                    margin-right: 0
+                    margin-bottom: 15px
+                    display: flex
+                    justify-content: center
+                &-legend
+                    left: unset
+            &__why
+                padding-top: 65px
+                padding-bottom: 65px
+                &-desc
+                    font-size: 14px
+                    line-height: 20px
+            &__features
+                &-item
+                    &__list
+                        & li
+                            margin-bottom: 15px
+                            &::before
+                                margin-top: 8px
+                            & p
+                                font-size: 14px
