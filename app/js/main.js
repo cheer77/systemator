@@ -2,7 +2,7 @@ $(function () {
 
 
 
-    $('.nav__menu-btn').on('click', function (event) {
+    $('.nav__menu-btn, .menu__items a').on('click', function (event) {
         $('.nav__menu-btn').toggleClass('nav__menu-btn-active');
         $('.menu').toggleClass('menu__active');
         $('body').toggleClass('lock');
@@ -16,6 +16,15 @@ $(function () {
         awaitOpenAnimation: true, // [8]
         awaitCloseAnimation: true, // [9]
     });
+
+
+    $('.enter-modal__forgot').on('click', function (event) {
+        $('#modal-4').attr("aria-hidden", "true");
+        $('.forgot-modal__overlay').toggleClass('active')
+    });
+
+
+
 
 
 
@@ -145,7 +154,7 @@ $(function () {
                 centerSlidesBounds: true,
                 centeredSlides: true,
                 pagination: {
-                    el: ".swiper-pagination",
+                    el: ".video-pagination",
                     clickable: true,
                 },
                 breakpoints: {
@@ -186,7 +195,7 @@ $(function () {
             centerSlidesBounds: true,
             centeredSlides: true,
             pagination: {
-                el: ".swiper-pagination",
+                el: ".video-pagination",
                 clickable: true,
             },
             breakpoints: {

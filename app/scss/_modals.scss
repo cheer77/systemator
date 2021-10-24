@@ -151,6 +151,41 @@
         font-size: 12px;
         line-height: 18px;
     }
+    &__check {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+    &__check + &__know-label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+    }
+
+    &__check + &__know-label::before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid #adb5bd;
+        border-radius: 0.25em;
+        margin-right: 0.5em;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% 50%;
+    }
+
+    &__check:checked + &__know-label::before {
+        border-color: #0d6efd;
+        background-color: #0d6efd;
+        background-image: url("../images/icons/check.svg");
+        background-size: contain;
+        width: 15px;
+        height: 15px;
+    }
+
     &__know-text {
         font-size: 12px;
         line-height: 18px;
@@ -306,6 +341,42 @@
             opacity: 0.9;
         }
     }
+
+    &__check {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+    &__check + &__label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+    }
+
+    &__check + &__label::before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid #adb5bd;
+        border-radius: 0.25em;
+        margin-right: 0.5em;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% 50%;
+    }
+
+    &__check:checked + &__label::before {
+        border-color: #0d6efd;
+        background-color: #0d6efd;
+        background-image: url("../images/icons/check.svg");
+        background-size: contain;
+        width: 15px;
+        height: 15px;
+    }
+
     &__forgot {
         display: block;
         margin-bottom: 12px;
@@ -382,12 +453,25 @@
         width: 100%;
         margin-bottom: 12px;
         -webkit-appearance: none;
+        outline: none;
+        border: none;
+        border: 1px solid #ededed;
+        &:focus-visible {
+            outline: none;
+        }
         &::placeholder {
             font-size: 14px;
             line-height: 146.5%;
             color: #878787;
             opacity: 0.9;
         }
+    }
+    &__btn {
+        display: block;
+        width: 100%;
+        min-height: 50px;
+        font-size: 14px !important;
+        line-height: 146.5%;
     }
 }
 

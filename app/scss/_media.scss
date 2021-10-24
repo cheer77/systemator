@@ -243,6 +243,22 @@
             max-width: 430px;
             height: 280px;
         }
+
+        .video-pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 11px;
+            height: 11px;
+            background: #d0d7df;
+        }
+        .swiper-pagination-bullet-active {
+            background: #075fc5;
+        }
     }
 
     .news {
@@ -465,11 +481,6 @@
         line-height: 100%;
     }
     .nav {
-        padding-right: 10px;
-        // &__logo {
-        //     width: 97.43px;
-        //     height: 21px;
-        // }
         &__logo {
             width: 150px;
         }
@@ -567,7 +578,7 @@
     }
 
     .first {
-        margin-top: 61px;
+        margin-top: 43px;
         border-radius: 10px;
 
         &__inner {
@@ -674,20 +685,16 @@
         }
         .swiper-pagination {
             display: block;
-            // margin: 0 auto;
-            // display: flex;
             margin-left: auto;
             margin-right: auto;
-            // align-items: center;
-            // justify-content: center;
         }
         .swiper-pagination-bullet {
-            // width: 11px;
-            // height: 11px;
-            // background: #d0d7df;
+            width: 11px;
+            height: 11px;
+            background: #d0d7df;
         }
         .swiper-pagination-bullet-active {
-            // background: #075fc5;
+            background: #075fc5;
         }
         &__prev {
             display: none;
@@ -714,8 +721,8 @@
         // }
         &__item {
             display: flex;
-            justify-content: center;
             flex-direction: column;
+            justify-content: space-between;
             align-items: center;
             text-align: center;
             margin-top: 70px;
@@ -724,6 +731,7 @@
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             max-width: 505px;
+            min-height: 300px;
             &:first-child {
                 margin-top: 0;
             }
@@ -810,6 +818,9 @@
         }
         &__btn {
             width: 270px;
+        }
+        &__icons-box {
+            margin-bottom: 34px;
         }
         &__icons {
             margin-top: 62px;
@@ -969,32 +980,38 @@
     }
 
     .news {
-        margin: 80px 0;
+        margin: 80px 0 60px;
         &__block {
             max-width: 300px;
         }
         &__wrapper {
             justify-content: flex-start;
             flex-wrap: nowrap;
+            position: relative;
         }
         &__item {
             min-height: 217px;
             padding: 30px 25px 30px;
         }
+        &__name {
+            margin-top: 125px;
+        }
 
-        // .news-pagination {
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-        //     width: 11px;
-        //     height: 11px;
-        //     background: #d0d7df;
-        // }
-        // .swiper-pagination-bullet .news-pagination {
-        //     width: 11px;
-        //     height: 11px;
-        //     background: #d0d7df;
-        // }
+        .news-pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 11px;
+            height: 11px;
+            background: #d0d7df;
+        }
+        .swiper-pagination-bullet-active {
+            background: #075fc5;
+        }
     }
 
     .try {
@@ -1065,8 +1082,9 @@
     }
 
     .nav {
+        padding-right: 10px;
         &__logo {
-            width: 100px;
+            width: 130px;
         }
         &__inner {
             max-width: 135px;
@@ -1080,8 +1098,7 @@
     }
 
     .first {
-        // margin-top: 60px;
-        margin: 42px 1px 0;
+        margin: 60px 1px 0;
         border-radius: 10px;
         padding: 64px 0px 120px;
 
@@ -1251,7 +1268,7 @@
         }
 
         &__item {
-            min-height: 279px;
+            padding: 53px 20px 24px 20px;
         }
         &__item-title {
             font-size: 16px;
@@ -1654,7 +1671,7 @@
             text-align: center;
             right: 0;
             left: 0;
-            top: -211px;
+            top: -203px;
         }
         &__descr {
             padding: 77px 16px 32px;
@@ -1715,7 +1732,7 @@
     }
 
     .video {
-        margin: 334px 0 56px;
+        margin: 334px 0 0px;
         &__title {
             margin-bottom: 27px;
         }
@@ -1725,17 +1742,19 @@
         }
 
         &__content-slider {
-            max-width: 493px;
+            max-width: 299px;
             // max-width: 100%;
             padding-bottom: 50px;
         }
-
+        .swiper {
+            overflow: visible;
+        }
         &__content-block {
             max-width: 900px;
         }
 
         &__content {
-            margin-left: -1px;
+            margin-left: 5px;
             // max-width: 494px;
         }
         &__content-frame {
@@ -1772,6 +1791,15 @@
         &__item {
             width: 200px;
             padding: 20px 15px 20px;
+        }
+        &__name {
+            margin-top: 140px;
+            font-size: 14px;
+            line-height: 146.5%;
+        }
+        &__link {
+            font-size: 13px;
+            line-height: 146.5%;
         }
     }
 
@@ -1869,6 +1897,32 @@
         &__know-wrap {
             margin-top: 24px;
         }
+
+        &__check + &__know-label::before {
+            content: "";
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border: 1px solid #ffffff;
+            // background-color: #fff;
+            border-radius: 0.25em;
+            margin-right: 0.5em;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 50% 50%;
+        }
+
+        &__check:checked + &__know-label::before {
+            border-color: #fff;
+            background-color: #fff;
+            background-image: url("../images/icons/check-mob.svg");
+            background-size: contain;
+            width: 15px;
+            height: 15px;
+        }
+
         .try-modal__radio-wrap label {
             color: #fff;
             font-size: 14px;
@@ -1917,6 +1971,82 @@
     }
 
     .enter-modal {
+        &__overlay {
+            display: block;
+            z-index: 200;
+        }
+        &__container {
+            padding: 60px 33px 30px;
+            max-width: 100%;
+            height: 100%;
+            background: linear-gradient(134.6deg, #0b72ff 8.43%, #3605c0 80.91%);
+            border-radius: 0px;
+            position: relative;
+        }
+        &__close:before {
+            color: #fff;
+            right: 19px;
+            top: 13px;
+            font-size: 25px;
+        }
+
+        &__title {
+            font-size: 26px;
+            line-height: 128.5%;
+            color: #ffffff;
+            text-align: center;
+        }
+        &__title span {
+            color: $yellow;
+        }
+
+        &__form {
+            margin: 0 auto;
+            max-width: 294px;
+            margin-top: 27px;
+        }
+        &__input {
+            padding: 15px 16px;
+            max-width: 295px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        &__forgot {
+            font-size: 12px;
+            line-height: 18px;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        &__label {
+            color: #fff;
+        }
+        &__check + &__label::before {
+            content: "";
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border: 1px solid #ffffff;
+            // background-color: #fff;
+            border-radius: 0.25em;
+            margin-right: 0.5em;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 50% 50%;
+        }
+
+        &__check:checked + &__label::before {
+            border-color: #fff;
+            background-color: #fff;
+            background-image: url("../images/icons/check-mob.svg");
+            background-size: contain;
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    .forgot-modal {
         &__overlay {
             display: block;
             z-index: 200;
