@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', function() {
 
 	/*Вкладки tab для страницы Faq*/
-
+	$(function (){
 	$('.tabs li').click(function () {
 		var idTabLi = this.id.toString();
 		var findbox = '.' + idTabLi;
@@ -30,6 +30,7 @@ window.addEventListener('DOMContentLoaded', function() {
 			$this.find('.block_faq_bottom').slideUp()
 
 		}
+	})
 	})
 
 
