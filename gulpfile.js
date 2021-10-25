@@ -5,15 +5,33 @@ const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify-es').default;
 const imagemin = require('gulp-imagemin');
 const del = require('del');
+
+// const rename = require("gulp-rename");
+
 const browserSync = require('browser-sync').create();
+
+
+
 
 function browsersync() {
     browserSync.init({
         server: {
-            baseDir: 'app/'
+            baseDir: 'dist/'
         },
         notify: false
     })
+}
+
+function htmlMove() {
+    return src('app/*.html')
+        .pipe(dest('dist/'))
+        .pipe(browserSync.stream())
+}
+
+function fontsMove() {
+    return src('app/fonts/**/*.*')
+        .pipe(dest('dist/fonts'))
+        .pipe(browserSync.stream())
 }
 
 // gulp scss - expanded - не сжимает, compressed - сжимает
@@ -25,11 +43,11 @@ function styles() {
             overrideBrowserslist: ['last 10 version'],
             grid: true
         }))
-        .pipe(dest('app/css'))
+        .pipe(dest('./dist/css'))
         .pipe(browserSync.stream())
 }
 
-function scripts() {
+function scriptLibs() {
     return src([
         'node_modules/jquery/dist/jquery.js',
         'node_modules/slick-carousel/slick/slick.js',
@@ -40,13 +58,20 @@ function scripts() {
         'node_modules/rateyo/src/jquery.rateyo.js',
         'node_modules/swiper/swiper-bundle.min.js',
         'node_modules/micromodal/dist/micromodal.js',
-        'app/js/main.js'
+        // 'app/js/main.js'
     ])
-        .pipe(concat('main.min.js'))
+        .pipe(concat('script.libs.js'))
         .pipe(uglify())
-        .pipe(dest('app/js'))
+        .pipe(dest('./dist/js'))
         .pipe(browserSync.stream())
 }
+
+function scripts() {
+    return src('app/js/**/*.*')
+    .pipe(dest('dist/js/'))
+    .pipe(browserSync.stream())
+}
+
 
 function images() {
     return src('app/images/**/*.*')
@@ -61,19 +86,19 @@ function images() {
                 ]
             })
         ]))
-        .pipe(dest('dist/images'))
+        .pipe(dest('./dist/images'))
 }
 
 
-function build() {
-    return src([
-        'app/**/*.html',
-        'app/css/style.min.css',
-        'app/fonts/*.*',
-        'app/js/main.min.js'
-    ], { base: 'app' })
-        .pipe(dest('dist'))
-}
+// function build() {
+//     return src([
+//         'app/**/*.html',
+//         'app/css/style.min.css',
+//         'app/fonts/*.*',
+//         'app/js/main.min.js'
+//     ], { base: 'app' })
+//         .pipe(dest('dist'))
+// }
 
 function cleanDist() {
     return del('dist')
@@ -81,8 +106,11 @@ function cleanDist() {
 
 function watching() {
     watch(['app/scss/**/*.scss', 'app/scss/**/*.sass'], styles);
-    watch(['app/js**/*js', '!app/js/main.min.js'], scripts);
-    watch(['app/**/*.html']).on('change', browserSync.reload);
+    watch(['app/js/**/*.js'], scripts);
+    watch('app/images', images);
+    // watch('app/**/*.html').on('change', browserSync.reload);
+    watch('app/**/*.html', htmlMove);
+    watch('app/fonts/**/*.*', fontsMove);
 }
 
 
@@ -93,6 +121,8 @@ exports.browsersync = browsersync;
 exports.watching = watching;
 exports.images = images;
 exports.cleanDist = cleanDist;
-exports.build = series(cleanDist, images, build);
+// exports.staticMove = staticMove;
 
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.build = series(cleanDist, images);
+
+exports.default = parallel(series(cleanDist, htmlMove, fontsMove, styles, scriptLibs, scripts, images), watching, browsersync);
