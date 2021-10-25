@@ -81,6 +81,7 @@ $(function () {
 
     $('.enter-modal__forgot').on('click', function (event) {
         $('.forgot-modal__overlay').toggleClass('active');
+
         // $('.forgot-modal').toggleClass('forgot-modal--active');
     });
 
