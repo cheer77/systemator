@@ -351,6 +351,7 @@
         display: inline-flex;
         align-items: center;
         user-select: none;
+        cursor: pointer;
     }
 
     &__check + &__label::before {
@@ -380,6 +381,11 @@
     &__forgot {
         display: block;
         margin-bottom: 12px;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+            color: #f7b208;
+        }
     }
     &__btn {
         display: block;

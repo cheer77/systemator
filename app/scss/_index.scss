@@ -90,6 +90,10 @@
   &__link {
     font-size: 14px;
     line-height: 16px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: $bg;
+    }
   }
 }
 
@@ -1080,6 +1084,10 @@
     color: #075fc5;
     cursor: pointer;
     @extend %gil-600;
+    transition: all 0.3s;
+    &:hover {
+      color: #f7b208;
+    }
   }
   &__hidden {
     display: none;
@@ -1198,7 +1206,7 @@
     background-size: cover;
     position: relative;
     margin-top: 71px;
-    transition: all 0.5s;
+    transition: all 0.5s ease-in-out;
     &::before {
       content: "";
       position: absolute;
@@ -1207,6 +1215,7 @@
       background-color: #5c08f7;
       border-radius: 8px;
       opacity: 0;
+      transition: all 0.5s ease-in-out;
     }
     &:nth-child(1) {
       margin-top: 0;
@@ -1217,11 +1226,13 @@
   }
   .video__btn:hover {
     &::before {
+      transition: all 0.5s ease-in-out;
       opacity: 0.5;
     }
   }
   .video__btn:hover &__btn-img-play {
     opacity: 1;
+    transition: all 0.5s ease-in-out;
   }
   &__btn-img-play {
     position: absolute;
@@ -1232,6 +1243,7 @@
     margin: auto;
     z-index: 1;
     opacity: 0;
+    transition: all 0.6s ease-in-out;
   }
   &__btn-text {
     display: inline-block;
@@ -1244,18 +1256,45 @@
     text-align: center;
     text-transform: uppercase;
     @extend %gil-700;
+    transition: all 0.5s ease-in-out;
+    border-bottom: 0px solid #44414100;
   }
   .video__btn:hover &__btn-text {
     border-bottom: 1px solid #444141;
+    transition: all 0.5s ease-in-out;
+    transition-property: opacity, left, top, height;
   }
   &__content-slider {
     width: 100%;
   }
+  &__btn--active .video__btn-img-play {
+    opacity: 1;
+  }
+
+  &__btn--active {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #5c08f7;
+      border-radius: 8px;
+      opacity: 0.5;
+    }
+  }
+
+  &__btn--active &__btn-text {
+    border-bottom: 1px solid #444141;
+  }
+
   &__content {
     display: none;
+    border-radius: 10px;
   }
   &__content-active {
     display: block;
+    border-radius: 10px;
     // max-width: 653px;
   }
   &__content-frame {
@@ -1318,15 +1357,15 @@
   margin: 120px 0;
 
   &__title {
-    margin-bottom: 32px;
+    margin-bottom: 27px;
   }
   &__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
   &__item {
-    margin-top: 20px;
+    margin-top: 25px;
     padding: 176px 73px 30px 30px;
     display: flex;
     flex-direction: column;
@@ -1345,7 +1384,7 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background: linear-gradient(0deg, rgba(37, 26, 68, 0.6), rgba(37, 26, 68, 0.6)), url(.jpg), #c4c4c4;
+      background: linear-gradient(0deg, rgba(37, 26, 68, 0.6), rgba(37, 26, 68, 0.6)), #c4c4c4;
       opacity: 0.5;
       border-radius: 10px;
       top: 0;
@@ -1486,6 +1525,11 @@
       top: 8px;
       left: 0;
     }
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: $bg;
+      text-decoration: underline;
+    }
   }
 
   &__intro {
@@ -1502,6 +1546,11 @@
   }
   &__intro-link {
     margin-top: 26px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: $bg;
+      text-decoration: underline;
+    }
   }
 
   &__soc-logo-mob {
