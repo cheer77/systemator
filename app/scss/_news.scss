@@ -1,0 +1,36 @@
+.news{
+    margin: 41px 0 0 0;
+    color: #444141;
+    &-breadcrums{
+        margin: 42px 0;
+        &__list{
+            & ul{
+                display: flex;
+                padding-left: 0;
+                & li {
+                    list-style: none;
+                    margin-left: 5px;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+            }
+        }
+        &__active{
+            & a{
+                border-bottom: 1px solid rgba(68, 65, 65, 0.5);
+            }
+           
+        }
+    }
+    &-top{
+        margin-top: 10px;
+    }
+    &-title{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 80px;
+        line-height: 120%;
+        margin-bottom: 52px;
+    }
+}
