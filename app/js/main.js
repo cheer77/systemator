@@ -22,11 +22,6 @@ $(function () {
 
     $('.select-style, .nav__select').styler();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 56642a19d658f53d352fea2a1a02b286fbb97c38
-
 
     let swiper22 = new Swiper(".win__slider", {
         watchOverflow: true,
@@ -227,14 +222,8 @@ $(function () {
             }
         })
     }
-<<<<<<< HEAD
-=======
-	} catch (e) {
-		console.log(e)
-	}
->>>>>>> origin/dennis_branch
-=======
->>>>>>> 56642a19d658f53d352fea2a1a02b286fbb97c38
+
+
 });
 
 
