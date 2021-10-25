@@ -1,4 +1,5 @@
 window.addEventListener('DomContentLoaded', function() {
+
 	$(function() {
 
 		MicroModal.init({
@@ -156,10 +157,8 @@ window.addEventListener('DomContentLoaded', function() {
 			});
 		}
 		window.addEventListener('resize', function (event) {
-			const windowInnerWidth = window.innerWidth;
-			if (windowInnerWidth >= 1098) {
-				swiper2.destroy();
-			} else {
+			// const windowInnerWidth = window.innerWidth;
+			if (window.innerWidth <= 1098) {
 				//код инициализатора
 				let swiper2 = new Swiper(".video__content-slider", {
 					observer: true,

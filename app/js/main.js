@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			MicroModal.init({
 				disableScroll: true, // [6]
 				awaitOpenAnimation: true, // [8]
-				awaitCloseAnimation: true, // [9]
+				// awaitCloseAnimation: true, // [9]
 			});
 
 
