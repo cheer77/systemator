@@ -134,7 +134,11 @@
             color: #075fc5;
             font-weight: 500;
             font-size: 18.0243px;
-            line-height: 146.5%;        
+            line-height: 146.5%;
+            &-active{
+                background-color: #075FC5;
+                color: #fff;
+            }        
         }
         &__tabs-mobile{
             display: none;
@@ -230,10 +234,7 @@
     
 }
 
-.active{
-    background-color: #075FC5;
-    color: #fff;
-}
+
 @media (max-width: 1255px)  {
     .subscription{
         &-table{
