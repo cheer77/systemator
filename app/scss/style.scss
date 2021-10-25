@@ -1,5 +1,7 @@
 @import "vars";
+@import 'mixins';
 @import "fonts";
+@import "vars";
 @import "reset";
 @import "libs";
 @import "modals";
@@ -8,4 +10,5 @@
 @import "about";
 @import "introduction";
 @import "faq";
+@import "blog";
 @import "media";

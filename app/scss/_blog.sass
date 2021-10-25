@@ -1,0 +1,400 @@
+.blog
+    &-page
+        & main
+            margin-top: 60px
+        &__subtitle
+            @extend .about-page__subtitle
+        &__top
+            @extend .about-page__top
+            &::before
+                @extend .about-page__top::before
+            & .figure_circle1
+                position: absolute
+                width: 67px
+                top: 180px
+                left: -25px
+                display: block
+            & .figure_circle2
+                position: absolute
+                width: 21px
+                top: 375px
+                left: 20%
+                display: block
+            & .figure_circle3
+                position: absolute
+                width: 31px
+                top: 100px
+                left: 20%
+                display: block
+            & .figure_circle4
+                position: absolute
+                width: 35px
+                top: 150px
+                left: 35%
+                display: block
+            &-content
+                @extend .about-page__top-content
+                width: 100%
+            &-wrap
+                &:nth-of-type(1)
+                    @extend .about-page__top-wrap:nth-of-type(1)
+                &:nth-of-type(2)
+                    @extend .about-page__top-wrap:nth-of-type(2)
+            &-title
+                @extend .about-page__top-title
+            &-desc
+                @extend .about-page__top-desc
+                & span
+                    font-weight: 700
+                    color: rgba(215, 219, 27, 1)
+
+        &__search
+            &-content
+                padding-top: 40px!important
+                padding-bottom: 40px!important
+            &-form
+                & input::-webkit-input-placeholder,
+                & textarea::-webkit-input-placeholder
+                    font-family: "Gilroy", sans-serif
+                    font-size: 16px
+                    line-height: 24px
+                    color: rgba(29, 25, 25, .16)
+
+                & input::-moz-placeholder,
+                & textarea::-moz-placeholder
+                    font-family: "Gilroy", sans-serif
+                    font-size: 16px
+                    line-height: 24px
+                    color: rgba(29, 25, 25, .16)
+
+                & input:-moz-placeholder,
+                & textarea:-moz-placeholder
+                    font-family: "Gilroy", sans-serif
+                    font-size: 16px
+                    line-height: 24px
+                    color: rgba(29, 25, 25, .16)
+
+                & input:-ms-input-placeholder,
+                & textarea:-ms-input-placeholder
+                    font-family: "Gilroy", sans-serif
+                    font-size: 16px
+                    line-height: 24px
+                    color: rgba(29, 25, 25, .16)
+
+                & input:focus::-webkit-input-placeholder,
+                & textarea:focus::-webkit-input-placeholder
+                    opacity: 0
+                    transition: opacity 0.3s ease
+
+                & input:focus::-moz-placeholder,
+                & textarea:focus::-moz-placeholder
+                    opacity: 0
+                    transition: opacity 0.3s ease
+
+                & input:focus:-moz-placeholder,
+                & textarea:focus:-moz-placeholder
+                    opacity: 0
+                    transition: opacity 0.3s ease
+
+                & input:focus:-ms-input-placeholder,
+                & textarea:focus:-ms-input-placeholder
+                    opacity: 0
+                    transition: opacity 0.3s ease
+                & input:focus,
+                & textarea:focus
+                    outline: none
+                    background: transparent
+                    box-shadow: 0 0 0 1px #bcbcbc
+            &-wrap
+                position: relative
+                max-width: 530px
+                margin: 0 auto
+            &-input
+                width: 100%
+                padding: 15px 50px 15px 20px
+                border: none
+                border-radius: 8px
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+            &-link
+                @include flex
+                position: absolute
+                top: 20%
+                right: .8em
+                cursor: pointer
+                &::before
+                    content: ''
+                    display: block
+                    margin-right: 20px
+                    width: 2px
+                    height: 29px
+                    background: rgba(68, 65, 65, .16)
+                & svg
+                    width: 14px
+                    height: 14px
+
+        &__articles
+            padding-bottom: 20px
+            overflow: hidden
+            & .blog-page__settings
+                padding: 0
+                &-list
+                    @include flex
+                    justify-content: center
+                &-btn
+                    margin-right: 10px
+                    min-width: 130px
+                    max-height: 50px
+                    padding: 8px 26px
+                    font-size: 16px
+                    line-height: 23px
+                    white-space: nowrap
+                    border: none
+                    border-radius: 35px
+                    color: rgba(68, 65, 65, 0.85)
+                    background: none
+                    cursor: pointer
+                    &:nth-last-child(1)
+                        margin-right: 0
+                    &:hover
+                        background: rgba(235, 244, 255, 1)
+                    &.active
+                        background: rgba(235, 244, 255, 1)
+            &-content
+                margin-top: 50px
+            &-list
+                @include flex
+                flex-wrap: wrap
+                justify-content: space-around
+        &__item
+            margin-bottom: 40px
+            max-width: 380px
+            width: 30%
+            padding: 25px 20px
+            border-radius: 10px
+            background: rgba(255, 255, 255, 1)
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+            //&:nth-child(2n)
+            //    margin-left: 45px
+            //    margin-right: 45px
+            & img
+                border-radius: 10px
+            &-title
+                margin-top: 15px
+                //width: 250px
+                height: 56px
+                overflow: hidden
+                font-size: 20px
+                font-weight: 700
+                line-height: 30px
+                &::before
+                    content: ""
+                    float: left
+                    width: 5px
+                    height: 56px
+                & > *:first-child
+                    float: right
+                    width: 100%
+                    margin-left: -5px
+            &-desc
+                margin-top: 10px
+                margin-bottom: 20px
+                //width: 280px
+                height: 63px
+                overflow: hidden
+                font-size: 14px
+                line-height: 20px
+                color: rgba(68, 65, 65, .85)
+                &::before
+                    content: ""
+                    float: left
+                    width: 5px
+                    height: 63px
+                & > *:first-child
+                    float: right
+                    width: 100%
+                    margin-left: -5px
+                //&::after
+                //    content: "\02026"
+                //    box-sizing: content-box
+                //    float: right
+                //    width: 1em
+                //    margin-left: -2em
+                //    padding-right: 5px
+                //    text-align: right
+            &-wrap
+                @include flex
+                justify-content: space-between
+                flex-wrap: wrap
+            &-link
+                padding: 13px 40px
+                border: 1px solid rgba(7, 95, 197, 0.85)
+                border-radius: 6px
+                transition: all .3s
+                &:hover
+                    background: rgba(7, 95, 197, 1)
+                    & span
+                        color: rgba(255, 255, 255, 1)
+                & span
+                    font-size: 14px
+                    font-weight: 600
+                    line-height: 17px
+                    color: rgba(7, 95, 197, 1)
+            &-views
+                @include flex
+                &::before
+                    content: ''
+                    display: block
+                    margin-right: 7px
+                    width: 12px
+                    height: 12px
+                    background: url('../images/blog-page/fa-solid_eye.svg')
+                    background-size: cover
+                &--count
+                    font-size: 12px
+                    line-height: 18px
+                    color: rgba(68, 65, 65, .85)
+            &-categories
+                margin-top: 25px
+                @include flex
+                justify-content: space-between
+                &-list
+                    @include flex
+                    & li
+                        margin-right: 6px
+                        margin-bottom: 6px
+                        padding: 3px 15px
+                        border-radius: 35px
+                        background: rgba(235, 244, 255, 1)
+                        &:nth-last-of-type(1)
+                            margin-right: 0
+                        & p
+                            font-size: 12px
+                            line-height: 18px
+                &--more
+                    @include flex
+                    & span
+                        display: block
+                        margin-right: 3px
+                        width: 6px
+                        height: 6px
+                        border-radius: 50%
+                        background: rgba(7, 95, 197, 0.6)
+                        &:nth-last-of-type(1)
+                            margin-right: 0
+        &__pagination
+            margin-top: 20px
+            margin-bottom: 150px
+            &-wrap
+                @include flex
+                justify-content: center
+            &-btn
+                position: relative
+                cursor: pointer
+                & span
+                    position: absolute
+                    display: block
+                    width: 20px
+                    height: 20px
+                    border-radius: 50%
+                    background: rgba(7, 95, 197, .2)
+                &.pagination
+                    &-prev
+                        & span
+                            left: 0
+                    &-next
+                        transform: rotate(180deg)
+                        & span
+                            right: 15px
+            &-list
+                @include flex
+                margin: 0 2rem!important
+            &-item
+                margin-right: 5px
+                border: 1px solid rgba(7, 95, 197, .27)
+                border-radius: 2px
+                &:nth-last-of-type(1)
+                    margin-right: 0
+            &-link
+                @include flex
+                justify-content: center
+                width: 40px
+                height: 35px
+                border-radius: 2px
+                transition: all .3s
+                cursor: pointer
+                &:hover
+                    background: rgba(7, 95, 197, 1)
+                    & span
+                        color: rgba(255, 255, 255, 1)
+                & span
+                    font-size: 14px
+                    font-weight: 400
+                    line-height: 16px
+                    color: rgba(7, 95, 197, 1)
+        & .footer
+            background: rgba(13, 110, 253, .06)
+
+.sort
+    &-show--js
+        display: block!important
+    &-hide--js
+        display: none!important
+
+
+@media screen and (max-width: 1300px) and (min-width: 990px)
+
+    .blog-page__top-wrap:nth-of-type(2)
+        right: -18%
+
+
+@media screen and (max-width: 1023px)
+
+    .blog
+        &-page
+            &__item
+                &-categories
+                    &-list
+                        flex-wrap: wrap
+            &__pagination
+                margin-bottom: 80px
+
+
+@media screen and (max-width: 768px)
+
+    .blog
+        &-page
+            &__articles
+                & .blog
+                    &-page
+                        &__settings
+                            margin-top: 25px
+                            margin-bottom: 25px
+                            position: relative
+                            &-list
+                                justify-content: unset
+                                position: absolute
+                                width: 100%
+                                padding-bottom: 12px
+                                overflow-y: hidden
+                                overflow-x: auto
+                            &-btn
+                                &:nth-of-type(1)
+                                    margin-left: 10px
+                &-content
+                    margin-top: 100px
+            &__item
+                width: 46%
+
+
+@media screen and (max-width: 575px)
+
+    .blog
+        &-page
+            &__pagination
+                &-list
+                    & > :nth-child(n + 4)
+                        display: none
+                    & > :nth-of-type(3)
+                        margin-right: 0
+            &__item
+                width: 100%
