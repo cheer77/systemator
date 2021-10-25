@@ -161,6 +161,9 @@
             margin-right: 16px;
             margin-left: 16px;
             margin-top: 25px;
+            &:hover {
+                background: #fbff00;
+            }
         }
         &__btn-blue{
             font-weight: 600;
@@ -173,6 +176,9 @@
             margin-left: 16px;
             margin-top: 25px;
             color: #fff;
+            &:hover{
+                background-color: #4676ed;
+            }
         }
         &__p{
             font-weight: normal;
@@ -332,7 +338,7 @@
             &__tabs-mobile{
                 display: flex;
                 justify-content: space-between;
-                width: 71%;
+                width: 92%;
                 margin: 0 auto;
                 padding: 45px 0;
             }

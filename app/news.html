@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.min.css">
     </head>
-    <h1>Systemator-contacts</h1>
-    <body class="contact-page">
+    <h1>Systemator-news</h1>
+    <body class="news-page">
         <header class="header">
             <div class="container">
                 <nav class="nav">
@@ -94,101 +94,46 @@
                 </nav>
             </div>
         </header>
-        <main class="main contact">
-            <section class="first contact-first">
+        <main class="main news">
+            <section class="news-breadcrums">
                 <div class="container">
-    
-                    <div class="first__inner contact-first__inner">
-                        <div class="first__left contact-first__left">
-                            <h1 class="first__title contact__first-title">
-                                Контакты
-                            </h1>
-                            
-                            <p class="contact-first__left-text">
-                                Если у вас <span>остались вопросы - <br> 
-                                обращайтесь к нам!</span> Будем рады быть <br>
-                                полезными вам и вашему бизнесу!
-                            </p>
-    
-                        </div>
-    
-                        <div class=" contact-first__right">
-                            <a class=" contact-first__right-btn" data-fancybox="" href="https://www.google.com.ua/maps/place/%D1%83%D0%BB.+%D0%A2%D1%80%D0%BE%D1%81%D1%82%D1%8F%D0%BD%D0%B5%D1%86%D0%BA%D0%B0%D1%8F,+49,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4213251,30.6550059,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4c51e6457b747:0xee1fa11c6d9b1cf2!8m2!3d50.4213251!4d30.6571946?hl=ru">
-                                Посмотреть на карте
-                            </a>
-                        </div>
-                    </div>
-    
+                    <div class="news-breadcrums__list">
+                        <ul>
+                            <li class="news-breadcrums__active">
+                                <a href="#">Главная </a>
+                                <span>-</span>
+                            </li>                            
+                            <li class="news-breadcrums__active">
+                                <a href="#">Блог</a>
+                                <span>-</span>
+                            </li>                                
+                            <li>
+                                <a href="#">Название статьи</a>
+                            </li>
+                        </ul>
+                    </div>                    
                 </div>
             </section>
-            <section class="contact-contacts">
-                <div class="container contact-container">
-                    <h2 class="title contact-contacts__title">
-                        Как с нами <span>связаться</span>
-                    </h2>
-                
-                        <div class="contact-contacts__block">
-                            <div class="contact-contacts__left">
-                                <div class="contact-contacts__items">
-                                    <div class="contact-contacts__item">
-                                        <p class="contact-contacts__name">Адрес</p>
-                                        <div class="contact-contacts__adress">
-                                            <img src="/images/ic_round-place.svg" alt="">
-                                            <p>г. Киев, ул. Тростянецкая, 49</p>
-                                        </div>
-                                    </div>
-                                    <div class="contact-contacts__item">
-                                        <p class="contact-contacts__name">График работы</p>
-                                        <div class="contact-contacts__adress">
-                                            <img src="/images/time-filled.svg" alt="">
-                                            <p>Пн – Пт : 8.00 – 18.00</p>
-                                        </div>
-                                    </div>
-                                    <div class="contact-contacts__item">
-                                        <p class="contact-contacts__name">Контакты</p>
-                                        <div class="contact-contacts__adress">
-                                            <img src="/images/mdi_gmail.svg" alt="">
-                                            <p>office@systemator.pro</p>
-                                        </div>
-                                        <div class="contact-contacts__adress">
-                                            <img src="/images/phone-filled.svg" alt="">
-                                            <p>+38 097 829 38 89</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                            <div class="contact-contacts__right">
-                                <div class="contact-contacts-form__wrap">
-                                    <div class="contact-contacts-form__wrap-title">
-                                        <span>Свяжитесь</span> с нами:									
-                                    </div>
-                                    <form class="contact-contacts-form" action="">
-                                        <div class="contact-contacts-form__field input">
-                                            <textarea name="message" placeholder="Комментарий"></textarea>
-                                        </div>
-                                        <div class="contact-contacts-form__field input">
-                                            <input type="text" name="name" placeholder="Введите ваше имя" required="">
-                                        </div>
-                                        <div class="contact-contacts-form__field input">
-                                            <input type="tel" name="phone" placeholder="Введите ваш номер телефона" required="">
-                                        </div> 
-                                        <div class="contact-contacts-form__btn">
-                                            <button class="btn contact-btn-form">Отправить</button>
-                                        </div>
-                                        
-                                    </form>
-            
-                                    
-                                </div>
-                            </div>
-                        </div>
+            <section class="news-top">
+                <div class="container">
+                    <h1 class="news-title">
+                        Как управлять компанией <br>
+                        и не сдохнуть
+                    </h1>
+                    <img class="news-top__img" src="images/news/banner-1.png" alt="">
                 </div>
-            </section>  
-
-            
+            </section>
         </main>
+
+
+
+
+
+
+
+
+
+
         <footer class="footer">
             <div class="container">
                 <div class="footer__top">
@@ -263,26 +208,7 @@
     
         <script src="js/main.min.js"></script>
     
-        <!-- <script>
-            const needBlocks = document.querySelectorAll('.need__item');
-            needBlocks.forEach(item => blockSwitcher(item))
-            function blockSwitcher(block) {
-                const needBlock = block
-                const needText = needBlock.querySelector('.need__text')
-                const switcher = needBlock.querySelector('.toggle-switch')
-                switcher.addEventListener('click', () => {
-                    if (needText.classList.contains('need__text--active')) {
-                        switcher.classList.add('active')
-                        needText.classList.remove('need__text--active')
-                        needText.nextElementSibling.classList.add('need__text--active')
-                    } else {
-                        switcher.classList.remove('active')
-                        needText.classList.add('need__text--active')
-                        needText.nextElementSibling.classList.remove('need__text--active')
-                    }
-                })
-            }
-        </script> -->    
+       
     </body>
 
 </html>
