@@ -29,19 +29,19 @@
                                 <a href="#" class="menu__link">Инструменты управления</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Внедрение</a>
+                                <a href="introduction.html" class="menu__link">Внедрение</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Тарифы</a>
+                                <a href="subscription.html" class="menu__link">Тарифы</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">О&nbsp;Нас</a>
+                                <a href="about.html" class="menu__link">О&nbsp;Нас</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Блог</a>
+                                <a href="blog.html" class="menu__link">Блог</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Контакты</a>
+                                <a href="contact.html" class="menu__link">Контакты</a>
                             </li>
                         </ul>
     
@@ -85,7 +85,7 @@
                         </div>
     
                         <button class="nav__btn" data-micromodal-trigger="modal-4">Войти</button>
-                        <div class="nav__menu-btn">
+                        <div class="custom-btn--js nav__menu-btn">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -218,11 +218,11 @@
                     </div>
                     <div class="footer__intro">
                         <p class="footer__intro-title">Принципы внедрения</p>
-    
+
                         <div class="footer__intro-box">
-                            <a href="" class="footer__intro-link">Тарифы</a>
-                            <a href="" class="footer__intro-link">Контакты</a>
-                            <a href="" class="footer__intro-link">FAQ</a>
+                            <a href="subscription.html" class="footer__intro-link">Тарифы</a>
+                            <a href="contact.html" class="footer__intro-link">Контакты</a>
+                            <a href="faq.html" class="footer__intro-link">FAQ</a>
                         </div>
                     </div>
                     <div class="footer__location">
@@ -231,15 +231,15 @@
                         <p class="footer__location-time">Пн&nbsp;&mdash; Пт: 8.00&nbsp;&mdash; 18.00</p>
                         <a href="mailto:office@systemator.pro" class="footer__location-email">office@systemator.pro</a>
                         <a href="tel:380978293889" class="footer__location-phone">+38 (097) 829 38 89</a>
-    
+
                         <div class="footer__location-box">
-                            <a href="#" class="footer__location-whatsapp">
+                            <a href="tel:+38978293889" class="footer__location-whatsapp">
                                 <img src="images/icons/call.svg" alt="" class="footer__location-img">
                             </a>
-                            <a href="#" class="footer__location-viber">
+                            <a href="viber://chat?number=+380978293889" class="footer__location-viber">
                                 <img src="images/icons/Viber.svg" alt="" class="footer__location-img">
                             </a>
-                            <a href="#" class="footer__location-telegram">
+                            <a href="tg://resolve?domain=systematorpro" class="footer__location-telegram">
                                 <img src="images/icons/Telegram.svg" alt="" class="footer__location-img">
                             </a>
                         </div>
@@ -256,12 +256,269 @@
                 </div>
             </div>
         </footer>
-    
-    
-    
-    
-    
-        <script src="js/main.min.js"></script>
+
+        <section class="modals">
+            <div class="container">
+
+
+
+                <!-- <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+										<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+												<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title"
+														aria-describedby="modal-1-content">
+														<div>
+																<header class="modal__header">
+																		<h3 class="modal__title">
+																				Micromodal
+																		</h3>
+																		<button class="modal__close" aria-label="Close modal"
+																				aria-controls="modal__container1" data-micromodal-close>
+																		</button>
+																</header>
+																<main class="modal__content" id="modal-1-content">
+																		<p>
+																				Try hitting the <code>tab</code> key and notice how the focus stays
+																				within the modal itself. Also, <code>esc</code> to close modal.
+																		</p>
+																</main>
+																<footer class="modal__footer">
+																		<button class="modal__btn modal__btn-primary">Continue</button>
+																		<button class="modal__btn" data-micromodal-close
+																				aria-label="Close this dialog window">Close</button>
+																</footer>
+														</div>
+												</div>
+										</div>
+								</div> -->
+
+
+                <div class="micromodal-slide try-modal" id="modal-1" aria-hidden="true">
+                    <div class="try-modal__overlay" tabindex="-1" data-micromodal-close>
+                        <div class="try-modal__container" role="dialog" aria-modal="true"
+                             aria-labelledby="modal-1-title" aria-describedby="modal-1-content">
+
+                            <button class="try-modal__close" aria-label="Close modal" aria-controls="modal__container1"
+                                    data-micromodal-close>
+                            </button>
+                            <p class="try-modal__title">Попробовать <span>бесплатно</span> </p>
+
+                            <main class="try-modal__content" id="modal-1-content">
+                                <form class="try-modal__form">
+                                    <p class="try-modal__staff">Количество сотрудников</p>
+                                    <div class="try-modal__radio-wrap">
+                                        <input class="try-modal__radio" type="radio" name="drink" value="rad1" id="rad1"
+                                               required>
+                                        <label for="rad1">до&nbsp;50</label>
+                                        <span class="try-modal__right"></span>
+                                        <input class="try-modal__radio" type="radio" name="drink" value="rad2" id="rad2"
+                                               required>
+                                        <label for="rad2">50-100</label>
+                                        <span class="try-modal__right"></span>
+
+                                        <input class="try-modal__radio" type="radio" name="drink" value="rad3"
+                                               id="rad3">
+                                        <label for="rad3" required>более 100</label>
+                                    </div>
+
+                                    <input type="text" class="try-modal__input" required
+                                           placeholder="Название  компании">
+                                    <input type="text" class="try-modal__input" required placeholder="Ваше имя">
+                                    <input type="email" class="try-modal__input" required placeholder="Email">
+                                    <input type="tel" class="try-modal__input" required placeholder="Номер телефона">
+
+                                    <button type="submit" class="try-modal__btn btn">Создать проект</button>
+
+                                    <div class="try-modal__know-wrap">
+                                        <input class="try-modal__check" type="checkbox" name="" id="box1" required>
+                                        <label class="try-modal__know-label" for="box1"> Я&nbsp;ознакомился
+                                            и&nbsp;принимаю
+                                            соглашение
+                                        </label>
+
+                                        <p class="try-modal__know-text">Договор о&nbsp;предоставлении услуг</p>
+                                        <p class="try-modal__know-text">Соглашение пользователя</p>
+                                        <p class="try-modal__know-text">Политика конфиденциальности</p>
+                                    </div>
+
+                                    <p class="try-modal__garant">
+                                        Мы&nbsp;гарантируем безопасность аккаунта и&nbsp;сохранность внесенной
+                                        информации. Детали
+                                        в&nbsp;соглашении.При заказе платных услуг&nbsp;&mdash; оплата производится
+                                        ежемесячно. У&nbsp;вас
+                                        нет никаких контрактов, обязательств или штрафов. Вы&nbsp;в&nbsp;праве
+                                        прекратить
+                                        использование в&nbsp;любое время
+                                    </p>
+
+                                </form>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="micromodal-slide try-modal get-modal" id="modal-2" aria-hidden="true">
+                    <div class="try-modal__overlay get-modal__overlay" tabindex="-1" data-micromodal-close>
+                        <div class="try-modal__container get-modal__container" role="dialog" aria-modal="true"
+                             aria-labelledby="modal-2-title" aria-describedby="modal-1-content">
+
+                            <button class="try-modal__close" aria-label="Close modal" aria-controls="modal__container1"
+                                    data-micromodal-close>
+                            </button>
+                            <p class="try-modal__title get-modal__title">Получить консультацию</p>
+                            <p class="try-modal__garant get-modal__garant">
+                                Заполните форму и мы свяжемся с вами в ближайшее время
+                            </p>
+
+                            <main class="try-modal__content" id="modal-2-content">
+                                <form class="try-modal__form get-modal__form">
+
+                                    <input type="text" class="try-modal__input" required placeholder="Ваше имя">
+                                    <input type="tel" class="try-modal__input" required placeholder="Номер телефона">
+
+                                    <button type="submit" class="try-modal__btn btn">Отправить</button>
+
+                                    <!-- <div class="try-modal__know-wrap">
+																				<input class="try-modal__check" type="checkbox" name="" id="box2" required>
+																				<label class="try-modal__know-label" for="box2"> Я&nbsp;ознакомился
+																						и&nbsp;принимаю
+																						соглашение
+																				</label>
+
+																				<p class="try-modal__know-text">Договор о&nbsp;предоставлении услуг</p>
+																				<p class="try-modal__know-text">Соглашение пользователя</p>
+																				<p class="try-modal__know-text">Политика конфиденциальности</p>
+																		</div> -->
+
+                                </form>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="micromodal-slide slider-modal" id="modal-3" aria-hidden="true">
+                    <div class="slider-modal__overlay" tabindex="-1" data-micromodal-close>
+                        <div class="slider-modal__container" role="dialog" aria-modal="true"
+                             aria-labelledby="modal-3-title" aria-describedby="modal-3-content">
+
+                            <button class="slider-modal__close" aria-label="Close modal"
+                                    aria-controls="modal__container1" data-micromodal-close>
+                            </button>
+
+                            <main class="slider-modal__content" id="modal-3-content">
+                                <img class="win__slider-img" src="images/slider/1.png" alt="фото">
+                                <p class="win__slider-name">Сергей Савченко</p>
+                                <div class="win__slider-box slider-modal__box">
+                                    <p class="win__slider-company">Владелец компании Blest</p>
+                                    <p class="win__slider-production">производство мягкой мебели</p>
+                                </div>
+
+                                <p class="win__slider-descr">
+                                    Начали внедрение Систематора в&nbsp;январе 2021&nbsp;года. Долгое время наша
+                                    компания была в
+                                    поиске решения, которое&nbsp;бы помогло систематизировать и&nbsp;упорядочить бизнес.
+                                    До&nbsp;этого
+                                    мы&nbsp;использовали несколько других, более простых решений, но&nbsp;ни&nbsp;одно
+                                    из&nbsp;них не&nbsp;давало
+                                    полного функционала, который нам был необходим. Организационная структура компании,
+                                    функциональные обязанности, показатели эффективности бизнеса, постановка и
+                                    управление задачами&nbsp;&mdash; все это было раздроблено и&nbsp;перед нами стояла
+                                    острое задача
+                                    объединить все данные в&nbsp;одну упорядоченную систему. Внедрение заняло
+                                    3&nbsp;месяца.
+                                    Многие данных у&nbsp;нас уже было готово в&nbsp;том или ином виде и&nbsp;выяснить,
+                                    хотим получить.
+                                    Также нам очень помогли с&nbsp;внедрением специалисты Систематора. Теперь
+                                    организационная
+                                    структура компании у&nbsp;нас четко сформулирована, функциональные обязанности
+                                    сотрудников описаны, показатели эффективности созданы и&nbsp;отслеживаются,
+                                    а&nbsp;также
+                                    ведется планирование и&nbsp;отслеживание выполнения задач сотрудниками и&nbsp;их
+                                    руководителями. Все это позволяет эффективно управлять компанией, удерживать свое
+                                    внимание и&nbsp;внимание сотрудников на&nbsp;ключевых показателях и&nbsp;добиваться
+                                    отличных
+                                    результатов.
+                                </p>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="micromodal-slide enter-modal" id="modal-4" aria-hidden="true">
+                    <div class="enter-modal__overlay" tabindex="-1" data-micromodal-close>
+                        <div class="enter-modal__container" role="dialog" aria-modal="true"
+                             aria-labelledby="modal-4-title" aria-describedby="modal-4-content">
+
+                            <button class="enter-modal__close" aria-label="Close modal"
+                                    aria-controls="modal__container1" data-micromodal-close>
+                            </button>
+
+                            <main class="enter-modal__content" id="modal-4-content">
+                                <p class="enter-modal__title">Вход в&nbsp;личный кабинет</p>
+
+                                <form class="enter-modal__form">
+                                    <input type="text" class="enter-modal__input" placeholder="Логин" required>
+                                    <input type="password" class="enter-modal__input" placeholder="Пароль" required>
+
+                                    <a  data-micromodal-trigger="modal-5" class="enter-modal__forgot">Забыли
+                                        пароль?</a>
+
+                                    <button class="enter-modal__btn btn">Войти</button>
+
+                                    <div class="enter-modal__box">
+                                        <input class="enter-modal__check" type="checkbox" name="" id="checkbox1">
+                                        <label class="enter-modal__label" for="checkbox1">Запомнить меня</label>
+                                    </div>
+                                </form>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="micromodal-slide forgot-modal" id="modal-5" aria-hidden="true">
+                    <div class="forgot-modal__overlay" tabindex="-1" data-micromodal-close>
+                        <div class="forgot-modal__container" role="dialog" aria-modal="true"
+                             aria-labelledby="modal-5-title" aria-describedby="modal-5-content">
+
+                            <button class="forgot-modal__close" aria-label="Close modal"
+                                    aria-controls="modal__container1" data-micromodal-close>
+                            </button>
+
+                            <main class="forgot-modal__content" id="modal-5-content">
+                                <p class="forgot-modal__title">Забыли пароль?</p>
+
+                                <form class="forgot-modal__form">
+                                    <input type="email" class="forgot-modal__input" placeholder="Email" required>
+
+                                    <button class="forgot-modal__btn btn">Отправить новый пароль на&nbsp;почту</button>
+                                </form>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </section>
+
+
+
+
+        <script src="js/script.libs.js"></script>
+        <script src="js/main.js"></script>
     
         <!-- <script>
             const needBlocks = document.querySelectorAll('.need__item');
