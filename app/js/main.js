@@ -24,16 +24,24 @@ window.addEventListener('DOMContentLoaded', function () {
 
             //modal
             MicroModal.init({
+                onOpen: customOpen(),
+                onClose: () => {
+                    setTimeout( () => {
+                        document.body.classList.remove('custom-body--js')
+                    }, 300)
+                },
                 disableScroll: true, // [6]
                 awaitOpenAnimation: true, // [8]
                 awaitCloseAnimation: true, // [9]
             });
 
-            document.querySelector('.nav__btn').addEventListener('click', (e) => {
 
-            })
-
-
+            function customOpen() {
+                const enterBtn = document.querySelector('.nav__btn');
+                enterBtn.addEventListener('click', () => {
+                    document.body.classList.add('custom-body--js');
+                })
+            }
 
             $('.enter-modal__forgot').on('click', function (event) {
                 $('#modal-4').attr("aria-hidden", "true");

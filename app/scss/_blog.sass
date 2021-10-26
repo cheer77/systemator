@@ -164,9 +164,11 @@
             &-list
                 @include flex
                 flex-wrap: wrap
-                justify-content: space-around
+                justify-content: flex-start
         &__item
-            margin-bottom: 40px
+            margin: 15px
+            margin-top: 0
+            margin-bottom: 30px
             max-width: 380px
             width: 30%
             padding: 25px 20px
@@ -347,7 +349,7 @@
         right: -18%
 
 
-@media screen and (max-width: 1023px)
+@media screen and (max-width: 1300px)
 
     .blog
         &-page
@@ -355,9 +357,21 @@
                 &-categories
                     &-list
                         flex-wrap: wrap
+
+
+@media screen and (max-width: 1023px)
+
+    .blog
+        &-page
             &__pagination
                 margin-bottom: 80px
 
+@media screen and (max-width: 960px)
+
+    .blog
+        &-page
+            &__item
+                width: 45%
 
 @media screen and (max-width: 768px)
 
@@ -382,8 +396,10 @@
                                     margin-left: 10px
                 &-content
                     margin-top: 100px
+                &-list
+                    justify-content: center
             &__item
-                width: 46%
+                margin: 5px
 
 
 @media screen and (max-width: 575px)
