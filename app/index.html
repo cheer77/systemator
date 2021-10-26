@@ -8,1396 +8,1392 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
-        <header class="header">
-            <div class="container">
-                <nav class="nav">
+<body class="index-page">
+<header class="header">
+    <div class="container">
+        <nav class="nav">
 
-                    <img class="nav__logo" src="images/logo.svg" alt="Logo">
+            <img class="nav__logo" src="images/logo.svg" alt="Logo">
 
-                    <div class="menu">
+            <div class="menu">
 
-                        <div class="nav__select-box menu__select-box-mob">
-                            <select class="nav__select" name="" id="">
-                                <option class="nav__select-option" value="0">ru</option>
-                                <option class="nav__select-option" value="1">ua</option>
-                                <option class="nav__select-option" value="2">en</option>
-                            </select>
-                        </div>
-
-                        <ul class="menu__items">
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Инструменты управления</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="introduction.html" class="menu__link">Внедрение</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Тарифы</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">О&nbsp;Нас</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Блог</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Контакты</a>
-                            </li>
-                        </ul>
-
-                        <div class="menu__mob">
-                            <div class="menu__mob-wrap">
-                                <a href="#" class="menu__mob-face">
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M28 14C28 6.2637 21.7363 0 14 0C6.2637 0 0 6.2637 0 14C0 20.9896 5.12296 26.7763 11.8222 27.8341V18.0444H8.25481V14H11.8222V10.9096C11.8222 7.40444 13.8963 5.47556 17.0904 5.47556C18.6252 5.47556 20.2222 5.74519 20.2222 5.74519V9.18815H18.4593C16.717 9.18815 16.1778 10.2667 16.1778 11.3659V14H20.0563L19.4341 18.0444H16.1778V27.8341C22.877 26.7763 28 20.9896 28 14Z"
-                                            fill="white" />
-                                        <path
-                                            d="M19.4549 18.0445L20.0771 14H16.1778V11.366C16.1778 10.2667 16.7171 9.18818 18.4593 9.18818H20.2223V5.74522C20.2223 5.74522 18.6253 5.47559 17.0904 5.47559C13.8964 5.47559 11.8223 7.40447 11.8223 10.9097V14H8.25488V18.0445H11.8223V27.8341C12.5275 27.9378 13.2741 28 14.0001 28C14.7467 28 15.4727 27.9378 16.1778 27.8341V18.0445H19.4549Z"
-                                            fill="#2927D4" />
-                                    </svg>
-                                </a>
-                                <a href="#" class="menu__mob-insta">
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="14" cy="14" r="14" fill="white" />
-                                        <path
-                                            d="M13.9979 11.3739C12.5519 11.3739 11.3718 12.554 11.3718 14C11.3718 15.446 12.5519 16.6261 13.9979 16.6261C15.4439 16.6261 16.624 15.446 16.624 14C16.624 12.554 15.4439 11.3739 13.9979 11.3739ZM21.8741 14C21.8741 12.9125 21.884 11.8349 21.8229 10.7494C21.7618 9.48851 21.4742 8.36951 20.5522 7.44751C19.6283 6.52354 18.5113 6.23788 17.2504 6.17681C16.163 6.11574 15.0853 6.12559 13.9999 6.12559C12.9124 6.12559 11.8348 6.11574 10.7493 6.17681C9.48845 6.23788 8.36947 6.52551 7.44749 7.44751C6.52353 8.37148 6.23788 9.48851 6.17681 10.7494C6.11574 11.8369 6.12559 12.9145 6.12559 14C6.12559 15.0855 6.11574 16.1651 6.17681 17.2506C6.23788 18.5115 6.52551 19.6305 7.44749 20.5525C8.37144 21.4765 9.48845 21.7621 10.7493 21.8232C11.8367 21.8843 12.9144 21.8744 13.9999 21.8744C15.0873 21.8744 16.1649 21.8843 17.2504 21.8232C18.5113 21.7621 19.6302 21.4745 20.5522 20.5525C21.4762 19.6285 21.7618 18.5115 21.8229 17.2506C21.8859 16.1651 21.8741 15.0875 21.8741 14ZM13.9979 18.0406C11.7619 18.0406 9.95732 16.236 9.95732 14C9.95732 11.764 11.7619 9.95936 13.9979 9.95936C16.2339 9.95936 18.0384 11.764 18.0384 14C18.0384 16.236 16.2339 18.0406 13.9979 18.0406ZM18.2039 10.7375C17.6819 10.7375 17.2603 10.3159 17.2603 9.79388C17.2603 9.27181 17.6819 8.85021 18.2039 8.85021C18.726 8.85021 19.1476 9.27181 19.1476 9.79388C19.1477 9.91784 19.1234 10.0406 19.0761 10.1552C19.0287 10.2697 18.9592 10.3738 18.8715 10.4615C18.7839 10.5492 18.6798 10.6187 18.5652 10.666C18.4507 10.7134 18.3279 10.7377 18.2039 10.7375Z"
-                                            fill="#2927D4" />
-                                    </svg>
-                                </a>
-                            </div>
-                            <p class="menu__mob-text">
-                                Все права защищены. Копирование текста или его части возможно только
-                                с&nbsp;разрешения правообладателя.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="nav__inner">
-                        <div class="nav__select-box">
-                            <select class="nav__select" name="" id="">
-                                <option class="nav__select-option" value="0">ru</option>
-                                <option class="nav__select-option" value="1">ua</option>
-                                <option class="nav__select-option" value="2">en</option>
-                            </select>
-                        </div>
-
-                        <button class="nav__btn" data-micromodal-trigger="modal-4">Войти</button>
-                        <div class="nav__menu-btn">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </header>
-
-
-
-
-
-
-        <main class="main">
-
-
-
-            <section class="first">
-                <div class="container">
-
-                    <div class="first__inner">
-                        <div class="first__left">
-                            <h1 class="first__title">
-                                <span>Систематизируй бизнес</span> и управляй компанией онлайн
-                            </h1>
-                            <!-- <h2 class="first__title-bottom">
-                            и управляй компанией онлайн
-                        </h2> -->
-                            <div class="first__left-wrap">
-                                <p class="first__wrap-text">Удобная</p>
-                                <p class="first__wrap-text">Логичная</p>
-                                <p class="first__wrap-text">Универсальная</p>
-                            </div>
-                            <p class="first__left-text">
-                                Онлайн-платформа, с&nbsp;помощью которой вы&nbsp;избавитесь от&nbsp;хаоса
-                                в&nbsp;управлении и&nbsp;получите от&nbsp;бизнеса больше удовольствия и&nbsp;прибыли
-                            </p>
-                            <button class="first__left-try btn" data-micromodal-trigger="modal-1"><span>Попробовать
-                                    бесплатно</span> </button>
-                            <button class="first__left-consult btn-sec" data-micromodal-trigger="modal-2">Получить
-                                консультацию</button>
-
-                        </div>
-
-                        <div class="first__right">
-                            <a class="first__right-btn" data-fancybox=""
-                                href="https://www.youtube.com/watch?v=qG9cm2lWofo">
-                                Смотреть презентацию
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-
-
-            <section class="win">
-                <div class="container">
-
-                    <h2 class="win__title title">Реальные <span> победы наших клиентов</span>
-                        в управлении с помощью Систематор:
-                    </h2>
-
-
-                    <div class="win__slider-inner">
-                        <div class="win__prev">
-                            <img src="images/icons/arrow-slider-prev.svg" alt="" class="win__prev-img">
-                        </div>
-                        <div class="win__next">
-                            <img src="images/icons/arrow-slider-next.svg" alt="" class="win__next-img">
-                        </div>
-                        <div class="swiper win__slider">
-                            <div class="swiper-wrapper win__wrapper">
-
-                                <div class="swiper-slide win__slider-item">
-                                    <img class="win__slider-img" src="images/slider/1.png" alt="фото">
-                                    <p class="win__slider-name">Сергей Савченко</p>
-                                    <div class="win__slider-box">
-                                        <p class="win__slider-company">Владелец компании Blest</p>
-                                        <p class="win__slider-production">производство мягкой мебели</p>
-                                    </div>
-
-                                    <p class="win__slider-descr">
-                                        Начали внедрение Систематора в&nbsp;январе 2021&nbsp;года. Долгое время наша
-                                        компания была в
-                                        поиске решения, которое&nbsp;бы помогло...
-                                    </p>
-                                    <a class="win__slider-link" data-micromodal-trigger="modal-3" href="#">Подробнее</a>
-                                </div>
-
-                                <div class="swiper-slide win__slider-item">
-                                    <img class="win__slider-img" src="images/slider/2.png" alt="фото">
-                                    <p class="win__slider-name">Сергей Савченко</p>
-                                    <div class="win__slider-box">
-                                        <p class="win__slider-company">Владелец компании Blest</p>
-                                        <p class="win__slider-production">производство мягкой мебели</p>
-                                    </div>
-
-                                    <p class="win__slider-descr">
-                                        Начали внедрение Систематора в&nbsp;январе 2021&nbsp;года. Долгое время наша
-                                        компания была в
-                                        поиске решения, которое&nbsp;бы помогло...
-                                    </p>
-                                    <a class="win__slider-link" data-micromodal-trigger="modal-3" href="#">Подробнее</a>
-                                </div>
-
-                                <div class="swiper-slide win__slider-item">
-                                    <img class="win__slider-img" src="images/slider/1.png" alt="фото">
-                                    <p class="win__slider-name">Сергей Савченко</p>
-                                    <div class="win__slider-box">
-                                        <p class="win__slider-company">Владелец компании Blest</p>
-                                        <p class="win__slider-production">производство мягкой мебели</p>
-                                    </div>
-
-                                    <p class="win__slider-descr">
-                                        Начали внедрение Систематора в&nbsp;январе 2021&nbsp;года. Долгое время наша
-                                        компания была в
-                                        поиске решения, которое&nbsp;бы помогло...
-                                    </p>
-                                    <a class="win__slider-link" data-micromodal-trigger="modal-3" href="#">Подробнее</a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-
-            <section class="need">
-                <div class="container">
-
-
-                    <h2 class="need__title title">
-                        Вам <span> нужен систематор,</span> если:
-                    </h2>
-                    <div class="need__inner">
-
-                        <div class="need__btns">
-
-                            <div class="need__btn-wrap">
-                                <a href="#tab1" class="need__btn need__btn-active">
-                                    <img class="need__btn-img" src="images/tabs/1.png" alt="картинка таба">
-                                </a>
-                                <p class="need__btn-text">Оргструктура</p>
-                            </div>
-                            <div class="need__btn-wrap">
-                                <a href="#tab2" class="need__btn">
-                                    <img class="need__btn-img" src="images/tabs/2.png" alt="картинка таба">
-                                </a>
-                                <p class="need__btn-text">KPI</p>
-                            </div>
-                            <div class="need__btn-wrap">
-                                <a href="#tab3" class="need__btn">
-                                    <img class="need__btn-img" src="images/tabs/5.png" alt="картинка таба">
-                                </a>
-                                <p class="need__btn-text">Команда</p>
-                            </div>
-                            <div class="need__btn-wrap">
-                                <a href="#tab4" class="need__btn">
-                                    <img class="need__btn-img" src="images/tabs/3.png" alt="картинка таба">
-                                </a>
-                                <p class="need__btn-text">Система планирования</p>
-                            </div>
-                            <div class="need__btn-wrap">
-                                <a href="#tab5" class="need__btn">
-                                    <img class="need__btn-img" src="images/tabs/4.png" alt="картинка таба">
-                                </a>
-                                <p class="need__btn-text">Делегирование</p>
-                            </div>
-                            <div class="need__btn-wrap">
-                                <a href="#tab6" class="need__btn">
-                                    <img class="need__btn-img" src="images/tabs/6.png" alt="картинка таба">
-                                </a>
-                                <p class="need__btn-text">Развитие и&nbsp;масштабирование</p>
-                            </div>
-                        </div>
-
-
-                        <div class="need__content">
-                            <div class="need__item need__item--active" id="tab1">
-
-                                <div class="need__item-img-mob">
-                                    <img class="need__item-img" src="images/tabs/1.png" alt="icon">
-                                </div>
-
-                                <p class="need__item-title">
-                                    <span>Нет понятной оргструктуры,</span> отражающей
-                                    реальное состояние бизнеса
-                                </p>
-                                <p class="need__text need__text--active">
-                                    Нет командного духа, целей и&nbsp;миссии компании.
-                                    Нет слаженной командной игры</p>
-                                <p class="need__text">
-                                    Сотрудники не берут ответственность
-                                    за результат своей работы, так как нет четких показателей оценки их работы, их
-                                    эффективности. На еженедельной основе.
-                                </p>
-                                <div class="need__box">
-                                    <p class="need__pain">Боль</p>
-                                    <input class="toggle-switch" type="checkbox">
-                                    <p class="need__desition">Решение</p>
-                                </div>
-                            </div>
-
-                            <div class="need__item" id="tab2">
-                                <div class="need__item-img-mob">
-                                    <img class="need__item-img" src="images/tabs/2.png" alt="icon">
-                                </div>
-                                <p class="need__item-title">
-                                    <span>Нет понятной оргструктуры,</span> отражающей
-                                    реальное состояние бизнеса
-                                </p>
-                                <p class="need__text need__text--active">
-                                    Нет командного духа, целей и&nbsp;миссии компании.
-                                    Что то&nbsp;поменялось ТАБ 2</p>
-                                <p class="need__text">
-                                    Меняется контент при клике ТАБ 2
-                                </p>
-                                <div class="need__box">
-                                    <p class="need__pain">Боль</p>
-                                    <input class="toggle-switch" type="checkbox">
-                                    <p class="need__desition">Решение</p>
-                                </div>
-                            </div>
-
-                            <div class="need__item" id="tab3">
-                                <div class="need__item-img-mob">
-                                    <img class="need__item-img" src="images/tabs/3.png" alt="icon">
-                                </div>
-                                <p class="need__item-title">
-                                    <span>Нет понятной оргструктуры,</span> отражающей
-                                    реальное состояние бизнеса
-                                </p>
-                                <p class="need__text need__text--active">
-                                    Нет командного духа, целей и&nbsp;миссии компании.
-                                    Что то&nbsp;поменялось ТАБ 3</p>
-                                <p class="need__text">
-                                    Меняется контент при клике ТАБ 3
-                                </p>
-                                <div class="need__box">
-                                    <p class="need__pain">Боль</p>
-                                    <input class="toggle-switch" type="checkbox">
-                                    <p class="need__desition">Решение</p>
-                                </div>
-                            </div>
-
-                            <div class="need__item" id="tab4">
-                                <div class="need__item-img-mob">
-                                    <img class="need__item-img" src="images/tabs/4.png" alt="icon">
-                                </div>
-                                <p class="need__item-title">
-                                    <span>Нет понятной оргструктуры,</span> отражающей
-                                    реальное состояние бизнеса
-                                </p>
-                                <p class="need__text need__text--active">
-                                    Нет командного духа, целей и&nbsp;миссии компании.
-                                    Что то&nbsp;поменялось ТАБ 4</p>
-                                <p class="need__text">
-                                    Меняется контент при клике ТАБ 4
-                                </p>
-                                <div class="need__box">
-                                    <p class="need__pain">Боль</p>
-                                    <input class="toggle-switch" type="checkbox">
-                                    <p class="need__desition">Решение</p>
-                                </div>
-                            </div>
-
-                            <div class="need__item" id="tab5">
-                                <div class="need__item-img-mob">
-                                    <img class="need__item-img" src="images/tabs/5.png" alt="icon">
-                                </div>
-                                <p class="need__item-title">
-                                    <span>Нет понятной оргструктуры,</span> отражающей
-                                    реальное состояние бизнеса
-                                </p>
-                                <p class="need__text need__text--active">
-                                    Нет командного духа, целей и&nbsp;миссии компании.
-                                    Что то&nbsp;поменялось ТАБ 5</p>
-                                <p class="need__text">
-                                    Меняется контент при клике ТАБ 5
-                                </p>
-                                <div class="need__box">
-                                    <p class="need__pain">Боль</p>
-                                    <input class="toggle-switch" type="checkbox">
-                                    <p class="need__desition">Решение</p>
-                                </div>
-                            </div>
-
-                            <div class="need__item" id="tab6">
-                                <div class="need__item-img-mob">
-                                    <img class="need__item-img" src="images/tabs/6.png" alt="icon">
-                                </div>
-                                <p class="need__item-title">
-                                    <span>Нет понятной оргструктуры,</span> отражающей
-                                    реальное состояние бизнеса
-                                </p>
-                                <p class="need__text need__text--active">
-                                    Нет командного духа, целей и&nbsp;миссии компании.
-                                    Что то&nbsp;поменялось ТАБ 6</p>
-                                <p class="need__text">
-                                    Меняется контент при клике ТАБ 6
-                                </p>
-                                <div class="need__box">
-                                    <p class="need__pain">Боль</p>
-                                    <input class="toggle-switch" type="checkbox">
-                                    <p class="need__desition">Решение</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="nav__select-box menu__select-box-mob">
+                    <select class="nav__select" name="" id="">
+                        <option class="nav__select-option" value="0">ru</option>
+                        <option class="nav__select-option" value="1">ua</option>
+                        <option class="nav__select-option" value="2">en</option>
+                    </select>
                 </div>
 
-            </section>
+                <ul class="menu__items">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Инструменты управления</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="introduction.html" class="menu__link">Внедрение</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Тарифы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">О&nbsp;Нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Блог</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Контакты</a>
+                    </li>
+                </ul>
 
-
-
-            <section class="profit">
-                <div class="container">
-
-                    <h2 class="profit__title title">
-                        Помогаем получить <span>максимум прибыли</span> от&nbsp;системного бизнеса
-                    </h2>
-
-                    <div class="profit__inner">
-                        <div class="profit__item profit__item-1">
-                            <img class="profit__img" src="images/profit/1.png" alt="">
-                            <p class="profit__item-text">
-                                Постройте <span>правильную оргструктуру</span>
-                            </p>
-                        </div>
-                        <div class="profit__item profit__item-2">
-                            <img class="profit__img" src="images/profit/2.png" alt="">
-                            <p class="profit__item-text">
-                                Распределите все <span>функции бизнеса</span>
-                                между сотрудниками
-                            </p>
-                        </div>
-                        <div class="profit__item profit__item-3">
-                            <img class="profit__img" src="images/profit/3.png" alt="">
-                            <p class="profit__item-text">
-                                Запустите <span>еженедельное планирование результатов</span>
-                                компании и&nbsp;загрузки сотрудников
-                            </p>
-                        </div>
-                        <div class="profit__item profit__item-4">
-                            <img class="profit__img" src="images/profit/4.png" alt="">
-                            <p class="profit__item-text">
-                                Определите показатели <span>эффективности (Key Performance Indicators)</span>
-                            </p>
-                        </div>
-                        <div class="profit__item profit__item-5">
-                            <img class="profit__img" src="images/profit/5.png" alt="">
-                            <p class="profit__item-text">
-                                Получите контроль над бизнесом
-                                в&nbsp;режиме <span>Online:</span>
-                                дашборды с&nbsp;показателями эффективности бизнеса, отделов и&nbsp;каждого отдельного
-                                сотрудника.
-                            </p>
-                        </div>
+                <div class="menu__mob">
+                    <div class="menu__mob-wrap">
+                        <a href="#" class="menu__mob-face">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                        d="M28 14C28 6.2637 21.7363 0 14 0C6.2637 0 0 6.2637 0 14C0 20.9896 5.12296 26.7763 11.8222 27.8341V18.0444H8.25481V14H11.8222V10.9096C11.8222 7.40444 13.8963 5.47556 17.0904 5.47556C18.6252 5.47556 20.2222 5.74519 20.2222 5.74519V9.18815H18.4593C16.717 9.18815 16.1778 10.2667 16.1778 11.3659V14H20.0563L19.4341 18.0444H16.1778V27.8341C22.877 26.7763 28 20.9896 28 14Z"
+                                        fill="white" />
+                                <path
+                                        d="M19.4549 18.0445L20.0771 14H16.1778V11.366C16.1778 10.2667 16.7171 9.18818 18.4593 9.18818H20.2223V5.74522C20.2223 5.74522 18.6253 5.47559 17.0904 5.47559C13.8964 5.47559 11.8223 7.40447 11.8223 10.9097V14H8.25488V18.0445H11.8223V27.8341C12.5275 27.9378 13.2741 28 14.0001 28C14.7467 28 15.4727 27.9378 16.1778 27.8341V18.0445H19.4549Z"
+                                        fill="#2927D4" />
+                            </svg>
+                        </a>
+                        <a href="#" class="menu__mob-insta">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="14" cy="14" r="14" fill="white" />
+                                <path
+                                        d="M13.9979 11.3739C12.5519 11.3739 11.3718 12.554 11.3718 14C11.3718 15.446 12.5519 16.6261 13.9979 16.6261C15.4439 16.6261 16.624 15.446 16.624 14C16.624 12.554 15.4439 11.3739 13.9979 11.3739ZM21.8741 14C21.8741 12.9125 21.884 11.8349 21.8229 10.7494C21.7618 9.48851 21.4742 8.36951 20.5522 7.44751C19.6283 6.52354 18.5113 6.23788 17.2504 6.17681C16.163 6.11574 15.0853 6.12559 13.9999 6.12559C12.9124 6.12559 11.8348 6.11574 10.7493 6.17681C9.48845 6.23788 8.36947 6.52551 7.44749 7.44751C6.52353 8.37148 6.23788 9.48851 6.17681 10.7494C6.11574 11.8369 6.12559 12.9145 6.12559 14C6.12559 15.0855 6.11574 16.1651 6.17681 17.2506C6.23788 18.5115 6.52551 19.6305 7.44749 20.5525C8.37144 21.4765 9.48845 21.7621 10.7493 21.8232C11.8367 21.8843 12.9144 21.8744 13.9999 21.8744C15.0873 21.8744 16.1649 21.8843 17.2504 21.8232C18.5113 21.7621 19.6302 21.4745 20.5522 20.5525C21.4762 19.6285 21.7618 18.5115 21.8229 17.2506C21.8859 16.1651 21.8741 15.0875 21.8741 14ZM13.9979 18.0406C11.7619 18.0406 9.95732 16.236 9.95732 14C9.95732 11.764 11.7619 9.95936 13.9979 9.95936C16.2339 9.95936 18.0384 11.764 18.0384 14C18.0384 16.236 16.2339 18.0406 13.9979 18.0406ZM18.2039 10.7375C17.6819 10.7375 17.2603 10.3159 17.2603 9.79388C17.2603 9.27181 17.6819 8.85021 18.2039 8.85021C18.726 8.85021 19.1476 9.27181 19.1476 9.79388C19.1477 9.91784 19.1234 10.0406 19.0761 10.1552C19.0287 10.2697 18.9592 10.3738 18.8715 10.4615C18.7839 10.5492 18.6798 10.6187 18.5652 10.666C18.4507 10.7134 18.3279 10.7377 18.2039 10.7375Z"
+                                        fill="#2927D4" />
+                            </svg>
+                        </a>
                     </div>
-
-                </div>
-            </section>
-
-
-
-
-            <section class="demo">
-                <div class="container">
-
-                    <h2 class="demo__title title">
-                        Демоверсия <span>(кликабельная)</span>
-                    </h2>
-
-                    <div class="demo__inner">
-
-                        <div class="demo__wrap">
-                            <img src="images/demo/demo-desctop.png" alt="" class="demo__inner-img">
-                            <img src="images/demo/demo-mob.png" alt="" class="demo__inner-img-mob">
-                        </div>
-
-
-                        <div class="demo__inner-wrap">
-                            <div class="demo__box">
-                                <img class="demo__box-img" src="images/demo/1.png" alt="">
-                                <p class="demo__box-title">
-                                    Внедрение самостоятельно или с&nbsp;<span>нашей помощью</span>
-                                </p>
-                            </div>
-                            <div class="demo__box">
-                                <img class="demo__box-img" src="images/demo/2.png" alt="">
-                                <p class="demo__box-title">
-                                    <span>Показатели </span> всей
-                                    деятельности компании
-                                </p>
-                            </div>
-                            <div class="demo__box">
-                                <img class="demo__box-img" src="images/demo/3.png" alt="">
-                                <p class="demo__box-title">
-                                    Живая <span>поддержка 24/7 </span>
-                                </p>
-                            </div>
-                            <div class="demo__box">
-                                <img class="demo__box-img" src="images/demo/4.png" alt="">
-                                <p class="demo__box-title">
-                                    Полная <span>конфиденциальность</span> и&nbsp;безопасность данных
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-
-
-            <section class="kit">
-                <div class="container">
-
-                    <div class="kit__inner">
-                        <div class="kit__descr">
-                            <img class="kit__logo" src="images/icons/kit-logo.png" alt="logo">
-                            <img class="kit__logo-mob" src="images/icons/kit-logo-mob.png" alt="">
-                            <h2 class="kit__title">Systemator</h2>
-                            <p class="kit__text">
-                                набор <span>инструментов для эффективной работы</span> офисных
-                                и&nbsp;удаленных сотрудников. Все управление компанией в&nbsp;одной программе.
-                            </p>
-                            <button class="kit__btn btn" data-micromodal-trigger="modal-2"><span>Заказать
-                                    презентацию</span></button>
-                        </div>
-                        <div class="kit__inner-img">
-                            <img class="kit__img" src="images/dashboard-kit.png" alt="">
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-
-
-
-            <section class="result">
-                <div class="container">
-
-                    <h2 class="result__title title">Конкретные <span>результаты</span> </h2>
-
-                    <div class="result__items">
-                        <div class="result__item">
-                            <input class="result__input" type="checkbox" id="q1" checked>
-                            <label for="q1" class="result__label">Для бизнеса и&nbsp;владельца
-                            </label>
-                            <div class="result__block">
-                                <p class="result__block-title">Бизнес-процессы ускоряются минимум в&nbsp;2-3 раза</p>
-                                <p class="result__text">
-                                    Сотрудники четко знают, что от&nbsp;них требуется, какие задачи и&nbsp;показатели
-                                    эффективности
-                                    перед ними стоят
-                                </p>
-                            </div>
-                            <div class="result__block">
-                                <p class="result__block-title">Доход растет, а&nbsp;бизнес становится масштабируемым</p>
-                                <p class="result__text">
-                                    Сотрудники четко знают, что от&nbsp;них требуется, какие задачи и&nbsp;показатели
-                                    эффективности
-                                    перед ними стоят
-                                </p>
-                            </div>
-                            <div class="result__block">
-                                <p class="result__block-title">Вы&nbsp;занимаетесь только стратегией</p>
-                                <p class="result__text">
-                                    Деятельность компании спланирована. Сотрудники сфокусированы на&nbsp;задах. Нет
-                                    простоев
-                                    -
-                                    ключевые показатели растут, расходы снижаются. Делегируйте свои функции подчиненным
-                                    внутри платформы
-                                </p>
-                            </div>
-                            <div class="result__block">
-                                <p class="result__block-title">Контроль над бизнесом в&nbsp;режиме онлайн</p>
-                                <p class="result__text">
-                                    Все показатели бизнеса на&nbsp;одном экране, возможность оперативно отслеживать
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="result__item">
-                            <input class="result__input" type="checkbox" id="faq2">
-                            <label for="faq2" class="result__label">Для руководителей
-                            </label>
-                            <div class="result__block">
-                                <p class="result__block-title">Бизнес-процессы ускоряются минимум в&nbsp;2-3 раза</p>
-                                <p class="result__text">
-                                    Сотрудники четко знают, что от&nbsp;них требуется, какие задачи и&nbsp;показатели
-                                    эффективности
-                                    перед ними стоят
-                                </p>
-                            </div>
-                            <div class="result__block">
-                                <p class="result__block-title">Доход растет, а&nbsp;бизнес становится масштабируемым</p>
-                                <p class="result__text">
-                                    Сотрудники четко знают, что от&nbsp;них требуется, какие задачи и&nbsp;показатели
-                                    эффективности
-                                    перед ними стоят
-                                </p>
-                            </div>
-                            <div class="result__block">
-                                <p class="result__block-title">Вы&nbsp;занимаетесь только стратегией</p>
-                                <p class="result__text">
-                                    Деятельность компании спланирована. Сотрудники сфокусированы на&nbsp;задах. Нет
-                                    простоев
-                                    -
-                                    ключевые показатели растут, расходы снижаются. Делегируйте свои функции подчиненным
-                                    внутри платформы
-                                </p>
-                            </div>
-                            <div class="result__block">
-                                <p class="result__block-title">Контроль над бизнесом в&nbsp;режиме онлайн</p>
-                                <p class="result__text">
-                                    Все показатели бизнеса на&nbsp;одном экране, возможность оперативно отслеживать
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="result__item">
-                            <input class="result__input" type="checkbox" id="faq3">
-                            <label for="faq3" class="result__label">Для сотрудников
-                            </label>
-                            <div class="result__block">
-                                <p class="result__block-title">Бизнес-процессы ускоряются минимум в&nbsp;2-3 раза</p>
-                                <p class="result__text">
-                                    Сотрудники четко знают, что от&nbsp;них требуется, какие задачи и&nbsp;показатели
-                                    эффективности
-                                    перед ними стоят
-                                </p>
-                            </div>
-                            <div class="result__block">
-                                <p class="result__block-title">Доход растет, а&nbsp;бизнес становится масштабируемым</p>
-                                <p class="result__text">
-                                    Сотрудники четко знают, что от&nbsp;них требуется, какие задачи и&nbsp;показатели
-                                    эффективности
-                                    перед ними стоят
-                                </p>
-                            </div>
-                            <div class="result__block">
-                                <p class="result__block-title">Вы&nbsp;занимаетесь только стратегией</p>
-                                <p class="result__text">
-                                    Деятельность компании спланирована. Сотрудники сфокусированы на&nbsp;задах. Нет
-                                    простоев
-                                    -
-                                    ключевые показатели растут, расходы снижаются. Делегируйте свои функции подчиненным
-                                    внутри платформы
-                                </p>
-                            </div>
-                            <div class="result__block">
-                                <p class="result__block-title">Контроль над бизнесом в&nbsp;режиме онлайн</p>
-                                <p class="result__text">
-                                    Все показатели бизнеса на&nbsp;одном экране, возможность оперативно отслеживать
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </section>
-
-
-
-
-
-
-            <section class="work">
-                <div class="container">
-                    <div class="work__wrapper">
-                        <div class="work__inner">
-
-                            <div class="work__descr">
-                                <h2 class="work__title">
-                                    Кратно <span>увеличьте результаты работы</span> воей компании
-                                </h2>
-                                <p class="work__text">За&nbsp;счет системного подхода к&nbsp;управлению </p>
-
-                                <button class="work__btn btn" data-micromodal-trigger="modal-2"><span>Заказать
-                                        презентацию</span> </button>
-                            </div>
-                            <div class="work__icons">
-                                <p class="work__icons-title">
-                                    На&nbsp;платформе Вас ждут:
-                                </p>
-
-                                <div class="work__icons-box">
-                                    <img class="work__icons-img" src="images/icons/work-lamp.png" alt="">
-                                    <p class="work__icons-text">
-                                        <span>3&nbsp;шаблона</span> оргструктуры для малого, чреднего и&nbsp;крупного
-                                        бизнеса
-                                    </p>
-                                </div>
-                                <div class="work__icons-box">
-                                    <img class="work__icons-img" src="images/icons/work-graph.png" alt="">
-                                    <p class="work__icons-text">
-                                        Более <span>100 шаблонов</span> показателей эффективности
-                                    </p>
-                                </div>
-                                <div class="work__icons-box">
-                                    <img class="work__icons-img" src="images/icons/work-book.png" alt="">
-                                    <p class="work__icons-text">
-                                        Более <span>160 шаблонов</span> функц.обязанностей
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-
-
-            <section class="team">
-                <div class="container">
-
-                    <h2 class="team__title title">
-                        Программа, которая <span>разработана практиками</span> в&nbsp;организации бизнеса
-                    </h2>
-
-                    <div class="team__items">
-
-                        <div class="team__item">
-                            <div class="team__item-top">
-                                <img class="team__photo" src="images/team-photo-1.png" alt="">
-                                <p class="team__name">
-                                    Александр Рыбчинский
-                                </p>
-                                <p class="team__descr">
-                                    Разработка электронных курсов
-                                </p>
-                            </div>
-
-                            <p class="team__text">
-                                Сертифицированный <span>бизнес-тренер</span>
-                            </p>
-                            <p class="team__text">
-                                <span>8&nbsp;лет</span> опыта в&nbsp;проведении бизнес-обучения
-                            </p>
-                            <p class="team__text">
-                                <span>3&nbsp;года опыта</span> в&nbsp;сфере организационного менеджмента
-                            </p>
-
-                            <input class="team__input" type="checkbox" id="press-btn">
-                            <label for="press-btn" class="team__read-next">Подробнее</label>
-                            <div class="team__hidden">
-                                <p class="team__text">
-                                    Боле <span>100 разработанных </span> электронных курсов
-                                </p>
-                                <label for="press-btn" class="team__read-close">Скрыть</label>
-                            </div>
-                        </div>
-
-                        <div class="team__item">
-                            <div class="team__item-top">
-                                <img class="team__photo" src="images/team-photo-2.png" alt="">
-                                <p class="team__name">
-                                    Ещенко Сергей
-                                </p>
-                                <p class="team__descr">
-                                    Консультация владельцев компаний
-                                </p>
-                            </div>
-
-                            <p class="team__text">
-                                Совладелец <span>3-х</span> компаний
-                            </p>
-                            <p class="team__text">
-                                <span>20&nbsp;лет </span> в&nbsp;бизнесе и&nbsp;имеет опыт управления производством,
-                                оптовой
-                                и
-                                розничной торговлей, предоставлением услуг
-                            </p>
-
-                            <input class="team__input" type="checkbox" id="press-btn2">
-                            <label for="press-btn2" class="team__read-next">Подробнее</label>
-                            <div class="team__hidden">
-                                <p class="team__text">
-                                    Много лет в&nbsp;оперативке&nbsp;&mdash; вышел из&nbsp;нее <span>благодаря
-                                        Systemator</span>
-                                </p>
-                                <label for="press-btn2" class="team__read-close">Скрыть</label>
-                            </div>
-                        </div>
-
-                        <div class="team__item">
-                            <div class="team__item-top">
-                                <img class="team__photo" src="images/team-photo-3.png" alt="">
-                                <p class="team__name">
-                                    Савченко Сергей
-                                </p>
-                                <p class="team__descr">
-                                    Бизнесмен
-                                </p>
-                            </div>
-
-                            <p class="team__text">
-                                20&nbsp;лет в&nbsp;бизнесе
-                            </p>
-                            <p class="team__text">
-                                Совладелец 3-х компаний
-                            </p>
-                            <p class="team__text">
-                                Опыт управления производством, оптовой и&nbsp;розничной торговлей, бизнесом в&nbsp;сфере
-                                оказания
-                                услуг
-                            </p>
-
-                            <input class="team__input" type="checkbox" id="press-btn3">
-                            <label for="press-btn3" class="team__read-next">Подробнее</label>
-                            <div class="team__hidden">
-                                <p class="team__text">
-                                    Много лет в&nbsp;оперативке и&nbsp;поиска выхода из&nbsp;нее
-                                </p>
-                                <p class="team__text">
-                                    Проект Systemator&nbsp;&mdash; как результат многолетних поисков, который помог
-                                    выйти
-                                    из&nbsp;ручного
-                                    управления и&nbsp;сконцентрироваться на&nbsp;развитии существующих бизнесов
-                                    и&nbsp;новых
-                                    стартапов
-                                </p>
-                                <label for="press-btn3" class="team__read-close">Скрыть</label>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </section>
-
-
-
-
-            <section class="help">
-                <div class="container">
-                    <div class="help__inner">
-
-                        <div class="help__descr">
-                            <h2 class="help__title">
-                                <span>Внедрите Systemator</span>
-                                самостоятельно или
-                                с&nbsp;нашей помощью
-                            </h2>
-                            <p class="help__pre-title">Готовые инструменты для развития бизнеса</p>
-                            <p class="help__text">
-                                <span>Пройдите бесплатный обучающий курс</span> на&nbsp;нашей платформе и&nbsp;внедрите
-                                Systemator
-                                самостоятельно
-                                или закажите внедрение с&nbsp;помощью наших специалистов в&nbsp;области систематизации
-                                бизнеса
-                            </p>
-                            <button class="help__btn2" data-micromodal-trigger="modal-1">
-                                <span>Попробовать бесплатно</span>
-                            </button>
-                        </div>
-
-                        <div class="help__box-img">
-                            <img class="help__img" src="images/dashboard-help.png" alt="">
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-
-
-
-            <section class="video">
-                <div class="container">
-                    <h2 class="video__title title">
-                        Что <span>говорят лидеры мнений</span> о&nbsp;важности систематизации:
-                    </h2>
-
-
-                    <div class="video__inner">
-                        <div class="video__btns">
-                            <a href="#video1" class="video__btn">
-                                <img lass="video__btn-img" src="images/video/v-1.jpg" alt="">
-                                <img class="video__btn-img-play" src="images/video/play-btn2.svg" alt="">
-                                <p class="video__btn-text">Илон Маск</p>
-                            </a>
-
-                            <a href="#video2" class="video__btn">
-                                <img class="video__btn-img" src="images/video/v-2.jpg" alt="">
-                                <img class="video__btn-img-play" src="images/video/play-btn2.svg" alt="">
-                                <p class="video__btn-text">Павел Дуров</p>
-                            </a>
-
-                            <a href="#video3" class="video__btn">
-                                <img lass="video__btn-img" src="images/video/v-3.jpg" alt="">
-                                <img class="video__btn-img-play" src="images/video/play-btn2.svg" alt="">
-                                <p class="video__btn-text">Марк Цукерберг</p>
-                            </a>
-                            <a href="#video4" class="video__btn">
-                                <img lass="video__btn-img" src="images/video/v-4.jpg" alt="">
-                                <img class="video__btn-img-play" src="images/video/play-btn2.svg" alt="">
-                                <p class="video__btn-text">Стив Джобс</p>
-                            </a>
-                        </div>
-
-                        <div class="swiper video__content-slider">
-                            <div class="video__content-block swiper-wrapper">
-
-                                <video id="video1" width="653" height="414" poster="images/video/v-1.jpg"
-                                    class="swiper-slide video__content video__content-active" controls="controls"
-                                    poster="video/duel.jpg">
-                                    <source class="video__content-frame" src="images/video-1.mp4" type="video/mp4;"
-                                        codecs="avc1.42E01E, mp4a.40.2">
-                                </video>
-
-                                <video id="video2" width="653" height="414" poster="images/video/v-1.jpg"
-                                    class="swiper-slide video__content video__content-active" controls="controls"
-                                    poster="video/duel.jpg">
-                                    <source class="video__content-frame" src="images/video-1.mp4" type="video/mp4;"
-                                        codecs="avc1.42E01E, mp4a.40.2">
-                                </video>
-
-                                <video id="video3" width="653" height="414" poster="images/video/v-1.jpg"
-                                    class="swiper-slide video__content video__content-active" controls="controls"
-                                    poster="video/duel.jpg">
-                                    <source class="video__content-frame" src="images/video-1.mp4" type="video/mp4;"
-                                        codecs="avc1.42E01E, mp4a.40.2">
-                                </video>
-                                <video id="video4" width="653" height="414" poster="images/video/v-1.jpg"
-                                    class="swiper-slide video__content video__content-active" controls="controls"
-                                    poster="video/duel.jpg">
-                                    <source class="video__content-frame" src="images/video-1.mp4" type="video/mp4;"
-                                        codecs="avc1.42E01E, mp4a.40.2">
-                                </video>
-                            </div>
-                            <div class="video-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-
-
-
-            <section class="teleg">
-                <div class="container">
-
-                    <div class="teleg__inner">
-
-                        <div class="teleg__descr">
-                            <img class="teleg__logo" src="images/icons/teleg-logo.svg" alt="">
-                            <h2 class="teleg__title">
-                                <span>Телеграм канал </span> для успешных управленцев
-                            </h2>
-                            <p class="teleg__text">
-                                Развивайте свои управленческие навыки
-                                на&nbsp;нашем телеграм-канале. А&nbsp;также получите
-                                <span>доступ к&nbsp;закрытой группе нашего сообщества
-                                    предпринимателей
-                                </span>
-                            </p>
-                            <button class="teleg__btn btn"><span>Присоедениться</span> </button>
-                        </div>
-
-                        <div class="teleg__box-img">
-                            <img class="teleg__img" src="images/teleg-bg.png" alt="">
-                        </div>
-
-                    </div>
-
-                </div>
-            </section>
-
-
-
-
-
-            <section class="news">
-                <div class="container">
-
-                    <h2 class="news__title title">Новостной <span>блог</span></h2>
-
-                    <div class="news__block">
-                        <div class="news__wrapper swiper-wrapper">
-
-                            <div style="background-image: url(' images/news/1.jpg')" class="swiper-slide news__item">
-                                <p class="news__name">Доход растет, а&nbsp;бизнес становится масштабируемым...</p>
-                                <a class="news__link" href="#">Подробнее</a>
-                            </div>
-
-                            <div style="background-image: url('images/news/2.jpg')" class="swiper-slide news__item">
-                                <p class="news__name">Доход растет, а&nbsp;бизнес становится масштабируемым...</p>
-                                <a class="news__link" href="#">Подробнее</a>
-                            </div>
-
-                            <div style="background-image: url('images/news/3.jpg')" class="swiper-slide news__item">
-                                <p class="news__name">Доход растет, а&nbsp;бизнес становится масштабируемым...</p>
-                                <a class="news__link" href="#">Подробнее</a>
-                            </div>
-
-                            <div style="background-image: url('images/news/4.jpg')" class="swiper-slide news__item">
-                                <p class="news__name">Доход растет, а&nbsp;бизнес становится масштабируемым...</p>
-                                <a class="news__link" href="#">Подробнее</a>
-                            </div>
-
-                            <div style="background-image: url('images/news/5.jpg')" class="swiper-slide news__item">
-                                <p class="news__name">Доход растет, а&nbsp;бизнес становится масштабируемым...</p>
-                                <a class="news__link" href="#">Подробнее</a>
-                            </div>
-
-                            <div style="background-image: url('images/news/6.jpg')" class="swiper-slide news__item">
-                                <p class="news__name">Доход растет, а&nbsp;бизнес становится масштабируемым...</p>
-                                <a class="news__link" href="#">Подробнее</a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="news-pagination"></div>
-                </div>
-            </section>
-
-
-
-
-            <section class="try">
-                <div class="container">
-
-                    <div class="try__inner">
-
-                        <div class="try__descr">
-                            <h2 class="try__title">Попробуйте <span>Systemator бесплатно</span></h2>
-                            <p class="try__text">Внедрите сервис самостоятельно или с&nbsp;нашей помощью</p>
-                            <button data-micromodal-trigger="modal-1" class="try__btn btn"><span>Попробовать
-                                    бесплатно</span> </button>
-                            <button data-micromodal-trigger="modal-2" class="try__btn-sec btn-sec"> Заказать
-                                консультацию</button>
-                        </div>
-
-                        <div class="try__box-img">
-                            <img class="try__img" src="images/try-bg.png" alt="">
-                        </div>
-
-                    </div>
-
-                </div>
-            </section>
-
-
-
-            <section class="modals">
-                <div class="container">
-
-
-
-                    <!-- <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
-                    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-                        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title"
-                            aria-describedby="modal-1-content">
-                            <div>
-                                <header class="modal__header">
-                                    <h3 class="modal__title">
-                                        Micromodal
-                                    </h3>
-                                    <button class="modal__close" aria-label="Close modal"
-                                        aria-controls="modal__container1" data-micromodal-close>
-                                    </button>
-                                </header>
-                                <main class="modal__content" id="modal-1-content">
-                                    <p>
-                                        Try hitting the <code>tab</code> key and notice how the focus stays
-                                        within the modal itself. Also, <code>esc</code> to close modal.
-                                    </p>
-                                </main>
-                                <footer class="modal__footer">
-                                    <button class="modal__btn modal__btn-primary">Continue</button>
-                                    <button class="modal__btn" data-micromodal-close
-                                        aria-label="Close this dialog window">Close</button>
-                                </footer>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
-
-                    <div class="micromodal-slide try-modal" id="modal-1" aria-hidden="true">
-                        <div class="try-modal__overlay" tabindex="-1" data-micromodal-close>
-                            <div class="try-modal__container" role="dialog" aria-modal="true"
-                                aria-labelledby="modal-1-title" aria-describedby="modal-1-content">
-
-                                <button class="try-modal__close" aria-label="Close modal"
-                                    aria-controls="modal__container1" data-micromodal-close>
-                                </button>
-                                <p class="try-modal__title">Попробовать <span>бесплатно</span> </p>
-
-                                <main class="try-modal__content" id="modal-1-content">
-                                    <form class="try-modal__form">
-                                        <p class="try-modal__staff">Количество сотрудников</p>
-                                        <div class="try-modal__radio-wrap">
-                                            <input class="try-modal__radio" type="radio" name="drink" value="rad1"
-                                                id="rad1" required>
-                                            <label for="rad1">до&nbsp;50</label>
-                                            <span class="try-modal__right"></span>
-                                            <input class="try-modal__radio" type="radio" name="drink" value="rad2"
-                                                id="rad2" required>
-                                            <label for="rad2">50-100</label>
-                                            <span class="try-modal__right"></span>
-
-                                            <input class="try-modal__radio" type="radio" name="drink" value="rad3"
-                                                id="rad3">
-                                            <label for="rad3" required>более 100</label>
-                                        </div>
-
-                                        <input type="text" class="try-modal__input" required
-                                            placeholder="Название  компании">
-                                        <input type="text" class="try-modal__input" required placeholder="Ваше имя">
-                                        <input type="email" class="try-modal__input" required placeholder="Email">
-                                        <input type="tel" class="try-modal__input" required
-                                            placeholder="Номер телефона">
-
-                                        <button type="submit" class="try-modal__btn btn"><span>Создать проект</span>
-                                        </button>
-
-                                        <div class="try-modal__know-wrap">
-                                            <input class="try-modal__check" type="checkbox" name="" id="box1" required>
-                                            <label class="try-modal__know-label" for="box1"> Я&nbsp;ознакомился
-                                                и&nbsp;принимаю
-                                                соглашение
-                                            </label>
-
-                                            <p class="try-modal__know-text">Договор о&nbsp;предоставлении услуг</p>
-                                            <p class="try-modal__know-text">Соглашение пользователя</p>
-                                            <p class="try-modal__know-text">Политика конфиденциальности</p>
-                                        </div>
-
-                                        <p class="try-modal__garant">
-                                            Мы&nbsp;гарантируем безопасность аккаунта и&nbsp;сохранность внесенной
-                                            информации. Детали
-                                            в&nbsp;соглашении.При заказе платных услуг&nbsp;&mdash; оплата производится
-                                            ежемесячно. У&nbsp;вас
-                                            нет никаких контрактов, обязательств или штрафов. Вы&nbsp;в&nbsp;праве
-                                            прекратить
-                                            использование в&nbsp;любое время
-                                        </p>
-
-                                    </form>
-                                </main>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="micromodal-slide try-modal get-modal" id="modal-2" aria-hidden="true">
-                        <div class="try-modal__overlay get-modal__overlay" tabindex="-1" data-micromodal-close>
-                            <div class="try-modal__container get-modal__container" role="dialog" aria-modal="true"
-                                aria-labelledby="modal-2-title" aria-describedby="modal-1-content">
-
-                                <button class="try-modal__close" aria-label="Close modal"
-                                    aria-controls="modal__container1" data-micromodal-close>
-                                </button>
-                                <p class="try-modal__title get-modal__title">Получить <span> консультацию</span></p>
-                                <p class="try-modal__garant get-modal__garant">
-                                    Заполните форму и мы свяжемся с вами в ближайшее время
-                                </p>
-
-                                <main class="try-modal__content" id="modal-2-content">
-                                    <form class="try-modal__form get-modal__form">
-
-                                        <input type="text" class="try-modal__input" required placeholder="Ваше имя">
-                                        <input type="tel" class="try-modal__input" required
-                                            placeholder="Номер телефона">
-
-                                        <button type="submit" class="try-modal__btn btn"><span>Отправить</span></button>
-
-                                        <!-- <div class="try-modal__know-wrap">
-                                        <input class="try-modal__check" type="checkbox" name="" id="box2" required>
-                                        <label class="try-modal__know-label" for="box2"> Я&nbsp;ознакомился
-                                            и&nbsp;принимаю
-                                            соглашение
-                                        </label>
-
-                                        <p class="try-modal__know-text">Договор о&nbsp;предоставлении услуг</p>
-                                        <p class="try-modal__know-text">Соглашение пользователя</p>
-                                        <p class="try-modal__know-text">Политика конфиденциальности</p>
-                                    </div> -->
-
-                                    </form>
-                                </main>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="micromodal-slide slider-modal" id="modal-3" aria-hidden="true">
-                        <div class="slider-modal__overlay" tabindex="-1" data-micromodal-close>
-                            <div class="slider-modal__container" role="dialog" aria-modal="true"
-                                aria-labelledby="modal-3-title" aria-describedby="modal-3-content">
-
-                                <button class="slider-modal__close" aria-label="Close modal"
-                                    aria-controls="modal__container1" data-micromodal-close>
-                                </button>
-
-                                <main class="slider-modal__content" id="modal-3-content">
-                                    <img class="win__slider-img" src="images/slider/1.png" alt="фото">
-                                    <p class="win__slider-name">Сергей Савченко</p>
-                                    <div class="win__slider-box slider-modal__box">
-                                        <p class="win__slider-company">Владелец компании Blest</p>
-                                        <p class="win__slider-production">производство мягкой мебели</p>
-                                    </div>
-
-                                    <p class="win__slider-descr">
-                                        Начали внедрение Систематора в&nbsp;январе 2021&nbsp;года. Долгое время наша
-                                        компания была в
-                                        поиске решения, которое&nbsp;бы помогло систематизировать и&nbsp;упорядочить
-                                        бизнес.
-                                        До&nbsp;этого
-                                        мы&nbsp;использовали несколько других, более простых решений,
-                                        но&nbsp;ни&nbsp;одно
-                                        из&nbsp;них не&nbsp;давало
-                                        полного функционала, который нам был необходим. Организационная структура
-                                        компании,
-                                        функциональные обязанности, показатели эффективности бизнеса, постановка и
-                                        управление задачами&nbsp;&mdash; все это было раздроблено и&nbsp;перед нами
-                                        стояла
-                                        острое задача
-                                        объединить все данные в&nbsp;одну упорядоченную систему. Внедрение заняло
-                                        3&nbsp;месяца.
-                                        Многие данных у&nbsp;нас уже было готово в&nbsp;том или ином виде
-                                        и&nbsp;выяснить,
-                                        хотим получить.
-                                        Также нам очень помогли с&nbsp;внедрением специалисты Систематора. Теперь
-                                        организационная
-                                        структура компании у&nbsp;нас четко сформулирована, функциональные обязанности
-                                        сотрудников описаны, показатели эффективности созданы и&nbsp;отслеживаются,
-                                        а&nbsp;также
-                                        ведется планирование и&nbsp;отслеживание выполнения задач сотрудниками и&nbsp;их
-                                        руководителями. Все это позволяет эффективно управлять компанией, удерживать
-                                        свое
-                                        внимание и&nbsp;внимание сотрудников на&nbsp;ключевых показателях
-                                        и&nbsp;добиваться
-                                        отличных
-                                        результатов.
-                                    </p>
-                                </main>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="micromodal-slide enter-modal" id="modal-4" aria-hidden="true">
-                        <div class="enter-modal__overlay" tabindex="-1" data-micromodal-close>
-                            <div class="enter-modal__container" role="dialog" aria-modal="true"
-                                aria-labelledby="modal-4-title" aria-describedby="modal-4-content">
-
-                                <button class="enter-modal__close" aria-label="Close modal"
-                                    aria-controls="modal__container1" data-micromodal-close>
-                                </button>
-
-                                <main class="enter-modal__content" id="modal-4-content">
-                                    <p class="enter-modal__title">Вход в&nbsp; <span>личный кабинет</span></p>
-
-                                    <form class="enter-modal__form">
-                                        <input type="text" class="enter-modal__input" placeholder="Логин" required>
-                                        <input type="password" class="enter-modal__input" placeholder="Пароль" required>
-
-                                        <a data-micromodal-trigger="modal-5" class="enter-modal__forgot">Забыли
-                                            пароль?</a>
-
-                                        <button class="enter-modal__btn btn"><span>Войти</span> </button>
-
-                                        <div class="enter-modal__box">
-                                            <input class="enter-modal__check" type="checkbox" name="" id="checkbox1">
-                                            <label class="enter-modal__label" for="checkbox1">Запомнить меня</label>
-                                        </div>
-                                    </form>
-                                </main>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="micromodal-slide forgot-modal" id="modal-5" aria-hidden="true">
-                        <div class="forgot-modal__overlay" tabindex="-1" data-micromodal-close>
-                            <div class="forgot-modal__container" role="dialog" aria-modal="true"
-                                aria-labelledby="modal-5-title" aria-describedby="modal-5-content">
-
-                                <button class="forgot-modal__close" aria-label="Close modal"
-                                    aria-controls="modal__container1" data-micromodal-close>
-                                </button>
-
-                                <main class="forgot-modal__content" id="modal-5-content">
-                                    <p class="forgot-modal__title">Забыли <span>пароль?</span> </p>
-
-                                    <form class="forgot-modal__form">
-                                        <input type="email" class="forgot-modal__input" placeholder="Email" required>
-
-                                        <button class="forgot-modal__btn btn"><span>Отправить новый пароль
-                                                на&nbsp;почту</span></button>
-                                    </form>
-                                </main>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-
-                </div>
-            </section>
-
-
-
-        </main>
-
-
-
-
-
-
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__top">
-                    <div class="footer__soc">
-                        <img class="footer__soc-logo" src="images/logo.svg" alt="Logo">
-                        <div class="footer__soc-box">
-                            <a href="#" class="footer__soc-link">
-                                <img class="footer__soc-face" src="images/icons/facebook-footer.svg" alt="facebook">
-                            </a>
-                            <a href="#" class="footer__soc-link">
-                                <img class="footer__soc-insta" src="images/icons/insta-footer.png" alt="instagram">
-                            </a>
-                        </div>
-                        <p class="footer__soc-copy">
-                            Copyright &copy;&nbsp;2021 Systemator
-                        </p>
-                    </div>
-                    <div class="footer__tools">
-                        <p class="footer__tools-title">Инструменты управления</p>
-
-                        <div class="footer__tools-box">
-                            <a href="#" class="footer__tools-link">Организационная структура</a>
-                            <a href="#" class="footer__tools-link">Функциональные обязанност</a>
-                            <a href="#" class="footer__tools-link">Показатели эффективности</a>
-                            <a href="#" class="footer__tools-link">Еженедельное планирование</a>
-                        </div>
-                    </div>
-                    <div class="footer__intro">
-                        <p class="footer__intro-title">Принципы внедрения</p>
-
-                        <div class="footer__intro-box">
-                            <a href="" class="footer__intro-link">Тарифы</a>
-                            <a href="" class="footer__intro-link">Контакты</a>
-                            <a href="" class="footer__intro-link">FAQ</a>
-                        </div>
-                    </div>
-                    <div class="footer__location">
-                        <img class="footer__soc-logo footer__soc-logo-mob" src="images/logo.svg" alt="Logo">
-                        <address class="footer__location-addr">Киев, ул. Тростянецкая, 49</address>
-                        <p class="footer__location-time">Пн&nbsp;&mdash; Пт: 8.00&nbsp;&mdash; 18.00</p>
-                        <a href="mailto:office@systemator.pro" class="footer__location-email">office@systemator.pro</a>
-                        <a href="tel:380978293889" class="footer__location-phone">+38 (097) 829 38 89</a>
-
-                        <div class="footer__location-box">
-                            <a href="#" class="footer__location-whatsapp">
-                                <img src="images/icons/call.svg" alt="" class="footer__location-img">
-                            </a>
-                            <a href="#" class="footer__location-viber">
-                                <img src="images/icons/Viber.svg" alt="" class="footer__location-img">
-                            </a>
-                            <a href="#" class="footer__location-telegram">
-                                <img src="images/icons/Telegram.svg" alt="" class="footer__location-img">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer__bottom">
-                    <a href="#" class="footer__bottom-link">Пользовательское соглашение</a>
-                    <a href="#" class="footer__bottom-link">Политика конфиденциальности</a>
-
-                    <p class="footer__soc-copy footer__soc-copy-mob">
-                        Copyright &copy;&nbsp;2021 Systemator
+                    <p class="menu__mob-text">
+                        Все права защищены. Копирование текста или его части возможно только
+                        с&nbsp;разрешения правообладателя.
                     </p>
                 </div>
             </div>
-        </footer>
+
+            <div class="nav__inner">
+                <div class="nav__select-box">
+                    <select class="nav__select" name="" id="">
+                        <option class="nav__select-option" value="0">ru</option>
+                        <option class="nav__select-option" value="1">ua</option>
+                        <option class="nav__select-option" value="2">en</option>
+                    </select>
+                </div>
+
+                <button class="nav__btn" data-micromodal-trigger="modal-4">Войти</button>
+                <div class="custom-btn--js nav__menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
 
 
 
 
 
-        <script src="js/script.libs.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/index-page.js"></script>
+
+<main class="main">
+
+
+
+    <section class="first">
+        <div class="container">
+
+            <div class="first__inner">
+                <div class="first__left">
+                    <h1 class="first__title">
+                        <span>Систематизируй бизнес</span> и управляй компанией онлайн
+                    </h1>
+                    <!-- <h2 class="first__title-bottom">
+                    и управляй компанией онлайн
+                </h2> -->
+                    <div class="first__left-wrap">
+                        <p class="first__wrap-text">Удобная</p>
+                        <p class="first__wrap-text">Логичная</p>
+                        <p class="first__wrap-text">Универсальная</p>
+                    </div>
+                    <p class="first__left-text">
+                        Онлайн-платформа, с&nbsp;помощью которой вы&nbsp;избавитесь от&nbsp;хаоса
+                        в&nbsp;управлении и&nbsp;получите от&nbsp;бизнеса больше удовольствия и&nbsp;прибыли
+                    </p>
+                    <button class="custom-btn--js first__left-try btn" data-micromodal-trigger="modal-1"><span>Попробовать
+                                    бесплатно</span> </button>
+                    <button class="custom-btn--js first__left-consult btn-sec" data-micromodal-trigger="modal-2">Получить
+                        консультацию</button>
+
+                </div>
+
+                <div class="first__right">
+                    <a class="first__right-btn" data-fancybox=""
+                       href="https://www.youtube.com/watch?v=qG9cm2lWofo">
+                        Смотреть презентацию
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="win">
+        <div class="container">
+
+            <h2 class="win__title title">Реальные <span> победы наших клиентов</span>
+                в управлении с помощью Систематор:
+            </h2>
+
+
+            <div class="win__slider-inner">
+                <div class="win__prev">
+                    <img src="images/icons/arrow-slider-prev.svg" alt="" class="win__prev-img">
+                </div>
+                <div class="win__next">
+                    <img src="images/icons/arrow-slider-next.svg" alt="" class="win__next-img">
+                </div>
+                <div class="swiper win__slider">
+                    <div class="swiper-wrapper win__wrapper">
+
+                        <div class="swiper-slide win__slider-item">
+                            <img class="win__slider-img" src="images/slider/1.png" alt="фото">
+                            <p class="win__slider-name">Сергей Савченко</p>
+                            <div class="win__slider-box">
+                                <p class="win__slider-company">Владелец компании Blest</p>
+                                <p class="win__slider-production">производство мягкой мебели</p>
+                            </div>
+
+                            <p class="win__slider-descr">
+                                Начали внедрение Систематора в&nbsp;январе 2021&nbsp;года. Долгое время наша
+                                компания была в
+                                поиске решения, которое&nbsp;бы помогло...
+                            </p>
+                            <a class="win__slider-link" data-micromodal-trigger="modal-3" href="#">Подробнее</a>
+                        </div>
+
+                        <div class="swiper-slide win__slider-item">
+                            <img class="win__slider-img" src="images/slider/2.png" alt="фото">
+                            <p class="win__slider-name">Сергей Савченко</p>
+                            <div class="win__slider-box">
+                                <p class="win__slider-company">Владелец компании Blest</p>
+                                <p class="win__slider-production">производство мягкой мебели</p>
+                            </div>
+
+                            <p class="win__slider-descr">
+                                Начали внедрение Систематора в&nbsp;январе 2021&nbsp;года. Долгое время наша
+                                компания была в
+                                поиске решения, которое&nbsp;бы помогло...
+                            </p>
+                            <a class="win__slider-link" data-micromodal-trigger="modal-3" href="#">Подробнее</a>
+                        </div>
+
+                        <div class="swiper-slide win__slider-item">
+                            <img class="win__slider-img" src="images/slider/1.png" alt="фото">
+                            <p class="win__slider-name">Сергей Савченко</p>
+                            <div class="win__slider-box">
+                                <p class="win__slider-company">Владелец компании Blest</p>
+                                <p class="win__slider-production">производство мягкой мебели</p>
+                            </div>
+
+                            <p class="win__slider-descr">
+                                Начали внедрение Систематора в&nbsp;январе 2021&nbsp;года. Долгое время наша
+                                компания была в
+                                поиске решения, которое&nbsp;бы помогло...
+                            </p>
+                            <a class="win__slider-link" data-micromodal-trigger="modal-3" href="#">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="need">
+        <div class="container">
+
+
+            <h2 class="need__title title">
+                Вам <span> нужен систематор,</span> если:
+            </h2>
+            <div class="need__inner">
+
+                <div class="need__btns">
+
+                    <div class="need__btn-wrap">
+                        <a href="#tab1" class="need__btn need__btn-active">
+                            <img class="need__btn-img" src="images/tabs/1.png" alt="картинка таба">
+                        </a>
+                        <p class="need__btn-text">Оргструктура</p>
+                    </div>
+                    <div class="need__btn-wrap">
+                        <a href="#tab2" class="need__btn">
+                            <img class="need__btn-img" src="images/tabs/2.png" alt="картинка таба">
+                        </a>
+                        <p class="need__btn-text">KPI</p>
+                    </div>
+                    <div class="need__btn-wrap">
+                        <a href="#tab3" class="need__btn">
+                            <img class="need__btn-img" src="images/tabs/5.png" alt="картинка таба">
+                        </a>
+                        <p class="need__btn-text">Команда</p>
+                    </div>
+                    <div class="need__btn-wrap">
+                        <a href="#tab4" class="need__btn">
+                            <img class="need__btn-img" src="images/tabs/3.png" alt="картинка таба">
+                        </a>
+                        <p class="need__btn-text">Система планирования</p>
+                    </div>
+                    <div class="need__btn-wrap">
+                        <a href="#tab5" class="need__btn">
+                            <img class="need__btn-img" src="images/tabs/4.png" alt="картинка таба">
+                        </a>
+                        <p class="need__btn-text">Делегирование</p>
+                    </div>
+                    <div class="need__btn-wrap">
+                        <a href="#tab6" class="need__btn">
+                            <img class="need__btn-img" src="images/tabs/6.png" alt="картинка таба">
+                        </a>
+                        <p class="need__btn-text">Развитие и&nbsp;масштабирование</p>
+                    </div>
+                </div>
+
+
+                <div class="need__content">
+                    <div class="need__item need__item--active" id="tab1">
+
+                        <div class="need__item-img-mob">
+                            <img class="need__item-img" src="images/tabs/1.png" alt="icon">
+                        </div>
+
+                        <p class="need__item-title">
+                            <span>Нет понятной оргструктуры,</span> отражающей
+                            реальное состояние бизнеса
+                        </p>
+                        <p class="need__text need__text--active">
+                            Нет командного духа, целей и&nbsp;миссии компании.
+                            Нет слаженной командной игры</p>
+                        <p class="need__text">
+                            Сотрудники не берут ответственность
+                            за результат своей работы, так как нет четких показателей оценки их работы, их
+                            эффективности. На еженедельной основе.
+                        </p>
+                        <div class="need__box">
+                            <p class="need__pain">Боль</p>
+                            <input class="toggle-switch" type="checkbox">
+                            <p class="need__desition">Решение</p>
+                        </div>
+                    </div>
+
+                    <div class="need__item" id="tab2">
+                        <div class="need__item-img-mob">
+                            <img class="need__item-img" src="images/tabs/2.png" alt="icon">
+                        </div>
+                        <p class="need__item-title">
+                            <span>Нет понятной оргструктуры,</span> отражающей
+                            реальное состояние бизнеса
+                        </p>
+                        <p class="need__text need__text--active">
+                            Нет командного духа, целей и&nbsp;миссии компании.
+                            Что то&nbsp;поменялось ТАБ 2</p>
+                        <p class="need__text">
+                            Меняется контент при клике ТАБ 2
+                        </p>
+                        <div class="need__box">
+                            <p class="need__pain">Боль</p>
+                            <input class="toggle-switch" type="checkbox">
+                            <p class="need__desition">Решение</p>
+                        </div>
+                    </div>
+
+                    <div class="need__item" id="tab3">
+                        <div class="need__item-img-mob">
+                            <img class="need__item-img" src="images/tabs/3.png" alt="icon">
+                        </div>
+                        <p class="need__item-title">
+                            <span>Нет понятной оргструктуры,</span> отражающей
+                            реальное состояние бизнеса
+                        </p>
+                        <p class="need__text need__text--active">
+                            Нет командного духа, целей и&nbsp;миссии компании.
+                            Что то&nbsp;поменялось ТАБ 3</p>
+                        <p class="need__text">
+                            Меняется контент при клике ТАБ 3
+                        </p>
+                        <div class="need__box">
+                            <p class="need__pain">Боль</p>
+                            <input class="toggle-switch" type="checkbox">
+                            <p class="need__desition">Решение</p>
+                        </div>
+                    </div>
+
+                    <div class="need__item" id="tab4">
+                        <div class="need__item-img-mob">
+                            <img class="need__item-img" src="images/tabs/4.png" alt="icon">
+                        </div>
+                        <p class="need__item-title">
+                            <span>Нет понятной оргструктуры,</span> отражающей
+                            реальное состояние бизнеса
+                        </p>
+                        <p class="need__text need__text--active">
+                            Нет командного духа, целей и&nbsp;миссии компании.
+                            Что то&nbsp;поменялось ТАБ 4</p>
+                        <p class="need__text">
+                            Меняется контент при клике ТАБ 4
+                        </p>
+                        <div class="need__box">
+                            <p class="need__pain">Боль</p>
+                            <input class="toggle-switch" type="checkbox">
+                            <p class="need__desition">Решение</p>
+                        </div>
+                    </div>
+
+                    <div class="need__item" id="tab5">
+                        <div class="need__item-img-mob">
+                            <img class="need__item-img" src="images/tabs/5.png" alt="icon">
+                        </div>
+                        <p class="need__item-title">
+                            <span>Нет понятной оргструктуры,</span> отражающей
+                            реальное состояние бизнеса
+                        </p>
+                        <p class="need__text need__text--active">
+                            Нет командного духа, целей и&nbsp;миссии компании.
+                            Что то&nbsp;поменялось ТАБ 5</p>
+                        <p class="need__text">
+                            Меняется контент при клике ТАБ 5
+                        </p>
+                        <div class="need__box">
+                            <p class="need__pain">Боль</p>
+                            <input class="toggle-switch" type="checkbox">
+                            <p class="need__desition">Решение</p>
+                        </div>
+                    </div>
+
+                    <div class="need__item" id="tab6">
+                        <div class="need__item-img-mob">
+                            <img class="need__item-img" src="images/tabs/6.png" alt="icon">
+                        </div>
+                        <p class="need__item-title">
+                            <span>Нет понятной оргструктуры,</span> отражающей
+                            реальное состояние бизнеса
+                        </p>
+                        <p class="need__text need__text--active">
+                            Нет командного духа, целей и&nbsp;миссии компании.
+                            Что то&nbsp;поменялось ТАБ 6</p>
+                        <p class="need__text">
+                            Меняется контент при клике ТАБ 6
+                        </p>
+                        <div class="need__box">
+                            <p class="need__pain">Боль</p>
+                            <input class="toggle-switch" type="checkbox">
+                            <p class="need__desition">Решение</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="profit">
+        <div class="container">
+
+            <h2 class="profit__title title">
+                Помогаем получить <span>максимум прибыли</span> от&nbsp;системного бизнеса
+            </h2>
+
+            <div class="profit__inner">
+                <div class="profit__item profit__item-1">
+                    <img class="profit__img" src="images/profit/1.png" alt="">
+                    <p class="profit__item-text">
+                        Постройте <span>правильную оргструктуру</span>
+                    </p>
+                </div>
+                <div class="profit__item profit__item-2">
+                    <img class="profit__img" src="images/profit/2.png" alt="">
+                    <p class="profit__item-text">
+                        Распределите все <span>функции бизнеса</span>
+                        между сотрудниками
+                    </p>
+                </div>
+                <div class="profit__item profit__item-3">
+                    <img class="profit__img" src="images/profit/3.png" alt="">
+                    <p class="profit__item-text">
+                        Запустите <span>еженедельное планирование результатов</span>
+                        компании и&nbsp;загрузки сотрудников
+                    </p>
+                </div>
+                <div class="profit__item profit__item-4">
+                    <img class="profit__img" src="images/profit/4.png" alt="">
+                    <p class="profit__item-text">
+                        Определите показатели <span>эффективности (Key Performance Indicators)</span>
+                    </p>
+                </div>
+                <div class="profit__item profit__item-5">
+                    <img class="profit__img" src="images/profit/5.png" alt="">
+                    <p class="profit__item-text">
+                        Получите контроль над бизнесом
+                        в&nbsp;режиме <span>Online:</span>
+                        дашборды с&nbsp;показателями эффективности бизнеса, отделов и&nbsp;каждого отдельного
+                        сотрудника.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="demo">
+        <div class="container">
+
+            <h2 class="demo__title title">
+                Демоверсия <span>(кликабельная)</span>
+            </h2>
+
+            <div class="demo__inner">
+
+                <div class="demo__wrap">
+                    <img src="images/demo/demo-desctop.png" alt="" class="demo__inner-img">
+                    <img src="images/demo/demo-mob.png" alt="" class="demo__inner-img-mob">
+                </div>
+
+
+                <div class="demo__inner-wrap">
+                    <div class="demo__box">
+                        <img class="demo__box-img" src="images/demo/1.png" alt="">
+                        <p class="demo__box-title">
+                            Внедрение самостоятельно или с&nbsp;<span>нашей помощью</span>
+                        </p>
+                    </div>
+                    <div class="demo__box">
+                        <img class="demo__box-img" src="images/demo/2.png" alt="">
+                        <p class="demo__box-title">
+                            <span>Показатели </span> всей
+                            деятельности компании
+                        </p>
+                    </div>
+                    <div class="demo__box">
+                        <img class="demo__box-img" src="images/demo/3.png" alt="">
+                        <p class="demo__box-title">
+                            Живая <span>поддержка 24/7 </span>
+                        </p>
+                    </div>
+                    <div class="demo__box">
+                        <img class="demo__box-img" src="images/demo/4.png" alt="">
+                        <p class="demo__box-title">
+                            Полная <span>конфиденциальность</span> и&nbsp;безопасность данных
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="kit">
+        <div class="container">
+
+            <div class="kit__inner">
+                <div class="kit__descr">
+                    <img class="kit__logo" src="images/icons/kit-logo.png" alt="logo">
+                    <img class="kit__logo-mob" src="images/icons/kit-logo-mob.png" alt="">
+                    <h2 class="kit__title">Systemator</h2>
+                    <p class="kit__text">
+                        набор <span>инструментов для эффективной работы</span> офисных
+                        и&nbsp;удаленных сотрудников. Все управление компанией в&nbsp;одной программе.
+                    </p>
+                    <button class="kit__btn btn" data-micromodal-trigger="modal-2"><span>Заказать
+                                    презентацию</span></button>
+                </div>
+                <div class="kit__inner-img">
+                    <img class="kit__img" src="images/dashboard-kit.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="result">
+        <div class="container">
+
+            <h2 class="result__title title">Конкретные <span>результаты</span> </h2>
+
+            <div class="result__items">
+                <div class="result__item">
+                    <input class="result__input" type="checkbox" id="q1" checked>
+                    <label for="q1" class="result__label">Для бизнеса и&nbsp;владельца
+                    </label>
+                    <div class="result__block">
+                        <p class="result__block-title">Бизнес-процессы ускоряются минимум в&nbsp;2-3 раза</p>
+                        <p class="result__text">
+                            Сотрудники четко знают, что от&nbsp;них требуется, какие задачи и&nbsp;показатели
+                            эффективности
+                            перед ними стоят
+                        </p>
+                    </div>
+                    <div class="result__block">
+                        <p class="result__block-title">Доход растет, а&nbsp;бизнес становится масштабируемым</p>
+                        <p class="result__text">
+                            Сотрудники четко знают, что от&nbsp;них требуется, какие задачи и&nbsp;показатели
+                            эффективности
+                            перед ними стоят
+                        </p>
+                    </div>
+                    <div class="result__block">
+                        <p class="result__block-title">Вы&nbsp;занимаетесь только стратегией</p>
+                        <p class="result__text">
+                            Деятельность компании спланирована. Сотрудники сфокусированы на&nbsp;задах. Нет
+                            простоев
+                            -
+                            ключевые показатели растут, расходы снижаются. Делегируйте свои функции подчиненным
+                            внутри платформы
+                        </p>
+                    </div>
+                    <div class="result__block">
+                        <p class="result__block-title">Контроль над бизнесом в&nbsp;режиме онлайн</p>
+                        <p class="result__text">
+                            Все показатели бизнеса на&nbsp;одном экране, возможность оперативно отслеживать
+                        </p>
+                    </div>
+                </div>
+
+                <div class="result__item">
+                    <input class="result__input" type="checkbox" id="faq2">
+                    <label for="faq2" class="result__label">Для руководителей
+                    </label>
+                    <div class="result__block">
+                        <p class="result__block-title">Бизнес-процессы ускоряются минимум в&nbsp;2-3 раза</p>
+                        <p class="result__text">
+                            Сотрудники четко знают, что от&nbsp;них требуется, какие задачи и&nbsp;показатели
+                            эффективности
+                            перед ними стоят
+                        </p>
+                    </div>
+                    <div class="result__block">
+                        <p class="result__block-title">Доход растет, а&nbsp;бизнес становится масштабируемым</p>
+                        <p class="result__text">
+                            Сотрудники четко знают, что от&nbsp;них требуется, какие задачи и&nbsp;показатели
+                            эффективности
+                            перед ними стоят
+                        </p>
+                    </div>
+                    <div class="result__block">
+                        <p class="result__block-title">Вы&nbsp;занимаетесь только стратегией</p>
+                        <p class="result__text">
+                            Деятельность компании спланирована. Сотрудники сфокусированы на&nbsp;задах. Нет
+                            простоев
+                            -
+                            ключевые показатели растут, расходы снижаются. Делегируйте свои функции подчиненным
+                            внутри платформы
+                        </p>
+                    </div>
+                    <div class="result__block">
+                        <p class="result__block-title">Контроль над бизнесом в&nbsp;режиме онлайн</p>
+                        <p class="result__text">
+                            Все показатели бизнеса на&nbsp;одном экране, возможность оперативно отслеживать
+                        </p>
+                    </div>
+                </div>
+
+                <div class="result__item">
+                    <input class="result__input" type="checkbox" id="faq3">
+                    <label for="faq3" class="result__label">Для сотрудников
+                    </label>
+                    <div class="result__block">
+                        <p class="result__block-title">Бизнес-процессы ускоряются минимум в&nbsp;2-3 раза</p>
+                        <p class="result__text">
+                            Сотрудники четко знают, что от&nbsp;них требуется, какие задачи и&nbsp;показатели
+                            эффективности
+                            перед ними стоят
+                        </p>
+                    </div>
+                    <div class="result__block">
+                        <p class="result__block-title">Доход растет, а&nbsp;бизнес становится масштабируемым</p>
+                        <p class="result__text">
+                            Сотрудники четко знают, что от&nbsp;них требуется, какие задачи и&nbsp;показатели
+                            эффективности
+                            перед ними стоят
+                        </p>
+                    </div>
+                    <div class="result__block">
+                        <p class="result__block-title">Вы&nbsp;занимаетесь только стратегией</p>
+                        <p class="result__text">
+                            Деятельность компании спланирована. Сотрудники сфокусированы на&nbsp;задах. Нет
+                            простоев
+                            -
+                            ключевые показатели растут, расходы снижаются. Делегируйте свои функции подчиненным
+                            внутри платформы
+                        </p>
+                    </div>
+                    <div class="result__block">
+                        <p class="result__block-title">Контроль над бизнесом в&nbsp;режиме онлайн</p>
+                        <p class="result__text">
+                            Все показатели бизнеса на&nbsp;одном экране, возможность оперативно отслеживать
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="work">
+        <div class="container">
+            <div class="work__wrapper">
+                <div class="work__inner">
+
+                    <div class="work__descr">
+                        <h2 class="work__title">
+                            Кратно <span>увеличьте результаты работы</span> воей компании
+                        </h2>
+                        <p class="work__text">За&nbsp;счет системного подхода к&nbsp;управлению </p>
+
+                        <button class="work__btn btn" data-micromodal-trigger="modal-2"><span>Заказать
+                                        презентацию</span> </button>
+                    </div>
+                    <div class="work__icons">
+                        <p class="work__icons-title">
+                            На&nbsp;платформе Вас ждут:
+                        </p>
+
+                        <div class="work__icons-box">
+                            <img class="work__icons-img" src="images/icons/work-lamp.png" alt="">
+                            <p class="work__icons-text">
+                                <span>3&nbsp;шаблона</span> оргструктуры для малого, чреднего и&nbsp;крупного
+                                бизнеса
+                            </p>
+                        </div>
+                        <div class="work__icons-box">
+                            <img class="work__icons-img" src="images/icons/work-graph.png" alt="">
+                            <p class="work__icons-text">
+                                Более <span>100 шаблонов</span> показателей эффективности
+                            </p>
+                        </div>
+                        <div class="work__icons-box">
+                            <img class="work__icons-img" src="images/icons/work-book.png" alt="">
+                            <p class="work__icons-text">
+                                Более <span>160 шаблонов</span> функц.обязанностей
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="team">
+        <div class="container">
+
+            <h2 class="team__title title">
+                Программа, которая <span>разработана практиками</span> в&nbsp;организации бизнеса
+            </h2>
+
+            <div class="team__items">
+
+                <div class="team__item">
+                    <div class="team__item-top">
+                        <img class="team__photo" src="images/team-photo-1.png" alt="">
+                        <p class="team__name">
+                            Александр Рыбчинский
+                        </p>
+                        <p class="team__descr">
+                            Разработка электронных курсов
+                        </p>
+                    </div>
+
+                    <p class="team__text">
+                        Сертифицированный <span>бизнес-тренер</span>
+                    </p>
+                    <p class="team__text">
+                        <span>8&nbsp;лет</span> опыта в&nbsp;проведении бизнес-обучения
+                    </p>
+                    <p class="team__text">
+                        <span>3&nbsp;года опыта</span> в&nbsp;сфере организационного менеджмента
+                    </p>
+
+                    <input class="team__input" type="checkbox" id="press-btn">
+                    <label for="press-btn" class="team__read-next">Подробнее</label>
+                    <div class="team__hidden">
+                        <p class="team__text">
+                            Боле <span>100 разработанных </span> электронных курсов
+                        </p>
+                        <label for="press-btn" class="team__read-close">Скрыть</label>
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <div class="team__item-top">
+                        <img class="team__photo" src="images/team-photo-2.png" alt="">
+                        <p class="team__name">
+                            Ещенко Сергей
+                        </p>
+                        <p class="team__descr">
+                            Консультация владельцев компаний
+                        </p>
+                    </div>
+
+                    <p class="team__text">
+                        Совладелец <span>3-х</span> компаний
+                    </p>
+                    <p class="team__text">
+                        <span>20&nbsp;лет </span> в&nbsp;бизнесе и&nbsp;имеет опыт управления производством,
+                        оптовой
+                        и
+                        розничной торговлей, предоставлением услуг
+                    </p>
+
+                    <input class="team__input" type="checkbox" id="press-btn2">
+                    <label for="press-btn2" class="team__read-next">Подробнее</label>
+                    <div class="team__hidden">
+                        <p class="team__text">
+                            Много лет в&nbsp;оперативке&nbsp;&mdash; вышел из&nbsp;нее <span>благодаря
+                                        Systemator</span>
+                        </p>
+                        <label for="press-btn2" class="team__read-close">Скрыть</label>
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <div class="team__item-top">
+                        <img class="team__photo" src="images/team-photo-3.png" alt="">
+                        <p class="team__name">
+                            Савченко Сергей
+                        </p>
+                        <p class="team__descr">
+                            Бизнесмен
+                        </p>
+                    </div>
+
+                    <p class="team__text">
+                        20&nbsp;лет в&nbsp;бизнесе
+                    </p>
+                    <p class="team__text">
+                        Совладелец 3-х компаний
+                    </p>
+                    <p class="team__text">
+                        Опыт управления производством, оптовой и&nbsp;розничной торговлей, бизнесом в&nbsp;сфере
+                        оказания
+                        услуг
+                    </p>
+
+                    <input class="team__input" type="checkbox" id="press-btn3">
+                    <label for="press-btn3" class="team__read-next">Подробнее</label>
+                    <div class="team__hidden">
+                        <p class="team__text">
+                            Много лет в&nbsp;оперативке и&nbsp;поиска выхода из&nbsp;нее
+                        </p>
+                        <p class="team__text">
+                            Проект Systemator&nbsp;&mdash; как результат многолетних поисков, который помог
+                            выйти
+                            из&nbsp;ручного
+                            управления и&nbsp;сконцентрироваться на&nbsp;развитии существующих бизнесов
+                            и&nbsp;новых
+                            стартапов
+                        </p>
+                        <label for="press-btn3" class="team__read-close">Скрыть</label>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="help">
+        <div class="container">
+            <div class="help__inner">
+
+                <div class="help__descr">
+                    <h2 class="help__title">
+                        <span>Внедрите Systemator</span>
+                        самостоятельно или
+                        с&nbsp;нашей помощью
+                    </h2>
+                    <p class="help__pre-title">Готовые инструменты для развития бизнеса</p>
+                    <p class="help__text">
+                        <span>Пройдите бесплатный обучающий курс</span> на&nbsp;нашей платформе и&nbsp;внедрите
+                        Systemator
+                        самостоятельно
+                        или закажите внедрение с&nbsp;помощью наших специалистов в&nbsp;области систематизации
+                        бизнеса
+                    </p>
+                    <button class="help__btn2" data-micromodal-trigger="modal-1">
+                        <span>Попробовать бесплатно</span>
+                    </button>
+                </div>
+
+                <div class="help__box-img">
+                    <img class="help__img" src="images/dashboard-help.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="video">
+        <div class="container">
+            <h2 class="video__title title">
+                Что <span>говорят лидеры мнений</span> о&nbsp;важности систематизации:
+            </h2>
+
+
+            <div class="video__inner">
+                <div class="video__btns">
+                    <a href="#video1" class="video__btn video__btn--active">
+                        <img lass="video__btn-img" src="images/video/v-1.jpg" alt="">
+                        <img class="video__btn-img-play" src="images/video/play-btn2.svg" alt="">
+                        <p class="video__btn-text">Илон Маск</p>
+                    </a>
+
+                    <a href="#video2" class="video__btn">
+                        <img class="video__btn-img" src="images/video/v-2.jpg" alt="">
+                        <img class="video__btn-img-play" src="images/video/play-btn2.svg" alt="">
+                        <p class="video__btn-text">Павел Дуров</p>
+                    </a>
+
+                    <a href="#video3" class="video__btn">
+                        <img lass="video__btn-img" src="images/video/v-3.jpg" alt="">
+                        <img class="video__btn-img-play" src="images/video/play-btn2.svg" alt="">
+                        <p class="video__btn-text">Марк Цукерберг</p>
+                    </a>
+                    <a href="#video4" class="video__btn">
+                        <img lass="video__btn-img" src="images/video/v-4.jpg" alt="">
+                        <img class="video__btn-img-play" src="images/video/play-btn2.svg" alt="">
+                        <p class="video__btn-text">Стив Джобс</p>
+                    </a>
+                </div>
+
+                <div class="swiper video__content-slider">
+                    <div class="video__content-block swiper-wrapper">
+
+                        <video id="video1" width="653" height="414" poster="images/video/v-1.jpg"
+                               class="swiper-slide video__content video__content-active" controls="controls"
+                               poster="video/duel.jpg">
+                            <source class="video__content-frame" src="images/video-1.mp4" type="video/mp4;"
+                                    codecs="avc1.42E01E, mp4a.40.2">
+                        </video>
+
+                        <video id="video2" width="653" height="414" poster="images/video/v-1.jpg"
+                               class="swiper-slide video__content" controls="controls" poster="video/duel.jpg">
+                            <source class="video__content-frame" src="images/video-1.mp4" type="video/mp4;"
+                                    codecs="avc1.42E01E, mp4a.40.2">
+                        </video>
+
+                        <video id="video3" width="653" height="414" poster="images/video/v-1.jpg"
+                               class="swiper-slide video__content" controls="controls" poster="video/duel.jpg">
+                            <source class="video__content-frame" src="images/video-1.mp4" type="video/mp4;"
+                                    codecs="avc1.42E01E, mp4a.40.2">
+                        </video>
+                        <video id="video4" width="653" height="414" poster="images/video/v-1.jpg"
+                               class="swiper-slide video__content" controls="controls" poster="video/duel.jpg">
+                            <source class="video__content-frame" src="images/video-1.mp4" type="video/mp4;"
+                                    codecs="avc1.42E01E, mp4a.40.2">
+                        </video>
+                    </div>
+                    <div class="video-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="teleg">
+        <div class="container">
+
+            <div class="teleg__inner">
+
+                <div class="teleg__descr">
+                    <img class="teleg__logo" src="images/icons/teleg-logo.svg" alt="">
+                    <h2 class="teleg__title">
+                        <span>Телеграм канал </span> для успешных управленцев
+                    </h2>
+                    <p class="teleg__text">
+                        Развивайте свои управленческие навыки
+                        на&nbsp;нашем телеграм-канале. А&nbsp;также получите
+                        <span>доступ к&nbsp;закрытой группе нашего сообщества
+                                    предпринимателей
+                                </span>
+                    </p>
+                    <button class="teleg__btn btn"><span>Присоедениться</span> </button>
+                </div>
+
+                <div class="teleg__box-img">
+                    <img class="teleg__img" src="images/teleg-bg.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <section class="news">
+        <div class="container">
+
+            <h2 class="news__title title">Новостной <span>блог</span></h2>
+
+            <div class="news__block">
+                <div class="news__wrapper swiper-wrapper">
+
+                    <div style="background-image: url(' images/news/1.jpg')" class="swiper-slide news__item">
+                        <p class="news__name">Доход растет, а&nbsp;бизнес становится масштабируемым...</p>
+                        <a class="news__link" href="#">Подробнее</a>
+                    </div>
+
+                    <div style="background-image: url('images/news/2.jpg')" class="swiper-slide news__item">
+                        <p class="news__name">Доход растет, а&nbsp;бизнес становится масштабируемым...</p>
+                        <a class="news__link" href="#">Подробнее</a>
+                    </div>
+
+                    <div style="background-image: url('images/news/3.jpg')" class="swiper-slide news__item">
+                        <p class="news__name">Доход растет, а&nbsp;бизнес становится масштабируемым...</p>
+                        <a class="news__link" href="#">Подробнее</a>
+                    </div>
+
+                    <div style="background-image: url('images/news/4.jpg')" class="swiper-slide news__item">
+                        <p class="news__name">Доход растет, а&nbsp;бизнес становится масштабируемым...</p>
+                        <a class="news__link" href="#">Подробнее</a>
+                    </div>
+
+                    <div style="background-image: url('images/news/5.jpg')" class="swiper-slide news__item">
+                        <p class="news__name">Доход растет, а&nbsp;бизнес становится масштабируемым...</p>
+                        <a class="news__link" href="#">Подробнее</a>
+                    </div>
+
+                    <div style="background-image: url('images/news/6.jpg')" class="swiper-slide news__item">
+                        <p class="news__name">Доход растет, а&nbsp;бизнес становится масштабируемым...</p>
+                        <a class="news__link" href="#">Подробнее</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="news-pagination"></div>
+        </div>
+    </section>
+
+
+
+
+    <section class="try">
+        <div class="container">
+
+            <div class="try__inner">
+
+                <div class="try__descr">
+                    <h2 class="try__title">Попробуйте <span>Systemator бесплатно</span></h2>
+                    <p class="try__text">Внедрите сервис самостоятельно или с&nbsp;нашей помощью</p>
+                    <button data-micromodal-trigger="modal-1" class="try__btn btn"><span>Попробовать
+                                    бесплатно</span> </button>
+                    <button data-micromodal-trigger="modal-2" class="try__btn-sec btn-sec"> Заказать
+                        консультацию</button>
+                </div>
+
+                <div class="try__box-img">
+                    <img class="try__img" src="images/try-bg.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="modals">
+        <div class="container">
+
+
+
+            <!-- <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title"
+                    aria-describedby="modal-1-content">
+                    <div>
+                        <header class="modal__header">
+                            <h3 class="modal__title">
+                                Micromodal
+                            </h3>
+                            <button class="modal__close" aria-label="Close modal"
+                                aria-controls="modal__container1" data-micromodal-close>
+                            </button>
+                        </header>
+                        <main class="modal__content" id="modal-1-content">
+                            <p>
+                                Try hitting the <code>tab</code> key and notice how the focus stays
+                                within the modal itself. Also, <code>esc</code> to close modal.
+                            </p>
+                        </main>
+                        <footer class="modal__footer">
+                            <button class="modal__btn modal__btn-primary">Continue</button>
+                            <button class="modal__btn" data-micromodal-close
+                                aria-label="Close this dialog window">Close</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+            <div class="micromodal-slide try-modal" id="modal-1" aria-hidden="true">
+                <div class="try-modal__overlay" tabindex="-1" data-micromodal-close>
+                    <div class="try-modal__container" role="dialog" aria-modal="true"
+                         aria-labelledby="modal-1-title" aria-describedby="modal-1-content">
+
+                        <button class="try-modal__close" aria-label="Close modal"
+                                aria-controls="modal__container1" data-micromodal-close>
+                        </button>
+                        <p class="try-modal__title">Попробовать <span>бесплатно</span> </p>
+
+                        <main class="try-modal__content" id="modal-1-content">
+                            <form class="try-modal__form">
+                                <p class="try-modal__staff">Количество сотрудников</p>
+                                <div class="try-modal__radio-wrap">
+                                    <input class="try-modal__radio" type="radio" name="drink" value="rad1"
+                                           id="rad1" required>
+                                    <label for="rad1">до&nbsp;50</label>
+                                    <span class="try-modal__right"></span>
+                                    <input class="try-modal__radio" type="radio" name="drink" value="rad2"
+                                           id="rad2" required>
+                                    <label for="rad2">50-100</label>
+                                    <span class="try-modal__right"></span>
+
+                                    <input class="try-modal__radio" type="radio" name="drink" value="rad3"
+                                           id="rad3">
+                                    <label for="rad3" required>более 100</label>
+                                </div>
+
+                                <input type="text" class="try-modal__input" required
+                                       placeholder="Название  компании">
+                                <input type="text" class="try-modal__input" required placeholder="Ваше имя">
+                                <input type="email" class="try-modal__input" required placeholder="Email">
+                                <input type="tel" class="try-modal__input" required
+                                       placeholder="Номер телефона">
+
+                                <button type="submit" class="try-modal__btn btn"><span>Создать проект</span>
+                                </button>
+
+                                <div class="try-modal__know-wrap">
+                                    <input class="try-modal__check" type="checkbox" name="" id="box1" required>
+                                    <label class="try-modal__know-label" for="box1"> Я&nbsp;ознакомился
+                                        и&nbsp;принимаю
+                                        соглашение
+                                    </label>
+
+                                    <p class="try-modal__know-text">Договор о&nbsp;предоставлении услуг</p>
+                                    <p class="try-modal__know-text">Соглашение пользователя</p>
+                                    <p class="try-modal__know-text">Политика конфиденциальности</p>
+                                </div>
+
+                                <p class="try-modal__garant">
+                                    Мы&nbsp;гарантируем безопасность аккаунта и&nbsp;сохранность внесенной
+                                    информации. Детали
+                                    в&nbsp;соглашении.При заказе платных услуг&nbsp;&mdash; оплата производится
+                                    ежемесячно. У&nbsp;вас
+                                    нет никаких контрактов, обязательств или штрафов. Вы&nbsp;в&nbsp;праве
+                                    прекратить
+                                    использование в&nbsp;любое время
+                                </p>
+
+                            </form>
+                        </main>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="micromodal-slide try-modal get-modal" id="modal-2" aria-hidden="true">
+                <div class="try-modal__overlay get-modal__overlay" tabindex="-1" data-micromodal-close>
+                    <div class="try-modal__container get-modal__container" role="dialog" aria-modal="true"
+                         aria-labelledby="modal-2-title" aria-describedby="modal-1-content">
+
+                        <button class="try-modal__close" aria-label="Close modal"
+                                aria-controls="modal__container1" data-micromodal-close>
+                        </button>
+                        <p class="try-modal__title get-modal__title">Получить <span> консультацию</span></p>
+                        <p class="try-modal__garant get-modal__garant">
+                            Заполните форму и мы свяжемся с вами в ближайшее время
+                        </p>
+
+                        <main class="try-modal__content" id="modal-2-content">
+                            <form class="try-modal__form get-modal__form">
+
+                                <input type="text" class="try-modal__input" required placeholder="Ваше имя">
+                                <input type="tel" class="try-modal__input" required
+                                       placeholder="Номер телефона">
+
+                                <button type="submit" class="try-modal__btn btn"><span>Отправить</span></button>
+
+                                <!-- <div class="try-modal__know-wrap">
+                                <input class="try-modal__check" type="checkbox" name="" id="box2" required>
+                                <label class="try-modal__know-label" for="box2"> Я&nbsp;ознакомился
+                                    и&nbsp;принимаю
+                                    соглашение
+                                </label>
+
+                                <p class="try-modal__know-text">Договор о&nbsp;предоставлении услуг</p>
+                                <p class="try-modal__know-text">Соглашение пользователя</p>
+                                <p class="try-modal__know-text">Политика конфиденциальности</p>
+                            </div> -->
+
+                            </form>
+                        </main>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="micromodal-slide slider-modal" id="modal-3" aria-hidden="true">
+                <div class="slider-modal__overlay" tabindex="-1" data-micromodal-close>
+                    <div class="slider-modal__container" role="dialog" aria-modal="true"
+                         aria-labelledby="modal-3-title" aria-describedby="modal-3-content">
+
+                        <button class="slider-modal__close" aria-label="Close modal"
+                                aria-controls="modal__container1" data-micromodal-close>
+                        </button>
+
+                        <main class="slider-modal__content" id="modal-3-content">
+                            <img class="win__slider-img" src="images/slider/1.png" alt="фото">
+                            <p class="win__slider-name">Сергей Савченко</p>
+                            <div class="win__slider-box slider-modal__box">
+                                <p class="win__slider-company">Владелец компании Blest</p>
+                                <p class="win__slider-production">производство мягкой мебели</p>
+                            </div>
+
+                            <p class="win__slider-descr">
+                                Начали внедрение Систематора в&nbsp;январе 2021&nbsp;года. Долгое время наша
+                                компания была в
+                                поиске решения, которое&nbsp;бы помогло систематизировать и&nbsp;упорядочить
+                                бизнес.
+                                До&nbsp;этого
+                                мы&nbsp;использовали несколько других, более простых решений,
+                                но&nbsp;ни&nbsp;одно
+                                из&nbsp;них не&nbsp;давало
+                                полного функционала, который нам был необходим. Организационная структура
+                                компании,
+                                функциональные обязанности, показатели эффективности бизнеса, постановка и
+                                управление задачами&nbsp;&mdash; все это было раздроблено и&nbsp;перед нами
+                                стояла
+                                острое задача
+                                объединить все данные в&nbsp;одну упорядоченную систему. Внедрение заняло
+                                3&nbsp;месяца.
+                                Многие данных у&nbsp;нас уже было готово в&nbsp;том или ином виде
+                                и&nbsp;выяснить,
+                                хотим получить.
+                                Также нам очень помогли с&nbsp;внедрением специалисты Систематора. Теперь
+                                организационная
+                                структура компании у&nbsp;нас четко сформулирована, функциональные обязанности
+                                сотрудников описаны, показатели эффективности созданы и&nbsp;отслеживаются,
+                                а&nbsp;также
+                                ведется планирование и&nbsp;отслеживание выполнения задач сотрудниками и&nbsp;их
+                                руководителями. Все это позволяет эффективно управлять компанией, удерживать
+                                свое
+                                внимание и&nbsp;внимание сотрудников на&nbsp;ключевых показателях
+                                и&nbsp;добиваться
+                                отличных
+                                результатов.
+                            </p>
+                        </main>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="micromodal-slide enter-modal" id="modal-4" aria-hidden="true">
+                <div class="enter-modal__overlay" tabindex="-1" data-micromodal-close>
+                    <div class="enter-modal__container" role="dialog" aria-modal="true"
+                         aria-labelledby="modal-4-title" aria-describedby="modal-4-content">
+
+                        <button class="enter-modal__close" aria-label="Close modal"
+                                aria-controls="modal__container1" data-micromodal-close>
+                        </button>
+
+                        <main class="enter-modal__content" id="modal-4-content">
+                            <p class="enter-modal__title">Вход в&nbsp; <span>личный кабинет</span></p>
+
+                            <form class="enter-modal__form">
+                                <input type="text" class="enter-modal__input" placeholder="Логин" required>
+                                <input type="password" class="enter-modal__input" placeholder="Пароль" required>
+
+                                <a data-micromodal-trigger="modal-5" class="enter-modal__forgot">Забыли
+                                    пароль?</a>
+
+                                <button class="enter-modal__btn btn"><span>Войти</span> </button>
+
+                                <div class="enter-modal__box">
+                                    <input class="enter-modal__check" type="checkbox" name="" id="checkbox1">
+                                    <label class="enter-modal__label" for="checkbox1">Запомнить меня</label>
+                                </div>
+                            </form>
+                        </main>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="micromodal-slide forgot-modal" id="modal-5" aria-hidden="true">
+                <div class="forgot-modal__overlay" tabindex="-1" data-micromodal-close>
+                    <div class="forgot-modal__container" role="dialog" aria-modal="true"
+                         aria-labelledby="modal-5-title" aria-describedby="modal-5-content">
+
+                        <button class="forgot-modal__close" aria-label="Close modal"
+                                aria-controls="modal__container1" data-micromodal-close>
+                        </button>
+
+                        <main class="forgot-modal__content" id="modal-5-content">
+                            <p class="forgot-modal__title">Забыли <span>пароль?</span> </p>
+
+                            <form class="forgot-modal__form">
+                                <input type="email" class="forgot-modal__input" placeholder="Email" required>
+
+                                <button class="forgot-modal__btn btn"><span>Отправить новый пароль
+                                                на&nbsp;почту</span></button>
+                            </form>
+                        </main>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+</main>
+
+
+
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__soc">
+                <img class="footer__soc-logo" src="images/logo.svg" alt="Logo">
+                <div class="footer__soc-box">
+                    <a href="#" class="footer__soc-link">
+                        <img class="footer__soc-face" src="images/icons/facebook-footer.svg" alt="facebook">
+                    </a>
+                    <a href="#" class="footer__soc-link">
+                        <img class="footer__soc-insta" src="images/icons/insta-footer.png" alt="instagram">
+                    </a>
+                </div>
+                <p class="footer__soc-copy">
+                    Copyright &copy;&nbsp;2021 Systemator
+                </p>
+            </div>
+            <div class="footer__tools">
+                <p class="footer__tools-title">Инструменты управления</p>
+
+                <div class="footer__tools-box">
+                    <a href="#" class="footer__tools-link">Организационная структура</a>
+                    <a href="#" class="footer__tools-link">Функциональные обязанност</a>
+                    <a href="#" class="footer__tools-link">Показатели эффективности</a>
+                    <a href="#" class="footer__tools-link">Еженедельное планирование</a>
+                </div>
+            </div>
+            <div class="footer__intro">
+                <a href="" class="footer__intro-link">Принципы внедрения</a>
+
+                <div class="footer__intro-box">
+                    <a href="" class="footer__intro-link">Тарифы</a>
+                    <a href="" class="footer__intro-link">Контакты</a>
+                    <a href="" class="footer__intro-link">FAQ</a>
+                </div>
+            </div>
+            <div class="footer__location">
+                <img class="footer__soc-logo footer__soc-logo-mob" src="images/logo.svg" alt="Logo">
+                <address class="footer__location-addr">Киев, ул. Тростянецкая, 49</address>
+                <p class="footer__location-time">Пн&nbsp;&mdash; Пт: 8.00&nbsp;&mdash; 18.00</p>
+                <a href="mailto:office@systemator.pro" class="footer__location-email">office@systemator.pro</a>
+                <a href="tel:380978293889" class="footer__location-phone">+38 (097) 829 38 89</a>
+
+                <div class="footer__location-box">
+                    <a href="#" class="footer__location-whatsapp">
+                        <img src="images/icons/call.svg" alt="" class="footer__location-img">
+                    </a>
+                    <a href="#" class="footer__location-viber">
+                        <img src="images/icons/Viber.svg" alt="" class="footer__location-img">
+                    </a>
+                    <a href="#" class="footer__location-telegram">
+                        <img src="images/icons/Telegram.svg" alt="" class="footer__location-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <a href="#" class="footer__bottom-link">Пользовательское соглашение</a>
+            <a href="#" class="footer__bottom-link">Политика конфиденциальности</a>
+
+            <p class="footer__soc-copy footer__soc-copy-mob">
+                Copyright &copy;&nbsp;2021 Systemator
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script src="js/script.libs.js"></script>
+<script src="js/main.js"></script>
+<script src="js/index-page.js"></script>
 
 
 </body>

@@ -37,9 +37,12 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
             function customOpen() {
-                const enterBtn = document.querySelector('.nav__btn');
-                enterBtn.addEventListener('click', () => {
-                    document.body.classList.add('custom-body--js');
+                const enterBtn = document.querySelectorAll('.custom-btn--js');
+
+                enterBtn.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        document.body.classList.add('custom-body--js');
+                    })
                 })
             }
 
