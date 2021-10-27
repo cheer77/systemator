@@ -177,127 +177,149 @@
                         Тарифы
                     </h2>                    
                 </div>
-                <div class="subscription-tariffs__tabs">
-                    <div>
-                        <button class="subscription-tariffs__item-active" >
-                            <a href="#">На месяц</a>
+                <div class="subscription-tariffs__tabs subscription-wrap--js">
+                    
+                        <button class="subscription-btn--js subscription-tariffs__item subscription-tariffs__item-active" data-percent="0" >
+                            На месяц
                         </button>
-                    </div>
-                    <div>
-                        <button class="subscription-tariffs__item">
-                            <a href="">На полгода -15%</a>
+                   
+                   
+                        <button class="subscription-btn--js subscription-tariffs__item" data-percent="15">
+                            На полгода -15%
                         </button>                        
-                    </div>
-                    <div>
-                        <button class="subscription-tariffs__item">
-                            <a href="">На год -20%</a>
+                    
+                    
+                        <button class="subscription-btn--js subscription-tariffs__item" data-percent="20">
+                            На год -20%
                         </button>                        
-                    </div>
+                   
+                </div>
+                <div class="container">
+                    <h3 class="title subscription-tariffs__sub-title">
+                        Выберите тариф
+                    </h3>                    
                 </div>
                 <div class="subscription-tariffs__table">
                     <table class="subscription-table">
                         <thead>
                             <tr>
                                 <th></th>
-                                <th>Орг.структура</th>
-                                <th>Стартап</th>
-                                <th>Команда</th>
-                                <th>Бизнес</th>
+                                <th>
+                                    <button class="subscription-table__btn subscription-table__btn--js"  data-target="org">Орг.структура</button> 
+                                </th>
+                                <th >
+                                    <button class="subscription-table__btn subscription-table__btn-active subscription-table__btn--js" data-target="start">Стартап</button>
+                                </th>
+                                <th >
+                                    <button class="subscription-table__btn subscription-table__btn--js" data-target="comand">Команда</button>
+                                </th>
+                                <th >
+                                    <button class="subscription-table__btn subscription-table__btn--js" data-target="bizness">Бизнес</button>
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Орг.структура + шаблон</td>
-                                <td>-</td>
-                                <td>+</td>
-                                <td>+</td>
-                                <td>+</td>
+                                <td class="table-data--js"data-content="org">-</td>
+                                <td class="table-data--js" data-content="start">+</td>
+                                <td class="table-data--js" data-content="comand">+</td>
+                                <td class="table-data--js" data-content="bizness">+</td>
                             </tr>
                             <tr>
                                 <td>Функциональные обязанности</td>
-                                <td>+</td>
-                                <td>+</td>
-                                <td>+</td>
-                                <td>+</td>
+                                <td class="table-data--js" data-content="org">+</td>
+                                <td class="table-data--js" data-content="start">+</td>
+                                <td class="table-data--js" data-content="comand">+</td>
+                                <td class="table-data--js" data-content="bizness">+</td>
                             </tr>
                             <tr>
                                 <td>Планирование</td>
-                                <td>-</td>
-                                <td>+</td>
-                                <td>+</td>
-                                <td>+</td>
+                                <td class="table-data--js" data-content="org">-</td>
+                                <td class="table-data--js" data-content="start">+</td>
+                                <td class="table-data--js" data-content="comand">+</td>
+                                <td class="table-data--js" data-content="bizness">+</td>
                             </tr>
                             <tr>
                                 <td>Показатели эффективности</td>
-                                <td>-</td>
-                                <td>+</td>
-                                <td>+</td>
-                                <td>+</td>
+                                <td class="table-data--js" data-content="org">-</td>
+                                <td class="table-data--js" data-content="start">+</td>
+                                <td class="table-data--js" data-content="comand">+</td>
+                                <td class="table-data--js" data-content="bizness">+</td>
                             </tr>
                             <tr>
                                 <td>Техническая поддержка 24/7</td>
-                                <td>-</td>
-                                <td>+</td>
-                                <td>+</td>
-                                <td>+</td>
+                                <td class="table-data--js" data-content="org">-</td>
+                                <td class="table-data--js" data-content="start">+</td>
+                                <td class="table-data--js" data-content="comand">+</td>
+                                <td class="table-data--js" data-content="bizness">+</td>
                             </tr>
                             <tr>
                                 <td>Доступ к закрытой группе предпринимателей</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>+</td>
+                                <td class="table-data--js" data-content="org">-</td>
+                                <td class="table-data--js" data-content="start">-</td>
+                                <td class="table-data--js" data-content="comand">-</td>
+                                <td class="table-data--js" data-content="bizness">+</td>
                             </tr>
                             <tr>
                                 <td>Количество бизнесов на аккаунте</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>1-3</td>
-                                <td>Неограничено</td>
+                                <td class="table-data--js" data-content="org">1</td>
+                                <td class="table-data--js" data-content="start">1</td>
+                                <td class="table-data--js" data-content="comand">1-3</td>
+                                <td class="table-data--js" data-content="bizness">Неограничено</td>
                             </tr>
                             <tr>
                                 <td>Количество сотрудников</td>
-                                <td></td>
-                                <td>до 10</td>
-                                <td>до 50</td>
-                                <td>от 50</td>
+                                <td class="table-data--js" data-content="org"></td>
+                                <td class="table-data--js" data-content="start">до 10</td>
+                                <td class="table-data--js" data-content="comand">до 50</td>
+                                <td class="table-data--js" data-content="bizness">от 50</td>
                             </tr>
                             <tr>
                                 <td>Цена</td>
-                                <td>Бесплатно</td>
-                                <td>49$</td>
-                                <td>99%</td>
-                                <td>1,5$ за <br> пользователя</td>
+                                <td class="table-data--js" data-content="org">Бесплатно</td>
+                                <td class="table-data--js" data-content="start">
+                                    <span class="subscribtion-price-count--js" data-pacege="49">49</span>
+                                    <span>$</span>                                    
+                                </td>
+                                <td class="table-data--js" data-content="comand">
+                                    <span class="subscribtion-price-count--js" data-pacege="99">99</span>
+                                    <span>$</span>
+                                </td>
+                                <td class="table-data--js" data-content="bizness">
+                                    <span class="subscribtion-price-count--js" data-pacege="1.5">1,5</span>
+                                    <span>$</span>                                    
+                                    за <br> пользователя</td>
                             </tr>
                             <tr>
                                 <td>Полный доступ на 1 месяц</td>
-                                <td>
+                                <td class="table-data--js" data-content="org">
                                     <button class="subscription-table__btn-yellou">
-                                        <a href="">Попробовать</a>                                        
+                                       Попробовать                                      
                                     </button>
                                     <p class="subscription-table__p">
                                         *Бесплатно
                                     </p>
                                 </td>
-                                <td>
+                                <td class="table-data--js" data-content="start">
                                     <button class="subscription-table__btn-yellou">
-                                        <a href="">Попробовать</a>    
+                                        Попробовать   
                                     </button>
                                     <p class="subscription-table__p">
                                         *Бесплатно
                                     </p>
                                 </td>
-                                <td>
+                                <td class="table-data--js" data-content="comand">
                                     <button class="subscription-table__btn-yellou">
-                                        <a href="">Попробовать</a>
+                                        Попробовать
                                     </button>
                                     <p class="subscription-table__p">
                                         *Бесплатно
                                     </p>
                                 </td>
-                                <td>
+                                <td class="table-data--js" data-content="bizness">
                                     <button class="subscription-table__btn-blue">
-                                        <a href="">Попробовать</a>
+                                        Попробовать
                                     </button>
                                     <p class="subscription-table__p">
                                         *Бесплатно
@@ -309,7 +331,7 @@
                 </div>
                 
                 
-                <div class="subscription-tariffs__tabs-mobile">
+                <!-- <div class="subscription-tariffs__tabs-mobile">
                     <div>
                         <button class="subscription__mobile-item mobile-active">
                             <a href=""> На месяц</a>
@@ -401,7 +423,7 @@
                             
                         </div>
                     </div>
-                </div>
+                </div> -->
             </section>
         </main>
 
@@ -742,6 +764,7 @@
 
         <script src="js/script.libs.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/subscription-page.js"></script>
     
         <!-- <script>
             const needBlocks = document.querySelectorAll('.need__item');

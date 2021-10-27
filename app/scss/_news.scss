@@ -304,9 +304,7 @@
        
     }
 }
-.hidden-menu-ticker {
-    display: none;
-  }
+
 @media (max-width: 768px){
     .news{
         margin: 40px 0 0 0;
@@ -349,6 +347,16 @@
                         line-height: 36px;
                     }
                 }
+                &-video{
+                    &::before{
+                    }
+                    & a{
+                        &::before{
+                            left: 43%;
+                            top: 38%;
+                        }
+                    }
+                }
             }
             &__right{
                 width: 100%;
@@ -358,7 +366,13 @@
                     background-color: #075FC5;
                     justify-content: center;
                     margin: 0 !important;
-                    order:2;                       
+                    order:2; 
+                    transition: 0.3s;
+                    &.opened{
+                        & img{
+                            transform: rotate(180deg);
+                        }
+                    }                      
                     & h5{
                         color: #fff;
                         font-size: 14px;
@@ -380,11 +394,31 @@
                
             }
         }
-    } 
-        
-    
-     
-      
+    }
+    .dropdown-content{
+        display: none;
+    }    
+}
+@media (max-width: 740px){
+    .news{
+        &-wrap{
+            &__left{
+                &-video{
+                    height: 425px;
+                    &::before{
+                        height: 425px;
+                    }
+                    & a{
+                        &:before{
+                            left: 43%;
+                            top: 37%;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
 }
 @media (max-width: 520px){
     .news{
@@ -473,6 +507,40 @@
                 }
                 &-video{
                     margin-bottom: 15px;
+                    height: 285px;
+                    &::before{
+                        height: 285px;
+                    }
+                    & a{
+                        &:before{
+                            width: 34px;
+                            height: 34px;
+                            left: 47%;
+                            top: 47%;
+                            background-image: url(../images/news/play-news.png) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 320px){
+    .news{
+        &-wrap{
+            &__left{
+                &-video{
+                    height: 187px;
+                    &::before{
+                        height: 187px;
+                    }
+                    & a{
+                        &:before{
+                            left: 45%;
+                            top: 41%;
+                            
+                        }
+                    }
                 }
             }
         }

@@ -233,6 +233,9 @@
     }            
     
 }
+.subscription-tariffs__sub-title{
+    display: none;
+}
 
 
 @media (max-width: 1255px)  {
@@ -331,10 +334,10 @@
         }
         &-tariffs{
             &__table{
-                display: none;
+                
             }
             &__tabs{
-                display: none;
+                
             }
             &__tabs-mobile{
                 display: flex;
@@ -348,19 +351,118 @@
                 
             }
         }
-        
+
+        &-tariffs{
+            &__table{
+                overflow: unset; 
+                width: 100%;               
+            }
+            
+            &__sub-title{
+                display: block;
+                font-weight: 600;
+                font-size: 18px !important;
+                line-height: 120% !important;  
+                margin-bottom: 17px;
+            }
+            &__tabs{
+                width: auto;
+                padding: 24px 0 34px 0;
+            }
+            &__item{
+                border: none;
+                border-radius: 0;
+                padding: 0;
+                font-weight: 500;
+                font-size: 13.6565px;
+                line-height: 146.5%;
+                color: #696767;
+                margin: 0 16px 0 16px;
+                &-active{
+                    background-color: #fff;
+                    color: #075fc5;
+                    border-bottom: 3px solid #075fc5;
+                    font-weight: bold;
+                    
+                }
+            }
+        }
+        &-table{
+            background: none;            
+            border-radius: 0;
+            border-spacing: 0;
+            box-shadow: none;
+            width: 100%;
+            & thead{
+                position: relative;
+                & tr{
+                    position: absolute;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    justify-content: center;
+                    
+                   
+                }
+            }
+            & tbody{
+                position: relative;
+                top: 80px;
+                & tr{
+                    &:nth-child(odd){
+                    background: #F4F5FD;
+                    }
+                    &:nth-child(even){
+                        background: #FFF;
+                    }
+                    & [data-content]{
+                        color: #075FC5;
+                        font-weight: bold;
+                    }
+                    & [data-content="start"]{
+                        display: none;
+                    }
+                    & [data-content="comand"]{
+                        display: none;
+                    }
+                    & [data-content="bizness"]{
+                        display: none;
+                    }
+                    & td{
+                        &:first-child {
+                            width: 80%;
+                            padding: 8px 40px 8px 12px;
+                        }
+                       
+                    }   
+                 
+                }
+            }
+            &__btn{
+                margin: 0 6px 0 6px;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 149%;
+                &-active{                   
+                    background: linear-gradient(0deg, #075FC5, #075FC5), linear-gradient(90deg, #FFDB1B 0%, #FFBF1B 100%);
+                    border-radius: 4.09695px;
+                    padding: 6px 18px;
+                    color:#fff;                   
+                }
+            }
+        }
     }
     
     .table{
         &__mobile{
-            & tbody {
-            
+            & tbody {            
                 & tr:nth-child(odd){
                     background: #F4F5FD;
                 }
             }
-            & tbody tr:nth-child(even){
-                background: #fff;
+            & tbody & tr:nth-child(odd){
+                background: #F4F5FD;
             }
         }
         &-mobile{
