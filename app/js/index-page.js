@@ -124,7 +124,6 @@ $(function () {
 	}
 
 
-
 	const needBlocks = document.querySelectorAll('.need__item');
 	needBlocks.forEach(item => blockSwitcher(item))
 	function blockSwitcher(block) {

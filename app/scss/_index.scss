@@ -858,13 +858,16 @@
       transform: translateY(-50%);
       left: 18px;
       @extend %gil-500;
+      transition: all .4s ease-in-out;
     }
   }
 
   &__block {
-    display: none;
-    background-color: none;
-    margin-top: 24px;
+    visibility: hidden;
+    max-height: 0px;
+    background-color: transparent;
+    opacity: 0;
+    transition: all .5s ease-in-out;
   }
   &__block-title {
     padding-left: 61px;
@@ -897,14 +900,20 @@
     height: 0;
     appearance: none;
     position: relative;
+    transition: all .4s ease-in-out;
   }
 
   &__input:checked ~ &__block {
     display: block;
+    visibility: visible;
+    max-height: 200px;
+    margin-top: 24px;
+    opacity: 1;
   }
   &__input:checked ~ &__label {
     &::before {
       content: "-";
+      transition: all .4s ease-in-out;
     }
   }
 }
